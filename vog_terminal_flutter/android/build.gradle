@@ -1,0 +1,35 @@
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects { project ->
+    project.plugins.withId('com.android.library') {
+        project.android {
+            compileSdk 35
+            if (namespace == null) {
+                def manifestFile = project.file("src/main/AndroidManifest.xml")
+                if (manifestFile.exists()) {
+                    def match = manifestFile.text =~ /package\s*=\s*["']([^"']+)["']/
+                    if (match.find()) {
+                        namespace = match.group(1)
+                    } else {
+                        namespace = "com.vog.${project.name.replaceAll('[^a-zA-Z0-9_]', '_')}"
+                    }
+                } else {
+                    namespace = "com.vog.${project.name.replaceAll('[^a-zA-Z0-9_]', '_')}"
+                }
+            }
+        }
+    }
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

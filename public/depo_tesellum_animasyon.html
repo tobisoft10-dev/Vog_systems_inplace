@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOG Tekstil - Depo Tesellüm & El Terminali İşleyiş Animasyonu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #040711;
+            --card-bg: #080d21;
+            --accent-blue: #38bdf8;
+            --accent-green: #00ff66;
+            --accent-red: #ff4b4b;
+            --text-main: #fffffe;
+            --text-muted: #8892b0;
+            --border-glow: rgba(56, 189, 248, 0.2);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Space Grotesk', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 1rem;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+            max-width: 900px;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--text-main), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        /* Control Panel */
+        .controls-bar {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: var(--text-main);
+            padding: 0.8rem 1.8rem;
+            border-radius: 100px;
+            font-weight: 900;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            letter-spacing: 0.5px;
+            font-family: inherit;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #0284c7, #38bdf8);
+            color: #040711;
+            border: none;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 30px rgba(56, 189, 248, 0.7);
+        }
+
+        /* Main Workspace Canvas */
+        .simulation-container {
+            width: 100%;
+            max-width: 1100px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.8rem;
+        }
+
+        @media (max-width: 900px) {
+            .simulation-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .sim-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-glow);
+            border-radius: 1.5rem;
+            padding: 1.8rem;
+            position: relative;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            transition: all 0.4s ease;
+        }
+
+        .sim-card.active-step {
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 25px rgba(56, 189, 248, 0.3);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            padding-bottom: 0.8rem;
+        }
+
+        .step-badge {
+            background: rgba(56, 189, 248, 0.15);
+            color: var(--accent-blue);
+            padding: 0.3rem 0.8rem;
+            border-radius: 100px;
+            font-weight: 900;
+            font-size: 0.8rem;
+            border: 1px solid var(--accent-blue);
+        }
+
+        /* Handheld Terminal Simulator Screen */
+        .pda-screen {
+            background: #02040a;
+            border: 2px solid var(--accent-blue);
+            border-radius: 1.2rem;
+            padding: 1.2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8), 0 0 15px rgba(56, 189, 248, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Scanner Laser Line Animation */
+        .laser-beam {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, var(--accent-red), #ff0000, var(--accent-red), transparent);
+            box-shadow: 0 0 15px #ff0000, 0 0 30px #ff0000;
+            opacity: 0;
+            top: 0;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        .laser-beam.scanning {
+            opacity: 1;
+            animation: scanAnim 1.2s infinite ease-in-out;
+        }
+
+        @keyframes scanAnim {
+            0% { top: 5%; }
+            50% { top: 90%; }
+            100% { top: 5%; }
+        }
+
+        /* Order Progress Bar */
+        .progress-track {
+            width: 100%;
+            height: 14px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 100px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .progress-fill {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, var(--accent-blue), var(--accent-green));
+            border-radius: 100px;
+            transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 0 10px var(--accent-green);
+        }
+
+        /* Database & Vouchers Table Visualizer */
+        .db-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+        }
+
+        .db-table th {
+            text-align: left;
+            padding: 0.6rem;
+            color: var(--text-muted);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+
+        .db-table td {
+            padding: 0.7rem 0.6rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            font-family: monospace;
+        }
+
+        .row-highlight {
+            animation: rowFlash 1s ease;
+            background: rgba(0, 255, 102, 0.15) !important;
+        }
+
+        @keyframes rowFlash {
+            0% { background: rgba(0, 255, 102, 0.5); }
+            100% { background: rgba(0, 255, 102, 0.15); }
+        }
+
+        .badge-success {
+            background: rgba(0, 255, 102, 0.15);
+            color: var(--accent-green);
+            padding: 0.2rem 0.6rem;
+            border-radius: 100px;
+            border: 1px solid var(--accent-green);
+            font-weight: 800;
+        }
+
+        .badge-pending {
+            background: rgba(255, 170, 0, 0.15);
+            color: #ffaa00;
+            padding: 0.2rem 0.6rem;
+            border-radius: 100px;
+            border: 1px solid #ffaa00;
+            font-weight: 800;
+        }
+
+        /* Celebratory Overlay */
+        .success-banner {
+            background: linear-gradient(135deg, rgba(0, 255, 102, 0.2), rgba(56, 189, 248, 0.2));
+            border: 2px solid var(--accent-green);
+            padding: 1rem;
+            border-radius: 1rem;
+            text-align: center;
+            font-weight: 900;
+            color: var(--accent-green);
+            display: none;
+            animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 0 25px rgba(0, 255, 102, 0.3);
+        }
+
+        @keyframes popIn {
+            0% { transform: scale(0.8); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .box-graphic {
+            width: 70px;
+            height: 70px;
+            background: #d97706;
+            border: 3px solid #f59e0b;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            transition: all 0.5s ease;
+        }
+
+        .box-graphic.scanning-box {
+            transform: scale(1.1) rotate(5deg);
+            border-color: var(--accent-red);
+            box-shadow: 0 0 25px var(--accent-red);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>VOG TEKSTİL WMS</h1>
+        <p>Depo Tesellüm & El Terminali Barkod Okutma Canlı İşleyiş Simülasyonu</p>
+    </header>
+
+    <div class="controls-bar">
+        <button class="btn btn-primary" id="startBtn">▶️ Animasyonu Başlat</button>
+        <button class="btn" id="nextStepBtn">⏩ Adım Adım İlerle</button>
+        <button class="btn" id="resetBtn">🔄 Sıfırla</button>
+    </div>
+
+    <div class="simulation-container">
+        
+        <!-- LEFT: Handheld Terminal (El Terminali) Screen -->
+        <div class="sim-card active-step" id="cardTerminal">
+            <div class="card-header">
+                <span class="step-badge">1. SAHA ADIMI</span>
+                <span style="font-weight: 900; font-size: 0.9rem; color: var(--accent-blue);">📱 EL TERMINALI (PDA)</span>
+            </div>
+
+            <div class="pda-screen">
+                <div class="laser-beam" id="laserBeam"></div>
+                
+                <!-- Order Selector -->
+                <div>
+                    <label style="font-size: 0.75rem; color: var(--text-muted); font-weight: 800;">TESELLÜM SİPARİŞİ SEÇİMİ:</label>
+                    <div style="background: #080d21; border: 1px solid var(--accent-blue); padding: 0.7rem 1rem; border-radius: 0.8rem; margin-top: 0.3rem; font-weight: 900; font-size: 0.9rem; color: var(--accent-blue);" id="pdaOrderSelect">
+                        📋 #5285 - SEAT İstanbul (10 Adet)
+                    </div>
+                </div>
+
+                <!-- Progress Bar Card -->
+                <div style="background: rgba(56, 189, 248, 0.08); padding: 0.8rem; border-radius: 0.8rem; border: 1px solid rgba(56, 189, 248, 0.2);">
+                    <div style="display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 900; margin-bottom: 0.4rem;">
+                        <span>İlerleme Oranı:</span>
+                        <span style="color: var(--accent-green);" id="pdaProgressText">0 / 10 Adet (%0)</span>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-fill" id="pdaProgressFill"></div>
+                    </div>
+                </div>
+
+                <!-- Live Barcode Input Simulation -->
+                <div>
+                    <label style="font-size: 0.75rem; color: var(--text-muted); font-weight: 800;">LAZER OKUTMA GİRDİSİ:</label>
+                    <div style="background: #000; border: 1px solid rgba(255,255,255,0.2); padding: 0.8rem 1rem; border-radius: 0.8rem; font-family: monospace; font-size: 1.1rem; color: var(--accent-green); margin-top: 0.3rem;" id="pdaInput">
+                        ⚡ Okutma Bekleniyor...
+                    </div>
+                </div>
+
+                <!-- Scanned List -->
+                <div style="flex: 1; min-height: 140px; background: #040711; border-radius: 0.8rem; padding: 0.8rem; display: flex; flex-direction: column; gap: 0.5rem; overflow-y: auto;" id="pdaScannedList">
+                    <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 800;">SON OKUNAN ÜRÜNLER (VOUCHERS AKTARIMI):</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT: System Database & Stock Status (Vouchers & Orders) -->
+        <div class="sim-card" id="cardBackend">
+            <div class="card-header">
+                <span class="step-badge" style="background: rgba(0, 255, 102, 0.15); color: var(--accent-green); border-color: var(--accent-green);">2. SİSTEM KAYITLARI</span>
+                <span style="font-weight: 900; font-size: 0.9rem; color: var(--accent-green);">🗄️ WMS VERİTABANI</span>
+            </div>
+
+            <!-- Banner for Completed Order -->
+            <div class="success-banner" id="successBanner">
+                🎉 SİPARİŞ #5285 %100 TAMAMLANDI!<br>
+                <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-main);">Bekleyen Listesinden Düşürüldü & Vouchers Stokuna Aktarıldı.</span>
+            </div>
+
+            <!-- Physical Box Graphic Simulation -->
+            <div style="display: flex; align-items: center; gap: 1.2rem; background: rgba(255,255,255,0.02); padding: 1rem; border-radius: 1rem; border: 1px solid rgba(255,255,255,0.05);">
+                <div class="box-graphic" id="boxGraphic">📦</div>
+                <div>
+                    <div style="font-weight: 900; font-size: 1rem;" id="boxTitle">Gelen Koli: SEAT Yazlık Paket</div>
+                    <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.2rem;" id="boxDesc">Barkod: 8691234567890 | SKU: SEAT-POLO-L</div>
+                </div>
+            </div>
+
+            <!-- Vouchers Table Representation -->
+            <div>
+                <div style="font-size: 0.85rem; font-weight: 900; color: var(--accent-blue); margin-bottom: 0.4rem;">📦 Vouchers (Depo İrsaliye Stok Tablosu):</div>
+                <table class="db-table">
+                    <thead>
+                        <tr>
+                            <th>Sipariş No</th>
+                            <th>Barkod / EAN13</th>
+                            <th>Ürün / Beden</th>
+                            <th>Adet</th>
+                            <th>Lokasyon</th>
+                        </tr>
+                    </thead>
+                    <tbody id="vouchersTbody">
+                        <tr>
+                            <td colspan="5" style="text-align: center; color: var(--text-muted); padding: 1.5rem;">Henüz tesellüm kaydı girmediniz.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pending Orders Table Representation -->
+            <div>
+                <div style="font-size: 0.85rem; font-weight: 900; color: #ffaa00; margin-bottom: 0.4rem;">📋 Orders (Bekleyen Siparişler Kuyruğu):</div>
+                <table class="db-table">
+                    <thead>
+                        <tr>
+                            <th>Sipariş</th>
+                            <th>Müşteri/Bayi</th>
+                            <th>Bekleyen / Toplam</th>
+                            <th>Statü</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ordersTbody">
+                        <tr id="orderRow5285">
+                            <td>#5285</td>
+                            <td>SEAT İstanbul</td>
+                            <td>10 Adet</td>
+                            <td><span class="badge-pending" id="orderBadge5285">Bekliyor</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        // Web Audio API for Laser Beep sound effect
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        function playBeep(freq = 880, duration = 0.1) {
+            try {
+                if (audioCtx.state === 'suspended') audioCtx.resume();
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+                gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + duration);
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+                osc.start();
+                osc.stop(audioCtx.currentTime + duration);
+            } catch (e) {}
+        }
+
+        function playSuccessChime() {
+            playBeep(523.25, 0.1);
+            setTimeout(() => playBeep(659.25, 0.1), 100);
+            setTimeout(() => playBeep(783.99, 0.2), 200);
+        }
+
+        // State variables
+        let currentStep = 0;
+        let isAutoPlaying = false;
+        let timer = null;
+        let receivedCount = 0;
+        const totalQty = 10;
+        const barcodes = [
+            "8691234567890", "8691234567891", "8691234567892", "8691234567893", "8691234567894",
+            "8691234567895", "8691234567896", "8691234567897", "8691234567898", "8691234567899"
+        ];
+        const products = [
+            "SEAT Polo Tişört (L)", "SEAT Polo Tişört (M)", "SEAT Pantolon (42)", "SEAT Mont (L)",
+            "SEAT Yelek (XL)", "SEAT Şapka (Std)", "SEAT Polo Tişört (XL)", "SEAT Pantolon (44)",
+            "SEAT Mont (M)", "SEAT Ayakkabı (43)"
+        ];
+
+        // UI elements
+        const startBtn = document.getElementById('startBtn');
+        const nextStepBtn = document.getElementById('nextStepBtn');
+        const resetBtn = document.getElementById('resetBtn');
+        const laserBeam = document.getElementById('laserBeam');
+        const boxGraphic = document.getElementById('boxGraphic');
+        const pdaInput = document.getElementById('pdaInput');
+        const pdaProgressFill = document.getElementById('pdaProgressFill');
+        const pdaProgressText = document.getElementById('pdaProgressText');
+        const pdaScannedList = document.getElementById('pdaScannedList');
+        const vouchersTbody = document.getElementById('vouchersTbody');
+        const orderRow5285 = document.getElementById('orderRow5285');
+        const orderBadge5285 = document.getElementById('orderBadge5285');
+        const successBanner = document.getElementById('successBanner');
+        const pdaOrderSelect = document.getElementById('pdaOrderSelect');
+
+        function stepScan() {
+            if (receivedCount >= totalQty) {
+                stopAutoPlay();
+                return;
+            }
+
+            receivedCount++;
+            const code = barcodes[receivedCount - 1];
+            const prodName = products[receivedCount - 1];
+            const percent = Math.round((receivedCount / totalQty) * 100);
+
+            // 1. Play Laser Sound & Laser Beam Animation
+            playBeep(1200, 0.08);
+            laserBeam.classList.add('scanning');
+            boxGraphic.classList.add('scanning-box');
+
+            setTimeout(() => {
+                laserBeam.classList.remove('scanning');
+                boxGraphic.classList.remove('scanning-box');
+            }, 600);
+
+            // 2. Update Handheld Terminal Input & Progress
+            pdaInput.innerHTML = `⚡ ${code} <span style="font-size:0.8rem; color:#38bdf8;">(OK)</span>`;
+            pdaProgressFill.style.width = `${percent}%`;
+            pdaProgressText.innerText = `${receivedCount} / ${totalQty} Adet (%${percent})`;
+
+            // 3. Append to Handheld Scanned List
+            const itemDiv = document.createElement('div');
+            itemDiv.style.cssText = "background:#080d21; padding:0.5rem 0.8rem; border-radius:0.6rem; border:1px solid rgba(255,255,255,0.05); font-size:0.8rem; display:flex; justify-content:space-between; align-items:center;";
+            itemDiv.innerHTML = `<div><strong style="color:#38bdf8;">📦 ${prodName}</strong><br><span style="font-family:monospace; color:#8892b0;">${code}</span></div> <span style="color:#00ff66; font-weight:900;">OK</span>`;
+            pdaScannedList.insertBefore(itemDiv, pdaScannedList.children[1]);
+
+            // 4. Update Vouchers Table in Backend
+            if (receivedCount === 1) vouchersTbody.innerHTML = '';
+            
+            const tr = document.createElement('tr');
+            tr.className = 'row-highlight';
+            tr.innerHTML = `
+                <td>#5285</td>
+                <td>${code}</td>
+                <td>${prodName}</td>
+                <td>1</td>
+                <td><span style="color:#38bdf8;">Ana Depo Tesellüm</span></td>
+            `;
+            vouchersTbody.insertBefore(tr, vouchersTbody.firstChild);
+
+            // 5. Update Pending Orders Status
+            if (receivedCount < totalQty) {
+                orderBadge5285.className = 'badge-pending';
+                orderBadge5285.innerText = `Kısmi Tesellüm (${receivedCount}/${totalQty})`;
+            } else {
+                // 100% Completed!
+                playSuccessChime();
+                orderBadge5285.className = 'badge-success';
+                orderBadge5285.innerText = 'Depoda (Tamamlandı)';
+                pdaProgressFill.style.background = '#00ff66';
+                successBanner.style.display = 'block';
+                pdaOrderSelect.innerHTML = '✨ Tüm Bekleyen Siparişler Tesellüm Edildi!';
+                pdaOrderSelect.style.borderColor = '#00ff66';
+                pdaOrderSelect.style.color = '#00ff66';
+                
+                // Fade out completed order from pending list after 1 sec
+                setTimeout(() => {
+                    orderRow5285.style.opacity = '0.3';
+                }, 1000);
+            }
+        }
+
+        function resetSim() {
+            stopAutoPlay();
+            receivedCount = 0;
+            pdaInput.innerHTML = '⚡ Okutma Bekleniyor...';
+            pdaProgressFill.style.width = '0%';
+            pdaProgressFill.style.background = 'linear-gradient(90deg, var(--accent-blue), var(--accent-green))';
+            pdaProgressText.innerText = '0 / 10 Adet (%0)';
+            pdaScannedList.innerHTML = '<div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 800;">SON OKUNAN ÜRÜNLER (VOUCHERS AKTARIMI):</div>';
+            vouchersTbody.innerHTML = '<tr><td colspan="5" style="text-align: center; color: var(--text-muted); padding: 1.5rem;">Henüz tesellüm kaydı girmediniz.</td></tr>';
+            orderRow5285.style.opacity = '1';
+            orderBadge5285.className = 'badge-pending';
+            orderBadge5285.innerText = 'Bekliyor';
+            successBanner.style.display = 'none';
+            pdaOrderSelect.innerHTML = '📋 #5285 - SEAT İstanbul (10 Adet)';
+            pdaOrderSelect.style.borderColor = 'var(--accent-blue)';
+            pdaOrderSelect.style.color = 'var(--accent-blue)';
+        }
+
+        function startAutoPlay() {
+            if (isAutoPlaying) {
+                stopAutoPlay();
+                return;
+            }
+            if (receivedCount >= totalQty) resetSim();
+            
+            isAutoPlaying = true;
+            startBtn.innerText = '⏸️ Duraklat';
+            startBtn.style.background = 'linear-gradient(135deg, #e11d48, #ff4b4b)';
+            
+            timer = setInterval(() => {
+                if (receivedCount < totalQty) {
+                    stepScan();
+                } else {
+                    stopAutoPlay();
+                }
+            }, 1200);
+        }
+
+        function stopAutoPlay() {
+            isAutoPlaying = false;
+            clearInterval(timer);
+            startBtn.innerText = '▶️ Animasyonu Başlat';
+            startBtn.style.background = 'linear-gradient(135deg, #0284c7, #38bdf8)';
+        }
+
+        startBtn.addEventListener('click', startAutoPlay);
+        nextStepBtn.addEventListener('click', () => {
+            stopAutoPlay();
+            stepScan();
+        });
+        resetBtn.addEventListener('click', resetSim);
+    </script>
+</body>
+</html>

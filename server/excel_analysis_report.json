@@ -1,0 +1,4308 @@
+[
+  {
+    "fileName": "NISSAN 2026 KIŞ PARÇA KODLARI.xlsx",
+    "fullPath": "c:\\vog_system\\NISSAN 2026 KIŞ PARÇA KODLARI.xlsx",
+    "sheets": [
+      {
+        "sheetName": "NISSAN KIŞ 2026",
+        "totalRows": 275,
+        "headers": [
+          "BARKOD NUMARASI",
+          "1- Firma Adı",
+          "2- Ürün Adı",
+          "3- Ürün Kodu",
+          "FORMATI"
+        ],
+        "samplePreview": [
+          [
+            "8520147032006",
+            "Nissan",
+            "TEKNİSYEN KISLIK MONT 4XL",
+            "KIYAFETKIS-MONT-4XL",
+            "EAN 13"
+          ],
+          [
+            "8520147032013",
+            "Nissan",
+            "TEKNİSYEN KISLIK MONT 3XL",
+            "KIYAFETKIS-MONT-3XL",
+            "EAN 13"
+          ],
+          [
+            "8520147032020",
+            "Nissan",
+            "TEKNİSYEN KISLIK MONT 2XL",
+            "KIYAFETKIS-MONT-2XL",
+            "EAN 13"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fileName": "NISSAN 2026 YAZ PARÇA KODLARI.xlsx",
+    "fullPath": "c:\\vog_system\\NISSAN 2026 YAZ PARÇA KODLARI.xlsx",
+    "sheets": [
+      {
+        "sheetName": "NISSAN YAZ 2026",
+        "totalRows": 73,
+        "headers": [
+          "BARKOD NUMARASI",
+          "1- Firma Adı",
+          "2- Ürün Adı",
+          "3- Ürün Kodu",
+          "FORMATI"
+        ],
+        "samplePreview": [
+          [
+            "901020100101",
+            "Nissan",
+            "Servis Danışmanı Tshirt - Erkek-XS",
+            "KIYAFETYAZ-TSHIRT-SRVDAN-XS",
+            "EAN 13"
+          ],
+          [
+            "901020100102",
+            "Nissan",
+            "Servis Danışmanı Tshirt - Erkek-S",
+            "KIYAFETYAZ-TSHIRT-SRVDAN-S",
+            "EAN 13"
+          ],
+          [
+            "901020100103",
+            "Nissan",
+            "Servis Danışmanı Tshirt - Erkek-M",
+            "KIYAFETYAZ-TSHIRT-SRVDAN-M",
+            "EAN 13"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fileName": "SEAT 2026 Yaz Kişi Listesi.xlsx",
+    "fullPath": "c:\\vog_system\\SEAT 2026 Yaz Kişi Listesi.xlsx",
+    "sheets": [
+      {
+        "sheetName": "BAŞLIK",
+        "totalRows": 21,
+        "headers": [],
+        "samplePreview": []
+      },
+      {
+        "sheetName": "Personel Listesi",
+        "totalRows": 8746,
+        "headers": [
+          "Personel Adı",
+          "Yetkili Satıcı Kısa Adı",
+          "Bölüm",
+          "Görev",
+          "Üretken / Üretken Değil",
+          "Ek Görev 1",
+          "Ek Görev 2",
+          "Ek Görev 3",
+          "Ek Görev 4",
+          "Kullanıcı Adı",
+          "Varsayılan Marka",
+          "Sigorta Sicil No",
+          "Eğitim Durumu",
+          "Mevcut İşe Giriş Tarihi",
+          "Firm Organisation Id"
+        ],
+        "samplePreview": [
+          [
+            "ABBAS ERTÜRK",
+            "ALTUR",
+            "SATIŞ MÜDÜRLÜĞÜ ",
+            "SATIŞ MÜDÜRÜ",
+            "Üretken Değil",
+            null,
+            null,
+            null,
+            null,
+            "AERTURK2"
+          ],
+          [
+            "ABDULBAKİ ASLAN",
+            "ÖZÖN İSTANBUL",
+            "SATIŞ SONRASI HİZMETLER MÜDÜRLÜĞÜ",
+            "YEDEK PARÇA",
+            "Üretken Değil",
+            null,
+            null,
+            null,
+            null,
+            "AASLAN5"
+          ],
+          [
+            "ABDULBAKİ DEMİRTAŞ",
+            "DOĞU",
+            "VW ATÖLYE",
+            "FORMEN MEKANİK - ELEKTRİK",
+            "Üretken",
+            null,
+            null,
+            null,
+            null,
+            "ADEMIRDAS"
+          ]
+        ]
+      },
+      {
+        "sheetName": "Sheet1",
+        "totalRows": 4441,
+        "headers": [
+          "Personel Adı",
+          "Yetkili Satıcı Kısa Adı",
+          "Görev",
+          "Varsayılan Marka",
+          "Mevcut İşe Giriş Tarihi",
+          "KHP Marka",
+          "KHP Marka Diğer",
+          "Cinsiyet",
+          "Ayak Ölçüsü",
+          "Üst Beden",
+          "Alt Beden"
+        ],
+        "samplePreview": [
+          [
+            "ABDULBAKİ ASLAN",
+            "ÖZÖN İSTANBUL",
+            "YEDEK PARÇA",
+            "A",
+            41821,
+            "VW",
+            "A",
+            "Erkek",
+            "42",
+            "M"
+          ],
+          [
+            "ABDULBAKİ DEMİRTAŞ",
+            "DOĞU",
+            "FORMEN MEKANİK - ELEKTRİK",
+            "V",
+            41162,
+            "VW",
+            "V",
+            "Erkek",
+            "41",
+            "L"
+          ],
+          [
+            "ABDULGANİ PİRAN",
+            "ŞAHİNTAŞ",
+            "TEKNİSYEN - MEKANİK",
+            "V",
+            42331,
+            "V",
+            "S",
+            "Erkek",
+            "42",
+            "M"
+          ]
+        ]
+      },
+      {
+        "sheetName": "Personel Listesi (KHP)",
+        "totalRows": 7,
+        "headers": [
+          "ABDULLAH TUZ",
+          "VOSMER GAZİEMİR",
+          "SATIŞ SONRASI HİZMETLER MÜDÜRLÜĞÜ",
+          "TEKNİK DESTEK UZMANI",
+          "40422",
+          "VW",
+          "VW",
+          "Teknik Destek Uzmanı",
+          "VW",
+          "V",
+          "Erkek",
+          "40",
+          "M",
+          "42"
+        ],
+        "samplePreview": [
+          [
+            "ARİF AKGÖL",
+            "DOĞUŞ OTO ESENYURT",
+            "VW BİNEK ATÖLYE",
+            "TEKNİK DESTEK UZMANI",
+            41548,
+            "VW",
+            null,
+            "Teknik Destek Uzmanı",
+            "VW",
+            "V"
+          ],
+          [
+            "BURHAN KAYA",
+            "VOSMER GAZİEMİR",
+            "SATIŞ SONRASI HİZMETLER MÜDÜRLÜĞÜ",
+            "TEKNİK DESTEK UZMANI",
+            41985,
+            "VW",
+            "VW",
+            "Teknik Destek Uzmanı",
+            "GDM",
+            "GDM"
+          ],
+          [
+            "MEHMET ALİ TOKMAK",
+            "DOĞUŞ OTO KARTAL",
+            "VW BİNEK ATÖLYE",
+            "TEKNİK DESTEK UZMANI",
+            39583,
+            null,
+            null,
+            null,
+            "VW",
+            "V"
+          ]
+        ]
+      },
+      {
+        "sheetName": "Servis Danışmanı",
+        "totalRows": 407,
+        "headers": [
+          "NO",
+          "Yetkili Satıcı Kısa Adı",
+          "Personel Adı",
+          "Görev",
+          "Cinsiyet",
+          "Üst \nBeden",
+          "Alt \nBeden"
+        ],
+        "samplePreview": [
+          [
+            1,
+            "BAŞARAN FETHİYE",
+            "GÖKSEL EROL ",
+            "SERVİS DANIŞMANI",
+            "ERKEK",
+            "L",
+            46
+          ],
+          [
+            2,
+            "Demoto Afyon",
+            "Muhammed Ali DEMİREL",
+            "SERVİS DANIŞMANI",
+            "ERKEK",
+            "M",
+            44
+          ],
+          [
+            3,
+            "Demoto Afyon",
+            "Mevlüt ALTUNTAŞ",
+            "SERVİS DANIŞMANI",
+            "ERKEK",
+            "M",
+            42
+          ]
+        ]
+      },
+      {
+        "sheetName": "Diğer Servis Danışmanı",
+        "totalRows": 46,
+        "headers": [
+          "NO",
+          "Yetkili Satıcı Kısa Adı",
+          "Personel Adı",
+          "Görev",
+          "Cinsiyet",
+          "Üst \nBeden",
+          "Alt \nBeden"
+        ],
+        "samplePreview": [
+          [
+            1,
+            "YAĞCI EDREMİT",
+            "HASAN HÜSEYİN ŞAHAN",
+            "Diğer Servis Danışman",
+            "ERKEK",
+            "L",
+            50
+          ],
+          [],
+          []
+        ]
+      },
+      {
+        "sheetName": "Formen",
+        "totalRows": 1590,
+        "headers": [
+          "NO",
+          "Yetkili Satıcı Kısa Adı",
+          "Personel Adı",
+          "Görev",
+          "Cinsiyet",
+          "Üst \nBeden",
+          "Alt \nBeden"
+        ],
+        "samplePreview": [
+          [
+            1,
+            "BAŞARAN - FETHİYE",
+            "HALİL GÖKMEN",
+            "FORMEN",
+            "ERKEK",
+            "XL",
+            48
+          ],
+          [
+            2,
+            "BAŞARAN - FETHİYE",
+            "GÜNER SARICAN ",
+            "FORMEN",
+            "ERKEK",
+            "L",
+            48
+          ],
+          [
+            3,
+            "Demoto Afyon",
+            "Emre TAŞ",
+            "FORMEN",
+            "ERKEK",
+            "M",
+            44
+          ]
+        ]
+      },
+      {
+        "sheetName": "Mekanik Teknisyen",
+        "totalRows": 1587,
+        "headers": [
+          "NO",
+          "Yetkili Satıcı Kısa Adı",
+          "Personel Adı",
+          "Görev",
+          "Cinsiyet",
+          "Üst \nBeden",
+          "Alt \nBeden"
+        ],
+        "samplePreview": [
+          [
+            1,
+            "BAŞARAN - FETHİYE",
+            "LÜTFİ BERKAY ÖZUZUN ",
+            "MEKANİK TEKNİSYEN",
+            "ERKEK",
+            "M",
+            42
+          ],
+          [
+            2,
+            "BAŞARAN - FETHİYE",
+            "MUHAMMET ESAT KEÇE ",
+            "MEKANİK TEKNİSYEN",
+            "ERKEK",
+            "M",
+            42
+          ],
+          [
+            3,
+            "Demoto Afyon",
+            "Muhammed Enes TINASTEPE",
+            "MEKANİK TEKNİSYEN",
+            "ERKEK",
+            "L",
+            48
+          ]
+        ]
+      },
+      {
+        "sheetName": "Kaporta Teknisyen",
+        "totalRows": 1588,
+        "headers": [
+          "NO",
+          "Yetkili Satıcı Kısa Adı",
+          "Personel Adı",
+          "Görev",
+          "Cinsiyet",
+          "Üst \nBeden",
+          "Alt \nBeden"
+        ],
+        "samplePreview": [
+          [
+            1,
+            "BAŞARAN - FETHİYE",
+            "TOLGA GÜNGÖR",
+            "KAPORTA TEKNİSYEN ",
+            "ERKEK",
+            "L",
+            46
+          ],
+          [
+            2,
+            "BAŞARAN - FETHİYE",
+            "TURGUT ÖZTÜRK",
+            "KAPORTA TEKNİSYEN ",
+            "ERKEK",
+            "M",
+            42
+          ],
+          [
+            3,
+            "Demoto Afyon",
+            "Ali YILDIZ",
+            "KAPORTA TEKNİSYEN ",
+            "ERKEK",
+            "L",
+            42
+          ]
+        ]
+      },
+      {
+        "sheetName": "Master Teknisyen",
+        "totalRows": 1591,
+        "headers": [
+          "NO",
+          "Yetkili Satıcı Kısa Adı",
+          "Personel Adı",
+          "Görev",
+          "Cinsiyet",
+          "Üst \nBeden",
+          "Alt \nBeden"
+        ],
+        "samplePreview": [
+          [
+            1,
+            "BAŞARAN - FETHİYE",
+            "MÜCAHİD DEMİRCİ ",
+            "Master Teknisyen",
+            "Erkek",
+            "L",
+            48
+          ],
+          [
+            2,
+            "YAZICIOĞLU",
+            "İSMAİL KAYACAN",
+            "Master Teknisyen",
+            "Erkek",
+            "L",
+            46
+          ],
+          []
+        ]
+      },
+      {
+        "sheetName": "GarantiDispozisyon",
+        "totalRows": 1570,
+        "headers": [
+          "NO",
+          "Yetkili Satıcı Kısa Adı",
+          "Personel Adı",
+          "Görev",
+          "Cinsiyet",
+          "Üst \nBeden",
+          "Alt \nBeden"
+        ],
+        "samplePreview": [
+          [
+            1,
+            "BAŞARAN - FETHİYE",
+            "SEYFİ İÇÖZ",
+            "GarantiDispozisyon",
+            "ERKEK",
+            "L",
+            46
+          ],
+          [
+            2,
+            "Demoto Afyon",
+            "Mehmet KARAKAYA",
+            "GarantiDispozisyon",
+            "ERKEK",
+            "M",
+            46
+          ],
+          [
+            3,
+            "Demoto Afyon",
+            "Salim DÜLGER",
+            "GarantiDispozisyon",
+            "ERKEK",
+            "L",
+            46
+          ]
+        ]
+      },
+      {
+        "sheetName": "PAKETLER",
+        "totalRows": 22,
+        "headers": [
+          "Servis Danışmanı",
+          "Pantolon",
+          "2"
+        ],
+        "samplePreview": [
+          [
+            null,
+            "Tshirt Beyaz",
+            2
+          ],
+          [
+            null,
+            "Tshirt Kırmızı",
+            2
+          ],
+          []
+        ]
+      },
+      {
+        "sheetName": "PARÇA NO DETAY",
+        "totalRows": 211,
+        "headers": [
+          "SERVİS DANIŞMAN POLO YAKA T-SHIRT BAY - XS",
+          "PSEAT200002XS",
+          "2"
+        ],
+        "samplePreview": [
+          [
+            "SERVİS DANIŞMAN POLO YAKA T-SHIRT BAY - S",
+            "PSEAT200002S",
+            2
+          ],
+          [
+            "SERVİS DANIŞMAN POLO YAKA T-SHIRT BAY - M",
+            "PSEAT200002M",
+            2
+          ],
+          [
+            "SERVİS DANIŞMAN POLO YAKA T-SHIRT BAY - L",
+            "PSEAT200002L",
+            2
+          ]
+        ]
+      },
+      {
+        "sheetName": "PARÇA NO",
+        "totalRows": 18,
+        "headers": [],
+        "samplePreview": []
+      },
+      {
+        "sheetName": "sorulacak",
+        "totalRows": 209,
+        "headers": [
+          "Personel Adı",
+          "Yetkili Satıcı Kısa Adı",
+          "Bölge Yöneticisi",
+          "Bölüm",
+          "Görev",
+          "Mevcut İşe Giriş tarihi",
+          "KHP Marka",
+          "KHP Marka Diğer",
+          "KHP Görev Tanımı",
+          "Hizmet Verdiği Üst Marka",
+          "Hizmet Verdiği Marka",
+          "Cinsiyet",
+          "Ayak Ölçüsü",
+          "Üst Beden",
+          "Alt Beden"
+        ],
+        "samplePreview": [
+          [
+            "AHMET İŞCAN",
+            "DOĞUŞ OTO BURSA",
+            "Ömer Naci Masatlıoğlu",
+            "VW BİNEK ATÖLYE",
+            "FORMEN MEKANİK - ELEKTRİK",
+            38457,
+            "A",
+            null,
+            "Teknisyen",
+            "VW"
+          ],
+          [
+            "ANIL KEKİK",
+            "BAŞARAN ANTALYA",
+            "Ömer Naci Masatlıoğlu",
+            "VW ATÖLYE",
+            "TEKNİSYEN - MEKANİK",
+            41092,
+            "S",
+            "V",
+            "Teknisyen",
+            "S"
+          ],
+          [
+            "BURCU BELKIS",
+            "ARK OTO",
+            "Ömer Naci Masatlıoğlu",
+            "VW ATÖLYE",
+            "SERVİS DANIŞMANI",
+            41508,
+            "A",
+            "N",
+            "Servis Danışmanı",
+            "A"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fileName": "SEAT 2026 Yaz Rapor.xlsx",
+    "fullPath": "c:\\vog_system\\SEAT 2026 Yaz Rapor.xlsx",
+    "sheets": [
+      {
+        "sheetName": "BAŞLIK",
+        "totalRows": 21,
+        "headers": [],
+        "samplePreview": []
+      },
+      {
+        "sheetName": "Personel Listesi",
+        "totalRows": 8746,
+        "headers": [
+          "Personel Adı",
+          "Yetkili Satıcı Kısa Adı",
+          "Bölüm",
+          "Görev",
+          "Üretken / Üretken Değil",
+          "Ek Görev 1",
+          "Ek Görev 2",
+          "Ek Görev 3",
+          "Ek Görev 4",
+          "Kullanıcı Adı",
+          "Varsayılan Marka",
+          "Sigorta Sicil No",
+          "Eğitim Durumu",
+          "Mevcut İşe Giriş Tarihi",
+          "Firm Organisation Id"
+        ],
+        "samplePreview": [
+          [
+            "ABBAS ERTÜRK",
+            "ALTUR",
+            "SATIŞ MÜDÜRLÜĞÜ ",
+            "SATIŞ MÜDÜRÜ",
+            "Üretken Değil",
+            null,
+            null,
+            null,
+            null,
+            "AERTURK2"
+          ],
+          [
+            "ABDULBAKİ ASLAN",
+            "ÖZÖN İSTANBUL",
+            "SATIŞ SONRASI HİZMETLER MÜDÜRLÜĞÜ",
+            "YEDEK PARÇA",
+            "Üretken Değil",
+            null,
+            null,
+            null,
+            null,
+            "AASLAN5"
+          ],
+          [
+            "ABDULBAKİ DEMİRTAŞ",
+            "DOĞU",
+            "VW ATÖLYE",
+            "FORMEN MEKANİK - ELEKTRİK",
+            "Üretken",
+            null,
+            null,
+            null,
+            null,
+            "ADEMIRDAS"
+          ]
+        ]
+      },
+      {
+        "sheetName": "Sheet1",
+        "totalRows": 4441,
+        "headers": [
+          "Personel Adı",
+          "Yetkili Satıcı Kısa Adı",
+          "Görev",
+          "Varsayılan Marka",
+          "Mevcut İşe Giriş Tarihi",
+          "KHP Marka",
+          "KHP Marka Diğer",
+          "Cinsiyet",
+          "Ayak Ölçüsü",
+          "Üst Beden",
+          "Alt Beden"
+        ],
+        "samplePreview": [
+          [
+            "ABDULBAKİ ASLAN",
+            "ÖZÖN İSTANBUL",
+            "YEDEK PARÇA",
+            "A",
+            41821,
+            "VW",
+            "A",
+            "Erkek",
+            "42",
+            "M"
+          ],
+          [
+            "ABDULBAKİ DEMİRTAŞ",
+            "DOĞU",
+            "FORMEN MEKANİK - ELEKTRİK",
+            "V",
+            41162,
+            "VW",
+            "V",
+            "Erkek",
+            "41",
+            "L"
+          ],
+          [
+            "ABDULGANİ PİRAN",
+            "ŞAHİNTAŞ",
+            "TEKNİSYEN - MEKANİK",
+            "V",
+            42331,
+            "V",
+            "S",
+            "Erkek",
+            "42",
+            "M"
+          ]
+        ]
+      },
+      {
+        "sheetName": "Personel Listesi (KHP)",
+        "totalRows": 7,
+        "headers": [
+          "ABDULLAH TUZ",
+          "VOSMER GAZİEMİR",
+          "SATIŞ SONRASI HİZMETLER MÜDÜRLÜĞÜ",
+          "TEKNİK DESTEK UZMANI",
+          "40422",
+          "VW",
+          "VW",
+          "Teknik Destek Uzmanı",
+          "VW",
+          "V",
+          "Erkek",
+          "40",
+          "M",
+          "42"
+        ],
+        "samplePreview": [
+          [
+            "ARİF AKGÖL",
+            "DOĞUŞ OTO ESENYURT",
+            "VW BİNEK ATÖLYE",
+            "TEKNİK DESTEK UZMANI",
+            41548,
+            "VW",
+            null,
+            "Teknik Destek Uzmanı",
+            "VW",
+            "V"
+          ],
+          [
+            "BURHAN KAYA",
+            "VOSMER GAZİEMİR",
+            "SATIŞ SONRASI HİZMETLER MÜDÜRLÜĞÜ",
+            "TEKNİK DESTEK UZMANI",
+            41985,
+            "VW",
+            "VW",
+            "Teknik Destek Uzmanı",
+            "GDM",
+            "GDM"
+          ],
+          [
+            "MEHMET ALİ TOKMAK",
+            "DOĞUŞ OTO KARTAL",
+            "VW BİNEK ATÖLYE",
+            "TEKNİK DESTEK UZMANI",
+            39583,
+            null,
+            null,
+            null,
+            "VW",
+            "V"
+          ]
+        ]
+      },
+      {
+        "sheetName": "Bölüm İcmal",
+        "totalRows": 11,
+        "headers": [],
+        "samplePreview": []
+      },
+      {
+        "sheetName": "Bölüm Ürün İcmal",
+        "totalRows": 11,
+        "headers": [
+          "Bölüm / Ürün",
+          "Formen Polo Yaka T_Shirt",
+          "Master Teknisyen Polo Yaka T_Shirt",
+          "Servis Danışman Pantolon Bay",
+          "Servis Danışman Polo Yaka T_Shİrt Bay",
+          "Servis Danışman Polo Yaka T_Shİrt Bay Kırmızı",
+          "Teknisyen Bisiklet Yaka T_Shirt",
+          "Teknisyen Pantolon",
+          "Teknisyen Polo Yaka T_Shİrt",
+          "Genel Toplam"
+        ],
+        "samplePreview": [
+          [],
+          [
+            "Diğer Servis Danışman",
+            null,
+            null,
+            1,
+            1,
+            2,
+            null,
+            null,
+            null,
+            4
+          ],
+          [
+            "Formen",
+            24,
+            null,
+            null,
+            null,
+            null,
+            null,
+            12,
+            null,
+            36
+          ]
+        ]
+      },
+      {
+        "sheetName": "Yetkili Servis Adet İcmal",
+        "totalRows": 12,
+        "headers": [
+          "Yetkili Servis / Bölüm",
+          "Diğer Servis Danışman",
+          "Formen",
+          "Garanti / Dispozisyon",
+          "Kapota Teknisyen",
+          "Master Teknisyen",
+          "Mekanik Teknisyen",
+          "Servis Danışmanı",
+          "Genel Toplam"
+        ],
+        "samplePreview": [
+          [],
+          [
+            "BAŞARAN FETHİYE",
+            null,
+            12,
+            3,
+            12,
+            6,
+            12,
+            6,
+            51
+          ],
+          [
+            "Demoto Afyon",
+            null,
+            6,
+            6,
+            12,
+            null,
+            12,
+            18,
+            54
+          ]
+        ]
+      },
+      {
+        "sheetName": "Yetkili Servis Koli İcmal",
+        "totalRows": 12,
+        "headers": [
+          "Yetkili Servis / Bölüm",
+          "Diğer Servis Danışman",
+          "Formen",
+          "Garanti / Dispozisyon",
+          "Kapota Teknisyen",
+          "Master Teknisyen",
+          "Mekanik Teknisyen",
+          "Servis Danışmanı",
+          "Genel Toplam"
+        ],
+        "samplePreview": [
+          [],
+          [
+            "BAŞARAN FETHİYE",
+            null,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            9
+          ],
+          [
+            "Demoto Afyon",
+            null,
+            1,
+            2,
+            2,
+            null,
+            2,
+            3,
+            10
+          ]
+        ]
+      },
+      {
+        "sheetName": "Özet",
+        "totalRows": 65,
+        "headers": [
+          "Bölüm",
+          "Yetkili Servis",
+          "Adı, Soyadı-Bölümü",
+          "Adet"
+        ],
+        "samplePreview": [
+          [],
+          [
+            "Diğer Servis Danışman",
+            "YAĞCI EDREMİT",
+            "HASAN HÜSEYİN ŞAHAN-Diğer Servis Danışman",
+            4
+          ],
+          [
+            "Formen",
+            "BAŞARAN FETHİYE",
+            "GÜNER SARICAN -Formen",
+            6
+          ]
+        ]
+      },
+      {
+        "sheetName": "Detay",
+        "totalRows": 131,
+        "headers": [
+          "Yetkili Servis",
+          "Bölüm",
+          "Adı, Soyadı-Bölümü",
+          "Stok",
+          "Ürün",
+          "Adet"
+        ],
+        "samplePreview": [
+          [],
+          [
+            "BAŞARAN FETHİYE",
+            "Formen",
+            "GÜNER SARICAN -Formen",
+            "PSEAT200007L",
+            "Formen Polo Yaka T_Shirt",
+            4
+          ],
+          [
+            "BAŞARAN FETHİYE",
+            "Formen",
+            "GÜNER SARICAN -Formen",
+            "PSEAT200009XXL",
+            "Teknisyen Pantolon",
+            2
+          ]
+        ]
+      },
+      {
+        "sheetName": "Koli Etiketi",
+        "totalRows": 62,
+        "headers": [
+          "Sıra",
+          "Yetkili Servis",
+          "Adı, Soyadı",
+          "Bölümü",
+          "Cinsiyet",
+          "Ürün_1",
+          "Ürün_2",
+          "Ürün_3",
+          "P_1",
+          "P_2",
+          "P_3"
+        ],
+        "samplePreview": [
+          [
+            1,
+            "YAĞCI EDREMİT",
+            "HASAN HÜSEYİN ŞAHAN",
+            "Diğer Servis Danışman",
+            "Erkek",
+            "Pantolon 1 Adet",
+            "T_Shirt (1) 1 Adet",
+            "T_Shirt (2) 2 Adet",
+            "PSEAT200003XXXL",
+            "PSEAT200002L"
+          ],
+          [
+            1,
+            "BAŞARAN FETHİYE",
+            "HALİL GÖKMEN",
+            "Formen",
+            "Erkek",
+            "Pantolon 2 Adet",
+            "T_Shirt (1) 4 Adet",
+            " ",
+            "PSEAT200009XXL",
+            "PSEAT200007XL"
+          ],
+          [
+            2,
+            "BAŞARAN FETHİYE",
+            "GÜNER SARICAN ",
+            "Formen",
+            "Erkek",
+            "Pantolon 2 Adet",
+            "T_Shirt (1) 4 Adet",
+            " ",
+            "PSEAT200009XXL",
+            "PSEAT200007L"
+          ]
+        ]
+      },
+      {
+        "sheetName": "sorulacak",
+        "totalRows": 209,
+        "headers": [
+          "Personel Adı",
+          "Yetkili Satıcı Kısa Adı",
+          "Bölge Yöneticisi",
+          "Bölüm",
+          "Görev",
+          "Mevcut İşe Giriş tarihi",
+          "KHP Marka",
+          "KHP Marka Diğer",
+          "KHP Görev Tanımı",
+          "Hizmet Verdiği Üst Marka",
+          "Hizmet Verdiği Marka",
+          "Cinsiyet",
+          "Ayak Ölçüsü",
+          "Üst Beden",
+          "Alt Beden"
+        ],
+        "samplePreview": [
+          [
+            "AHMET İŞCAN",
+            "DOĞUŞ OTO BURSA",
+            "Ömer Naci Masatlıoğlu",
+            "VW BİNEK ATÖLYE",
+            "FORMEN MEKANİK - ELEKTRİK",
+            38457,
+            "A",
+            null,
+            "Teknisyen",
+            "VW"
+          ],
+          [
+            "ANIL KEKİK",
+            "BAŞARAN ANTALYA",
+            "Ömer Naci Masatlıoğlu",
+            "VW ATÖLYE",
+            "TEKNİSYEN - MEKANİK",
+            41092,
+            "S",
+            "V",
+            "Teknisyen",
+            "S"
+          ],
+          [
+            "BURCU BELKIS",
+            "ARK OTO",
+            "Ömer Naci Masatlıoğlu",
+            "VW ATÖLYE",
+            "SERVİS DANIŞMANI",
+            41508,
+            "A",
+            "N",
+            "Servis Danışmanı",
+            "A"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fileName": "SEATSipariş_2026 Yazlık_.xlsx",
+    "fullPath": "c:\\vog_system\\SEATSipariş_2026 Yazlık_.xlsx",
+    "sheets": [
+      {
+        "sheetName": "BAŞLIK",
+        "totalRows": 21,
+        "headers": [],
+        "samplePreview": []
+      },
+      {
+        "sheetName": "Personel Listesi",
+        "totalRows": 8746,
+        "headers": [
+          "Personel Adı",
+          "Yetkili Satıcı Kısa Adı",
+          "Bölüm",
+          "Görev",
+          "Üretken / Üretken Değil",
+          "Ek Görev 1",
+          "Ek Görev 2",
+          "Ek Görev 3",
+          "Ek Görev 4",
+          "Kullanıcı Adı",
+          "Varsayılan Marka",
+          "Sigorta Sicil No",
+          "Eğitim Durumu",
+          "Mevcut İşe Giriş Tarihi",
+          "Firm Organisation Id"
+        ],
+        "samplePreview": [
+          [
+            "ABBAS ERTÜRK",
+            "ALTUR",
+            "SATIŞ MÜDÜRLÜĞÜ ",
+            "SATIŞ MÜDÜRÜ",
+            "Üretken Değil",
+            null,
+            null,
+            null,
+            null,
+            "AERTURK2"
+          ],
+          [
+            "ABDULBAKİ ASLAN",
+            "ÖZÖN İSTANBUL",
+            "SATIŞ SONRASI HİZMETLER MÜDÜRLÜĞÜ",
+            "YEDEK PARÇA",
+            "Üretken Değil",
+            null,
+            null,
+            null,
+            null,
+            "AASLAN5"
+          ],
+          [
+            "ABDULBAKİ DEMİRTAŞ",
+            "DOĞU",
+            "VW ATÖLYE",
+            "FORMEN MEKANİK - ELEKTRİK",
+            "Üretken",
+            null,
+            null,
+            null,
+            null,
+            "ADEMIRDAS"
+          ]
+        ]
+      },
+      {
+        "sheetName": "Sheet1",
+        "totalRows": 4441,
+        "headers": [
+          "Personel Adı",
+          "Yetkili Satıcı Kısa Adı",
+          "Görev",
+          "Varsayılan Marka",
+          "Mevcut İşe Giriş Tarihi",
+          "KHP Marka",
+          "KHP Marka Diğer",
+          "Cinsiyet",
+          "Ayak Ölçüsü",
+          "Üst Beden",
+          "Alt Beden"
+        ],
+        "samplePreview": [
+          [
+            "ABDULBAKİ ASLAN",
+            "ÖZÖN İSTANBUL",
+            "YEDEK PARÇA",
+            "A",
+            41821,
+            "VW",
+            "A",
+            "Erkek",
+            "42",
+            "M"
+          ],
+          [
+            "ABDULBAKİ DEMİRTAŞ",
+            "DOĞU",
+            "FORMEN MEKANİK - ELEKTRİK",
+            "V",
+            41162,
+            "VW",
+            "V",
+            "Erkek",
+            "41",
+            "L"
+          ],
+          [
+            "ABDULGANİ PİRAN",
+            "ŞAHİNTAŞ",
+            "TEKNİSYEN - MEKANİK",
+            "V",
+            42331,
+            "V",
+            "S",
+            "Erkek",
+            "42",
+            "M"
+          ]
+        ]
+      },
+      {
+        "sheetName": "Personel Listesi (KHP)",
+        "totalRows": 7,
+        "headers": [
+          "ABDULLAH TUZ",
+          "VOSMER GAZİEMİR",
+          "SATIŞ SONRASI HİZMETLER MÜDÜRLÜĞÜ",
+          "TEKNİK DESTEK UZMANI",
+          "40422",
+          "VW",
+          "VW",
+          "Teknik Destek Uzmanı",
+          "VW",
+          "V",
+          "Erkek",
+          "40",
+          "M",
+          "42"
+        ],
+        "samplePreview": [
+          [
+            "ARİF AKGÖL",
+            "DOĞUŞ OTO ESENYURT",
+            "VW BİNEK ATÖLYE",
+            "TEKNİK DESTEK UZMANI",
+            41548,
+            "VW",
+            null,
+            "Teknik Destek Uzmanı",
+            "VW",
+            "V"
+          ],
+          [
+            "BURHAN KAYA",
+            "VOSMER GAZİEMİR",
+            "SATIŞ SONRASI HİZMETLER MÜDÜRLÜĞÜ",
+            "TEKNİK DESTEK UZMANI",
+            41985,
+            "VW",
+            "VW",
+            "Teknik Destek Uzmanı",
+            "GDM",
+            "GDM"
+          ],
+          [
+            "MEHMET ALİ TOKMAK",
+            "DOĞUŞ OTO KARTAL",
+            "VW BİNEK ATÖLYE",
+            "TEKNİK DESTEK UZMANI",
+            39583,
+            null,
+            null,
+            null,
+            "VW",
+            "V"
+          ]
+        ]
+      },
+      {
+        "sheetName": "Servis Danışmanı",
+        "totalRows": 407,
+        "headers": [
+          "Yetkili Satıcı Kısa Adı",
+          "Personel Adı",
+          "Görev",
+          "Cinsiyet",
+          "Üst Beden",
+          "Alt Beden"
+        ],
+        "samplePreview": [
+          [
+            "BAŞARAN FETHİYE",
+            "GÖKSEL EROL ",
+            "HASAR DANIŞMANI ",
+            "E",
+            "L",
+            46
+          ],
+          [
+            "Demoto Afyon",
+            "Muhammed Ali DEMİREL",
+            "Servis Danışmanı",
+            "E",
+            "M",
+            44
+          ],
+          [
+            "Demoto Afyon",
+            "Mevlüt ALTUNTAŞ",
+            "Hasar Danışmanı",
+            "E",
+            "M",
+            42
+          ]
+        ]
+      },
+      {
+        "sheetName": "Diğer Servis Danışmanı",
+        "totalRows": 46,
+        "headers": [
+          "Yetkili Satıcı Kısa Adı",
+          "Personel Adı",
+          "Görev",
+          "Cinsiyet",
+          "Üst Beden",
+          "Alt Beden"
+        ],
+        "samplePreview": [
+          [
+            "YAĞCI EDREMİT",
+            "HASAN HÜSEYİN ŞAHAN",
+            "YEDEK PARÇA",
+            "E",
+            "L",
+            50
+          ],
+          [],
+          []
+        ]
+      },
+      {
+        "sheetName": "Formen",
+        "totalRows": 1590,
+        "headers": [
+          "Yetkili Satıcı Kısa Adı",
+          "Personel Adı",
+          "Görev",
+          "Cinsiyet",
+          "Üst Beden",
+          "Alt Beden"
+        ],
+        "samplePreview": [
+          [
+            "BAŞARAN - FETHİYE",
+            "HALİL GÖKMEN",
+            "Formen",
+            "Erkek",
+            48,
+            "XL "
+          ],
+          [
+            "BAŞARAN - FETHİYE",
+            "GÜNER SARICAN ",
+            "Formen",
+            "Erkek",
+            48,
+            "L "
+          ],
+          [
+            "Demoto Afyon",
+            "Emre TAŞ",
+            "Formen",
+            "E",
+            "M",
+            44
+          ]
+        ]
+      },
+      {
+        "sheetName": "Mekanik Teknisyen",
+        "totalRows": 1587,
+        "headers": [
+          "Yetkili Satıcı Kısa Adı",
+          "Personel Adı",
+          "Görev",
+          "Cinsiyet",
+          "Üst Beden",
+          "Alt Beden"
+        ],
+        "samplePreview": [
+          [
+            "BAŞARAN - FETHİYE",
+            "LÜTFİ BERKAY ÖZUZUN ",
+            "Mekanik Teknisyen",
+            "Erkek",
+            "M",
+            42
+          ],
+          [
+            "BAŞARAN - FETHİYE",
+            "MUHAMMET ESAT KEÇE ",
+            "Mekanik Teknisyen",
+            "Erkek",
+            "M",
+            42
+          ],
+          [
+            "Demoto Afyon",
+            "Muhammed Enes TINASTEPE",
+            "Teknisyen",
+            "E",
+            "L",
+            48
+          ]
+        ]
+      },
+      {
+        "sheetName": "Kaporta Teknisyen",
+        "totalRows": 1588,
+        "headers": [
+          "Yetkili Satıcı Kısa Adı",
+          "Personel Adı",
+          "Görev",
+          "Cinsiyet",
+          "Üst Beden",
+          "Alt Beden"
+        ],
+        "samplePreview": [
+          [
+            "BAŞARAN - FETHİYE",
+            "TOLGA GÜNGÖR",
+            "KAPORTA TEKNİSYEN ",
+            "E",
+            "L",
+            46
+          ],
+          [
+            "BAŞARAN - FETHİYE",
+            "TURGUT ÖZTÜRK",
+            "KAPORTA TEKNİSYEN ",
+            "E",
+            "M",
+            42
+          ],
+          [
+            "Demoto Afyon",
+            "Ali YILDIZ",
+            "Kaporta Teknisyen",
+            "E",
+            "L",
+            42
+          ]
+        ]
+      },
+      {
+        "sheetName": "Master Teknisyen",
+        "totalRows": 1591,
+        "headers": [
+          "Yetkili Satıcı Kısa Adı",
+          "Personel Adı",
+          "Görev",
+          "Cinsiyet",
+          "Üst Beden",
+          "Alt Beden"
+        ],
+        "samplePreview": [
+          [
+            "BAŞARAN - FETHİYE",
+            "MÜCAHİD DEMİRCİ ",
+            "Mekanik Teknisyen",
+            "Erkek",
+            "L",
+            48
+          ],
+          [
+            "YAZICIOĞLU",
+            "İSMAİL KAYACAN",
+            "master teknisyen",
+            "Erkek",
+            "L ",
+            46
+          ],
+          []
+        ]
+      },
+      {
+        "sheetName": "GarantiDispozisyon",
+        "totalRows": 1570,
+        "headers": [
+          "Yetkili Satıcı Kısa Adı",
+          "Personel Adı",
+          "Görev",
+          "Cinsiyet",
+          "Üst Beden",
+          "Alt Beden"
+        ],
+        "samplePreview": [
+          [
+            "BAŞARAN - FETHİYE",
+            "SEYFİ İÇÖZ",
+            "Garanti",
+            "Erkek",
+            "L",
+            46
+          ],
+          [
+            "Demoto Afyon",
+            "Mehmet KARAKAYA",
+            "Garanti",
+            "E",
+            "M",
+            46
+          ],
+          [
+            "Demoto Afyon",
+            "Salim DÜLGER",
+            "Dispozisyon",
+            "E",
+            "L",
+            46
+          ]
+        ]
+      },
+      {
+        "sheetName": "PAKETLER",
+        "totalRows": 22,
+        "headers": [
+          "Servis Danışmanı",
+          "Pantolon",
+          "2"
+        ],
+        "samplePreview": [
+          [
+            null,
+            "Tshirt Beyaz",
+            2
+          ],
+          [
+            null,
+            "Tshirt Kırmızı",
+            2
+          ],
+          []
+        ]
+      },
+      {
+        "sheetName": "PARÇA NO",
+        "totalRows": 18,
+        "headers": [],
+        "samplePreview": []
+      },
+      {
+        "sheetName": "sorulacak",
+        "totalRows": 209,
+        "headers": [
+          "Personel Adı",
+          "Yetkili Satıcı Kısa Adı",
+          "Bölge Yöneticisi",
+          "Bölüm",
+          "Görev",
+          "Mevcut İşe Giriş tarihi",
+          "KHP Marka",
+          "KHP Marka Diğer",
+          "KHP Görev Tanımı",
+          "Hizmet Verdiği Üst Marka",
+          "Hizmet Verdiği Marka",
+          "Cinsiyet",
+          "Ayak Ölçüsü",
+          "Üst Beden",
+          "Alt Beden"
+        ],
+        "samplePreview": [
+          [
+            "AHMET İŞCAN",
+            "DOĞUŞ OTO BURSA",
+            "Ömer Naci Masatlıoğlu",
+            "VW BİNEK ATÖLYE",
+            "FORMEN MEKANİK - ELEKTRİK",
+            38457,
+            "A",
+            null,
+            "Teknisyen",
+            "VW"
+          ],
+          [
+            "ANIL KEKİK",
+            "BAŞARAN ANTALYA",
+            "Ömer Naci Masatlıoğlu",
+            "VW ATÖLYE",
+            "TEKNİSYEN - MEKANİK",
+            41092,
+            "S",
+            "V",
+            "Teknisyen",
+            "S"
+          ],
+          [
+            "BURCU BELKIS",
+            "ARK OTO",
+            "Ömer Naci Masatlıoğlu",
+            "VW ATÖLYE",
+            "SERVİS DANIŞMANI",
+            41508,
+            "A",
+            "N",
+            "Servis Danışmanı",
+            "A"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fileName": "NISSAN 2026 KIŞ PARÇA KODLARI.xlsx",
+    "fullPath": "C:\\Users\\ctopuz\\Desktop\\NISSAN 2026 KIŞ PARÇA KODLARI.xlsx",
+    "sheets": [
+      {
+        "sheetName": "NISSAN KIŞ 2026",
+        "totalRows": 275,
+        "headers": [
+          "BARKOD NUMARASI",
+          "1- Firma Adı",
+          "2- Ürün Adı",
+          "3- Ürün Kodu",
+          "FORMATI"
+        ],
+        "samplePreview": [
+          [
+            "8520147032006",
+            "Nissan",
+            "TEKNİSYEN KISLIK MONT 4XL",
+            "KIYAFETKIS-MONT-4XL",
+            "EAN 13"
+          ],
+          [
+            "8520147032013",
+            "Nissan",
+            "TEKNİSYEN KISLIK MONT 3XL",
+            "KIYAFETKIS-MONT-3XL",
+            "EAN 13"
+          ],
+          [
+            "8520147032020",
+            "Nissan",
+            "TEKNİSYEN KISLIK MONT 2XL",
+            "KIYAFETKIS-MONT-2XL",
+            "EAN 13"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fileName": "NISSAN 2026 KIŞ.xlsx",
+    "fullPath": "C:\\Users\\ctopuz\\Desktop\\NISSAN 2026 KIŞ.xlsx",
+    "sheets": [
+      {
+        "sheetName": "Sheet1",
+        "totalRows": 281,
+        "headers": [
+          "Departman",
+          "STOK ADI",
+          "Beden",
+          "BARKOD"
+        ],
+        "samplePreview": [
+          [
+            "TEKNİSYEN",
+            "TEKNİSYEN KISLIK MONT 4XL",
+            "4XL",
+            8520147032006
+          ],
+          [
+            "TEKNİSYEN",
+            "TEKNİSYEN KISLIK MONT 3XL",
+            "3XL",
+            8520147032013
+          ],
+          [
+            "TEKNİSYEN",
+            "TEKNİSYEN KISLIK MONT 2XL",
+            "2XL",
+            8520147032020
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fileName": "nissan Kışlık Kıyafet Sipariş Formu BARKOD (1).xlsx",
+    "fullPath": "C:\\Users\\ctopuz\\Desktop\\nissan Kışlık Kıyafet Sipariş Formu BARKOD (1).xlsx",
+    "sheets": [
+      {
+        "sheetName": "Sheet1",
+        "totalRows": 131,
+        "headers": [
+          null,
+          null,
+          "Teknisyen",
+          "Formen",
+          "Master teknisyen",
+          "Yıkamacı",
+          "Vale",
+          "Yedek parca",
+          "Servis Danısmanı",
+          "Servis Danısmanı Bayan"
+        ],
+        "samplePreview": [
+          [
+            "Yedek parça kodu",
+            "Yedek parça adı",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "KIYAFETKIS-MONT-4XL",
+            "KISLIK MONT-4XL",
+            "x",
+            "x",
+            "x",
+            "x",
+            null,
+            "x",
+            "x",
+            "x"
+          ],
+          [
+            "KIYAFETKIS-MONT-3XL",
+            "KISLIK MONT-3XL",
+            "x",
+            "x",
+            "x",
+            "x",
+            null,
+            "x",
+            "x",
+            "x"
+          ]
+        ]
+      },
+      {
+        "sheetName": "Sheet2",
+        "totalRows": 130,
+        "headers": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Teknisyen",
+          "Formen",
+          "Master teknisyen",
+          "Yıkamacı",
+          "Vale",
+          "Yedek parca",
+          "Servis Danısmanı",
+          "Servis Danısmanı Bayan"
+        ],
+        "samplePreview": [
+          [
+            "Stok Adı",
+            null,
+            "Yedek parça kodu",
+            "Yedek parça adı",
+            "Beden",
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            "KIYAFETKIS-MONT-4XL",
+            "KISLIK MONT-4XL",
+            null,
+            "x",
+            "x",
+            "x",
+            "x",
+            null
+          ],
+          [
+            null,
+            null,
+            "KIYAFETKIS-MONT-3XL",
+            "KISLIK MONT-3XL",
+            null,
+            "x",
+            "x",
+            "x",
+            "x",
+            null
+          ]
+        ]
+      },
+      {
+        "sheetName": "Sayfa1",
+        "totalRows": 267,
+        "headers": [
+          "Departman",
+          "Departman",
+          "Yedek parça kodu",
+          "Yedek parça adı",
+          "Beden",
+          "STOK ADI",
+          "BARKOD"
+        ],
+        "samplePreview": [
+          [
+            "Teknisyen",
+            "TEKNİSYEN",
+            "KIYAFETKIS-MONT-4XL",
+            "KISLIK MONT",
+            "4XL",
+            "TEKNİSYEN KISLIK MONT 4XL",
+            8520147032006,
+            13
+          ],
+          [
+            "Teknisyen",
+            "TEKNİSYEN",
+            "KIYAFETKIS-MONT-3XL",
+            "KISLIK MONT",
+            "3XL",
+            "TEKNİSYEN KISLIK MONT 3XL",
+            8520147032013,
+            13
+          ],
+          [
+            "Teknisyen",
+            "TEKNİSYEN",
+            "KIYAFETKIS-MONT-2XL",
+            "KISLIK MONT",
+            "2XL",
+            "TEKNİSYEN KISLIK MONT 2XL",
+            8520147032020,
+            13
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fileName": "VW 2026 KIŞ Parça Kodları (1).xlsx",
+    "fullPath": "C:\\Users\\ctopuz\\Desktop\\VW 2026 KIŞ Parça Kodları (1).xlsx",
+    "sheets": [
+      {
+        "sheetName": "VW KIŞ 2026",
+        "totalRows": 652,
+        "headers": [
+          "Atölye Personeli Pantolon Kışlık - Erkek",
+          null,
+          null,
+          null,
+          "38 Beden",
+          "PVWK100004XS",
+          "2"
+        ],
+        "samplePreview": [
+          [
+            "Atölye Personeli Pantolon Kışlık - Erkek",
+            null,
+            null,
+            null,
+            "40 Beden",
+            "PVWK100004S",
+            2
+          ],
+          [
+            "Atölye Personeli Pantolon Kışlık - Erkek",
+            null,
+            null,
+            null,
+            "42 Beden",
+            "PVWK100004M",
+            2
+          ],
+          [
+            "Atölye Personeli Pantolon Kışlık - Erkek",
+            null,
+            null,
+            null,
+            "44 Beden",
+            "PVWK100004L",
+            2
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fileName": "Audi 2025 Kış Parça Kıyafet Kodları.xlsx",
+    "fullPath": "C:\\Users\\ctopuz\\Downloads\\Audi 2025 Kış Parça Kıyafet Kodları.xlsx",
+    "sheets": [
+      {
+        "sheetName": "2025 KIŞ PARÇA KODLARI",
+        "totalRows": 311,
+        "headers": [
+          "PARÇA KODU",
+          "ÜRÜN",
+          "KİŞİ BAŞI ADET"
+        ],
+        "samplePreview": [
+          [
+            "PAUDI250008S",
+            "Mont/S/Diagnoz-AUDI/Erkek",
+            1
+          ],
+          [
+            "PAUDI250008M",
+            "Mont/M/Diagnoz-AUDI/Erkek",
+            1
+          ],
+          [
+            "PAUDI250008L",
+            "Mont/L/Diagnoz-AUDI/Erkek",
+            1
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fileName": "AUDI 2026 Yaz Servis Kıyafet Parça Kodları.xlsx",
+    "fullPath": "C:\\Users\\ctopuz\\Downloads\\AUDI 2026 Yaz Servis Kıyafet Parça Kodları.xlsx",
+    "sheets": [
+      {
+        "sheetName": "Sheet1",
+        "totalRows": 256,
+        "headers": [
+          "PARÇA KODU",
+          "ÜRÜN",
+          "KİŞİ BAŞI ADET"
+        ],
+        "samplePreview": [
+          [
+            "PPAUDI260001S",
+            "Siyah T-Shirt/S/Servis Danışmanı-AUDI/Erkek",
+            2
+          ],
+          [
+            "PPAUDI260001M",
+            "Siyah T-Shirt/M/Servis Danışmanı-AUDI/Erkek",
+            2
+          ],
+          [
+            "PPAUDI260001L",
+            "Siyah T-Shirt/L/Servis Danışmanı-AUDI/Erkek",
+            2
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fileName": "CUPRA 2025 KIŞ PARÇA KODLARI.XLSX",
+    "fullPath": "C:\\Users\\ctopuz\\Downloads\\CUPRA 2025 KIŞ PARÇA KODLARI.XLSX",
+    "sheets": [
+      {
+        "sheetName": "BAŞLIK",
+        "totalRows": 21,
+        "headers": [],
+        "samplePreview": []
+      },
+      {
+        "sheetName": "Personel Listesi",
+        "totalRows": 8746,
+        "headers": [
+          "Personel Adı",
+          "Yetkili Satıcı Kısa Adı",
+          "Bölüm",
+          "Görev",
+          "Üretken / Üretken Değil",
+          "Ek Görev 1",
+          "Ek Görev 2",
+          "Ek Görev 3",
+          "Ek Görev 4",
+          "Kullanıcı Adı",
+          "Varsayılan Marka",
+          "Sigorta Sicil No",
+          "Eğitim Durumu",
+          "Mevcut İşe Giriş Tarihi",
+          "Firm Organisation Id"
+        ],
+        "samplePreview": [
+          [
+            "ABBAS ERTÜRK",
+            "ALTUR",
+            "SATIŞ MÜDÜRLÜĞÜ ",
+            "SATIŞ MÜDÜRÜ",
+            "Üretken Değil",
+            null,
+            null,
+            null,
+            null,
+            "AERTURK2"
+          ],
+          [
+            "ABDULBAKİ ASLAN",
+            "ÖZÖN İSTANBUL",
+            "SATIŞ SONRASI HİZMETLER MÜDÜRLÜĞÜ",
+            "YEDEK PARÇA",
+            "Üretken Değil",
+            null,
+            null,
+            null,
+            null,
+            "AASLAN5"
+          ],
+          [
+            "ABDULBAKİ DEMİRTAŞ",
+            "DOĞU",
+            "VW ATÖLYE",
+            "FORMEN MEKANİK - ELEKTRİK",
+            "Üretken",
+            null,
+            null,
+            null,
+            null,
+            "ADEMIRDAS"
+          ]
+        ]
+      },
+      {
+        "sheetName": "Sheet1",
+        "totalRows": 4441,
+        "headers": [
+          "Personel Adı",
+          "Yetkili Satıcı Kısa Adı",
+          "Görev",
+          "Varsayılan Marka",
+          "Mevcut İşe Giriş Tarihi",
+          "KHP Marka",
+          "KHP Marka Diğer",
+          "Cinsiyet",
+          "Ayak Ölçüsü",
+          "Üst Beden",
+          "Alt Beden"
+        ],
+        "samplePreview": [
+          [
+            "ABDULBAKİ ASLAN",
+            "ÖZÖN İSTANBUL",
+            "YEDEK PARÇA",
+            "A",
+            41821,
+            "VW",
+            "A",
+            "Erkek",
+            "42",
+            "M"
+          ],
+          [
+            "ABDULBAKİ DEMİRTAŞ",
+            "DOĞU",
+            "FORMEN MEKANİK - ELEKTRİK",
+            "V",
+            41162,
+            "VW",
+            "V",
+            "Erkek",
+            "41",
+            "L"
+          ],
+          [
+            "ABDULGANİ PİRAN",
+            "ŞAHİNTAŞ",
+            "TEKNİSYEN - MEKANİK",
+            "V",
+            42331,
+            "V",
+            "S",
+            "Erkek",
+            "42",
+            "M"
+          ]
+        ]
+      },
+      {
+        "sheetName": "Personel Listesi (KHP)",
+        "totalRows": 7,
+        "headers": [
+          "ABDULLAH TUZ",
+          "VOSMER GAZİEMİR",
+          "SATIŞ SONRASI HİZMETLER MÜDÜRLÜĞÜ",
+          "TEKNİK DESTEK UZMANI",
+          "40422",
+          "VW",
+          "VW",
+          "Teknik Destek Uzmanı",
+          "VW",
+          "V",
+          "Erkek",
+          "40",
+          "M",
+          "42"
+        ],
+        "samplePreview": [
+          [
+            "ARİF AKGÖL",
+            "DOĞUŞ OTO ESENYURT",
+            "VW BİNEK ATÖLYE",
+            "TEKNİK DESTEK UZMANI",
+            41548,
+            "VW",
+            null,
+            "Teknik Destek Uzmanı",
+            "VW",
+            "V"
+          ],
+          [
+            "BURHAN KAYA",
+            "VOSMER GAZİEMİR",
+            "SATIŞ SONRASI HİZMETLER MÜDÜRLÜĞÜ",
+            "TEKNİK DESTEK UZMANI",
+            41985,
+            "VW",
+            "VW",
+            "Teknik Destek Uzmanı",
+            "GDM",
+            "GDM"
+          ],
+          [
+            "MEHMET ALİ TOKMAK",
+            "DOĞUŞ OTO KARTAL",
+            "VW BİNEK ATÖLYE",
+            "TEKNİK DESTEK UZMANI",
+            39583,
+            null,
+            null,
+            null,
+            "VW",
+            "V"
+          ]
+        ]
+      },
+      {
+        "sheetName": "PARÇA NO",
+        "totalRows": 356,
+        "headers": [
+          "CUPRA EXPERT SERVİS DANIŞMAN PANTOLON BAY KIŞLIK - 42 BEDEN",
+          "PCUPRA10002742",
+          "2"
+        ],
+        "samplePreview": [
+          [
+            "CUPRA EXPERT SERVİS DANIŞMAN PANTOLON BAY KIŞLIK - 44 BEDEN",
+            "PCUPRA10002744",
+            2
+          ],
+          [
+            "CUPRA EXPERT SERVİS DANIŞMAN PANTOLON BAY KIŞLIK - 46 BEDEN",
+            "PCUPRA10002746",
+            2
+          ],
+          [
+            "CUPRA EXPERT SERVİS DANIŞMAN PANTOLON BAY KIŞLIK - 48 BEDEN",
+            "PCUPRA10002748",
+            2
+          ]
+        ]
+      },
+      {
+        "sheetName": "sorulacak",
+        "totalRows": 209,
+        "headers": [
+          "Personel Adı",
+          "Yetkili Satıcı Kısa Adı",
+          "Bölge Yöneticisi",
+          "Bölüm",
+          "Görev",
+          "Mevcut İşe Giriş tarihi",
+          "KHP Marka",
+          "KHP Marka Diğer",
+          "KHP Görev Tanımı",
+          "Hizmet Verdiği Üst Marka",
+          "Hizmet Verdiği Marka",
+          "Cinsiyet",
+          "Ayak Ölçüsü",
+          "Üst Beden",
+          "Alt Beden"
+        ],
+        "samplePreview": [
+          [
+            "AHMET İŞCAN",
+            "DOĞUŞ OTO BURSA",
+            "Ömer Naci Masatlıoğlu",
+            "VW BİNEK ATÖLYE",
+            "FORMEN MEKANİK - ELEKTRİK",
+            38457,
+            "A",
+            null,
+            "Teknisyen",
+            "VW"
+          ],
+          [
+            "ANIL KEKİK",
+            "BAŞARAN ANTALYA",
+            "Ömer Naci Masatlıoğlu",
+            "VW ATÖLYE",
+            "TEKNİSYEN - MEKANİK",
+            41092,
+            "S",
+            "V",
+            "Teknisyen",
+            "S"
+          ],
+          [
+            "BURCU BELKIS",
+            "ARK OTO",
+            "Ömer Naci Masatlıoğlu",
+            "VW ATÖLYE",
+            "SERVİS DANIŞMANI",
+            41508,
+            "A",
+            "N",
+            "Servis Danışmanı",
+            "A"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fileName": "CUPRA 2026 YAZ PARÇA KODLARI.XLSX",
+    "fullPath": "C:\\Users\\ctopuz\\Downloads\\CUPRA 2026 YAZ PARÇA KODLARI.XLSX",
+    "sheets": [
+      {
+        "sheetName": "VERİLECEK ADETLER",
+        "totalRows": 246,
+        "headers": [
+          "PCUPRA200003XS",
+          "CUPRA SERVİS DANIŞMAN PANTOLON BAY YAZLIK - 38",
+          "2"
+        ],
+        "samplePreview": [
+          [
+            "PCUPRA200003S",
+            "CUPRA SERVİS DANIŞMAN PANTOLON BAY YAZLIK - 40",
+            2
+          ],
+          [
+            "PCUPRA200003M",
+            "CUPRA SERVİS DANIŞMAN PANTOLON BAY YAZLIK - 42",
+            2
+          ],
+          [
+            "PCUPRA200003L",
+            "CUPRA SERVİS DANIŞMAN PANTOLON BAY YAZLIK - 44",
+            2
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fileName": "NISSAN 2026 KIŞ.xlsx",
+    "fullPath": "C:\\Users\\ctopuz\\Downloads\\NISSAN 2026 KIŞ.xlsx",
+    "sheets": [
+      {
+        "sheetName": "Sheet1",
+        "totalRows": 281,
+        "headers": [
+          "Departman",
+          "STOK ADI",
+          "Beden",
+          "BARKOD"
+        ],
+        "samplePreview": [
+          [
+            "TEKNİSYEN",
+            "TEKNİSYEN KISLIK MONT 4XL",
+            "4XL",
+            8520147032006
+          ],
+          [
+            "TEKNİSYEN",
+            "TEKNİSYEN KISLIK MONT 3XL",
+            "3XL",
+            8520147032013
+          ],
+          [
+            "TEKNİSYEN",
+            "TEKNİSYEN KISLIK MONT 2XL",
+            "2XL",
+            8520147032020
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fileName": "Nissan Ürün yaz Barkod Listesi (1).xlsx",
+    "fullPath": "C:\\Users\\ctopuz\\Downloads\\Nissan Ürün yaz Barkod Listesi (1).xlsx",
+    "sheets": [
+      {
+        "sheetName": "Sayfa1",
+        "totalRows": 75,
+        "headers": [
+          "BARKOD NUMARASI",
+          "1- Firma Adı",
+          "2- Ürün Adı",
+          "3- Ürün Kodu",
+          "4- KKartı Fiyatı",
+          "5- Ürün Kodu",
+          "6- Grubu",
+          "7- Türü",
+          "8- Boyutu",
+          "9- Açıklama",
+          "10- firmasiteniz.com",
+          "BAR.FORMATI",
+          "GRUBU",
+          "BASKI SAYISI"
+        ],
+        "samplePreview": [
+          [
+            901020100101,
+            "Nissan",
+            "Servis Danışmanı Tshirt - Erkek-XS",
+            "KIYAFETYAZ-TSHIRT-SRVDAN-XS",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            901020100102,
+            "Nissan",
+            "Servis Danışmanı Tshirt - Erkek- S",
+            "KIYAFETYAZ-TSHIRT-SRVDAN-S",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            901020100103,
+            "Nissan",
+            "Servis Danışmanı Tshirt - Erkek-M",
+            "KIYAFETYAZ-TSHIRT-SRVDAN-M",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fileName": "parcakodu nissan.xlsx",
+    "fullPath": "C:\\Users\\ctopuz\\Downloads\\parcakodu nissan.xlsx",
+    "sheets": [
+      {
+        "sheetName": "PARÇA KODU",
+        "totalRows": 107,
+        "headers": [
+          "Servis Danışmanı Tshirt - Erkek",
+          "XS",
+          "KIYAFETYAZ-TSHIRT-SRVDAN-XS",
+          "KIYAFETKIS-SWEAT-SRVDAN-XS"
+        ],
+        "samplePreview": [
+          [
+            null,
+            " S",
+            "KIYAFETYAZ-TSHIRT-SRVDAN-S",
+            "KIYAFETKIS-SWEAT-SRVDAN-S"
+          ],
+          [
+            null,
+            "M",
+            "KIYAFETYAZ-TSHIRT-SRVDAN-M",
+            "KIYAFETKIS-SWEAT-SRVDAN-M"
+          ],
+          [
+            null,
+            "L",
+            "KIYAFETYAZ-TSHIRT-SRVDAN-L",
+            "KIYAFETKIS-SWEAT-SRVDAN-L"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fileName": "PORSCHE 2026 YAZ PARÇA KODLARI.XLSX",
+    "fullPath": "C:\\Users\\ctopuz\\Downloads\\PORSCHE 2026 YAZ PARÇA KODLARI.XLSX",
+    "sheets": [
+      {
+        "sheetName": "BAŞLIK",
+        "totalRows": 21,
+        "headers": [],
+        "samplePreview": []
+      },
+      {
+        "sheetName": "Personel Listesi",
+        "totalRows": 8746,
+        "headers": [
+          "Personel Adı",
+          "Yetkili Satıcı Kısa Adı",
+          "Bölüm",
+          "Görev",
+          "Üretken / Üretken Değil",
+          "Ek Görev 1",
+          "Ek Görev 2",
+          "Ek Görev 3",
+          "Ek Görev 4",
+          "Kullanıcı Adı",
+          "Varsayılan Marka",
+          "Sigorta Sicil No",
+          "Eğitim Durumu",
+          "Mevcut İşe Giriş Tarihi",
+          "Firm Organisation Id"
+        ],
+        "samplePreview": [
+          [
+            "ABBAS ERTÜRK",
+            "ALTUR",
+            "SATIŞ MÜDÜRLÜĞÜ ",
+            "SATIŞ MÜDÜRÜ",
+            "Üretken Değil",
+            null,
+            null,
+            null,
+            null,
+            "AERTURK2"
+          ],
+          [
+            "ABDULBAKİ ASLAN",
+            "ÖZÖN İSTANBUL",
+            "SATIŞ SONRASI HİZMETLER MÜDÜRLÜĞÜ",
+            "YEDEK PARÇA",
+            "Üretken Değil",
+            null,
+            null,
+            null,
+            null,
+            "AASLAN5"
+          ],
+          [
+            "ABDULBAKİ DEMİRTAŞ",
+            "DOĞU",
+            "VW ATÖLYE",
+            "FORMEN MEKANİK - ELEKTRİK",
+            "Üretken",
+            null,
+            null,
+            null,
+            null,
+            "ADEMIRDAS"
+          ]
+        ]
+      },
+      {
+        "sheetName": "Sheet1",
+        "totalRows": 4441,
+        "headers": [
+          "Personel Adı",
+          "Yetkili Satıcı Kısa Adı",
+          "Görev",
+          "Varsayılan Marka",
+          "Mevcut İşe Giriş Tarihi",
+          "KHP Marka",
+          "KHP Marka Diğer",
+          "Cinsiyet",
+          "Ayak Ölçüsü",
+          "Üst Beden",
+          "Alt Beden"
+        ],
+        "samplePreview": [
+          [
+            "ABDULBAKİ ASLAN",
+            "ÖZÖN İSTANBUL",
+            "YEDEK PARÇA",
+            "A",
+            41821,
+            "VW",
+            "A",
+            "Erkek",
+            "42",
+            "M"
+          ],
+          [
+            "ABDULBAKİ DEMİRTAŞ",
+            "DOĞU",
+            "FORMEN MEKANİK - ELEKTRİK",
+            "V",
+            41162,
+            "VW",
+            "V",
+            "Erkek",
+            "41",
+            "L"
+          ],
+          [
+            "ABDULGANİ PİRAN",
+            "ŞAHİNTAŞ",
+            "TEKNİSYEN - MEKANİK",
+            "V",
+            42331,
+            "V",
+            "S",
+            "Erkek",
+            "42",
+            "M"
+          ]
+        ]
+      },
+      {
+        "sheetName": "Personel Listesi (KHP)",
+        "totalRows": 7,
+        "headers": [
+          "ABDULLAH TUZ",
+          "VOSMER GAZİEMİR",
+          "SATIŞ SONRASI HİZMETLER MÜDÜRLÜĞÜ",
+          "TEKNİK DESTEK UZMANI",
+          "40422",
+          "VW",
+          "VW",
+          "Teknik Destek Uzmanı",
+          "VW",
+          "V",
+          "Erkek",
+          "40",
+          "M",
+          "42"
+        ],
+        "samplePreview": [
+          [
+            "ARİF AKGÖL",
+            "DOĞUŞ OTO ESENYURT",
+            "VW BİNEK ATÖLYE",
+            "TEKNİK DESTEK UZMANI",
+            41548,
+            "VW",
+            null,
+            "Teknik Destek Uzmanı",
+            "VW",
+            "V"
+          ],
+          [
+            "BURHAN KAYA",
+            "VOSMER GAZİEMİR",
+            "SATIŞ SONRASI HİZMETLER MÜDÜRLÜĞÜ",
+            "TEKNİK DESTEK UZMANI",
+            41985,
+            "VW",
+            "VW",
+            "Teknik Destek Uzmanı",
+            "GDM",
+            "GDM"
+          ],
+          [
+            "MEHMET ALİ TOKMAK",
+            "DOĞUŞ OTO KARTAL",
+            "VW BİNEK ATÖLYE",
+            "TEKNİK DESTEK UZMANI",
+            39583,
+            null,
+            null,
+            null,
+            "VW",
+            "V"
+          ]
+        ]
+      },
+      {
+        "sheetName": "PARÇA NO",
+        "totalRows": 160,
+        "headers": [
+          "MODEL",
+          "BEDEN",
+          "PARÇA KODU"
+        ],
+        "samplePreview": [
+          [
+            "Teknisyen Tshirt kırmızı",
+            "S",
+            "PPORSCHE2000085S"
+          ],
+          [
+            "Teknisyen Tshirt kırmızı",
+            "M",
+            "PPORSCHE2000085M"
+          ],
+          [
+            "Teknisyen Tshirt kırmızı",
+            "L",
+            "PPORSCHE2000085L"
+          ]
+        ]
+      },
+      {
+        "sheetName": "sorulacak",
+        "totalRows": 209,
+        "headers": [
+          "Personel Adı",
+          "Yetkili Satıcı Kısa Adı",
+          "Bölge Yöneticisi",
+          "Bölüm",
+          "Görev",
+          "Mevcut İşe Giriş tarihi",
+          "KHP Marka",
+          "KHP Marka Diğer",
+          "KHP Görev Tanımı",
+          "Hizmet Verdiği Üst Marka",
+          "Hizmet Verdiği Marka",
+          "Cinsiyet",
+          "Ayak Ölçüsü",
+          "Üst Beden",
+          "Alt Beden"
+        ],
+        "samplePreview": [
+          [
+            "AHMET İŞCAN",
+            "DOĞUŞ OTO BURSA",
+            "Ömer Naci Masatlıoğlu",
+            "VW BİNEK ATÖLYE",
+            "FORMEN MEKANİK - ELEKTRİK",
+            38457,
+            "A",
+            null,
+            "Teknisyen",
+            "VW"
+          ],
+          [
+            "ANIL KEKİK",
+            "BAŞARAN ANTALYA",
+            "Ömer Naci Masatlıoğlu",
+            "VW ATÖLYE",
+            "TEKNİSYEN - MEKANİK",
+            41092,
+            "S",
+            "V",
+            "Teknisyen",
+            "S"
+          ],
+          [
+            "BURCU BELKIS",
+            "ARK OTO",
+            "Ömer Naci Masatlıoğlu",
+            "VW ATÖLYE",
+            "SERVİS DANIŞMANI",
+            41508,
+            "A",
+            "N",
+            "Servis Danışmanı",
+            "A"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fileName": "Scania 2026 Yaz Kişi Listesi.xlsx",
+    "fullPath": "C:\\Users\\ctopuz\\Downloads\\Scania 2026 Yaz Kişi Listesi.xlsx",
+    "sheets": [
+      {
+        "sheetName": "Yedek Parça",
+        "totalRows": 37,
+        "headers": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "SCKY222",
+          null,
+          "SCKY224",
+          null,
+          "SCKY223"
+        ],
+        "samplePreview": [
+          [
+            "NO",
+            "YS",
+            "PERSONEL ADI",
+            "Görev",
+            "Cinsiyet",
+            "Alt Beden",
+            "Üst Beden",
+            "YEDEK PARÇA PANTOLON",
+            null,
+            "YEDEK PARÇA TİŞÖRT"
+          ],
+          [
+            1,
+            "Akdeniz Ağır Vasıta",
+            "Anıl TEPE",
+            "Yedek Parça",
+            "Erkek",
+            "L",
+            "L",
+            3,
+            "SCKY22204",
+            3
+          ],
+          [
+            2,
+            "Akdeniz Ağır Vasıta",
+            "Kerem SÖKEMEN",
+            "Yedek Parça",
+            "Erkek",
+            "M",
+            "M",
+            3,
+            "SCKY22203",
+            3
+          ]
+        ]
+      },
+      {
+        "sheetName": "Danışman",
+        "totalRows": 82,
+        "headers": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Kadın",
+          "SCKY225",
+          null,
+          "SCKY219",
+          null,
+          "SCKY211"
+        ],
+        "samplePreview": [
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "Erkek",
+            "SCKY222",
+            null
+          ],
+          [
+            "NO",
+            "YS",
+            "PERSONEL ADI",
+            "Görev",
+            "Cinsiyet",
+            "Alt Beden",
+            "Üst Beden",
+            "DANIŞMAN PANTOLON",
+            null,
+            "DANIŞMAN KISA KOLLU GÖMLEK"
+          ],
+          [
+            1,
+            "Akdeniz Ağır Vasıta",
+            "Ahmet ÖĞÜTVER",
+            "Servis Danışmanı",
+            "Erkek",
+            "L",
+            "L",
+            3,
+            "SCKY22204",
+            3
+          ]
+        ]
+      },
+      {
+        "sheetName": "Teknisyen - Master",
+        "totalRows": 347,
+        "headers": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "SCKY205",
+          null,
+          "SCKY216",
+          null,
+          "SCKY213",
+          null,
+          "SCKY214"
+        ],
+        "samplePreview": [
+          [
+            "NO",
+            "YS",
+            "PERSONEL ADI",
+            "Görev",
+            "Cinsiyet",
+            "Alt Beden",
+            "Üst Beden",
+            "TEKNİSYEN PANTOLON",
+            null,
+            "TEKNİSYEN POLO YAKA TİŞÖRT"
+          ],
+          [
+            1,
+            "Akdeniz Ağır Vasıta",
+            "Alaattin ÖZTUNÇ",
+            "Teknisyen",
+            "Erkek",
+            "M",
+            "M",
+            3,
+            "SCKY20503",
+            2
+          ],
+          [
+            2,
+            "Akdeniz Ağır Vasıta",
+            "Ali İNCEOĞLU",
+            "Teknisyen",
+            "Erkek",
+            "XXL",
+            "XXL",
+            3,
+            "SCKY20506",
+            2
+          ]
+        ]
+      },
+      {
+        "sheetName": "Yazlık Kıyafet-Parça Tanımları",
+        "totalRows": 208,
+        "headers": [
+          "Parça Kodu",
+          "Ürün Adı",
+          "Beden",
+          null,
+          "S",
+          "02"
+        ],
+        "samplePreview": [
+          [
+            "SCKY21201",
+            "SC MAST TEKN. 0 YAKA TİŞÖRT-XS",
+            "XS",
+            null,
+            "M",
+            "03"
+          ],
+          [
+            "SCKY21202",
+            "SC MAST TEKN. 0 YAKA TİŞÖRT-S",
+            "S",
+            null,
+            "L",
+            "04"
+          ],
+          [
+            "SCKY21203",
+            "SC MAST TEKN. 0 YAKA TİŞÖRT-M",
+            "M",
+            null,
+            "XL",
+            "05"
+          ]
+        ]
+      },
+      {
+        "sheetName": "Parametreler",
+        "totalRows": 21,
+        "headers": [
+          "YS",
+          "Görev Tanımı",
+          "Cinsiyet",
+          "Beden"
+        ],
+        "samplePreview": [
+          [
+            "AKDENİZ AĞIR VASITA",
+            "Servis Danışmanı",
+            "Kadın",
+            "S"
+          ],
+          [
+            "ANKARA AĞIR VASITA",
+            "Teknisyen",
+            "Erkek",
+            "M"
+          ],
+          [
+            "ASYA",
+            "Master Teknisyen",
+            null,
+            "L"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fileName": "SCANIA KIŞ 2025 KİŞİ LİSTESİ.xlsx",
+    "fullPath": "C:\\Users\\ctopuz\\Downloads\\SCANIA KIŞ 2025 KİŞİ LİSTESİ.xlsx",
+    "sheets": [
+      {
+        "sheetName": "Yedek Parça",
+        "totalRows": 33,
+        "headers": [
+          "NO",
+          "YS",
+          "PERSONEL ADI",
+          "Görev",
+          "Cinsiyet",
+          "Alt Beden",
+          "Üst Beden",
+          "YEDEK PARÇA PANTOLON",
+          null,
+          "SWEATSHIRT (GRİ) - (YEDEK PARÇA)",
+          null,
+          "SCANIA KOLSUZ YELEK",
+          null,
+          "BERE"
+        ],
+        "samplePreview": [
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "Adet",
+            "Parça Kodu",
+            "Adet"
+          ],
+          [
+            1,
+            "AKDENİZ AĞIR VASITA",
+            "Anıl TEPE",
+            "Yedek Parça",
+            "Erkek",
+            "L",
+            "L",
+            3,
+            "SCKY22204",
+            3
+          ],
+          [
+            2,
+            "AKDENİZ AĞIR VASITA",
+            "Serkan ŞAHİN",
+            "Yedek Parça",
+            "Erkek",
+            "M",
+            "M",
+            3,
+            "SCKY22203",
+            3
+          ]
+        ]
+      },
+      {
+        "sheetName": "Danışman",
+        "totalRows": 78,
+        "headers": [
+          "NO",
+          "YS",
+          "PERSONEL ADI",
+          "Görev",
+          "Cinsiyet",
+          "Alt Beden",
+          "Üst Beden",
+          "DANIŞMAN PANTOLON",
+          null,
+          "DANIŞMAN UZUN KOLLU GÖMLEK",
+          null,
+          "SWEATSHIRT (GRİ) - (DANIŞMAN)",
+          null,
+          "SCANIA KOLSUZ YELEK",
+          null
+        ],
+        "samplePreview": [
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "Adet",
+            "Parça Kodu",
+            "Adet"
+          ],
+          [
+            1,
+            "AKDENİZ AĞIR VASITA",
+            "Ahmet ÖĞÜTVER",
+            "Servis Danışmanı",
+            "Erkek",
+            "L",
+            "L",
+            3,
+            "SCKY22204",
+            3
+          ],
+          [
+            2,
+            "AKDENİZ AĞIR VASITA",
+            "Cihat ÖZMENOĞLU",
+            "Servis Danışmanı",
+            "Erkek",
+            "L",
+            "L",
+            3,
+            "SCKY22204",
+            3
+          ]
+        ]
+      },
+      {
+        "sheetName": "Teknisyen - Master",
+        "totalRows": 287,
+        "headers": [
+          "NO",
+          "YS",
+          "PERSONEL ADI",
+          "Görev",
+          "Cinsiyet",
+          "Alt Beden",
+          "Üst Beden",
+          "TEKNİSYEN PANTOLON",
+          null,
+          "SWEATSHIRT (MAVİ) - (TEKNİSYEN)",
+          null,
+          "MASTER TEKNİSYEN SWEATSHİRT",
+          null,
+          "SCANIA KOLSUZ YELEK",
+          null
+        ],
+        "samplePreview": [
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "Adet",
+            "Parça Kodu",
+            "Adet"
+          ],
+          [
+            1,
+            "AKDENİZ AĞIR VASITA",
+            "Ahmet Sinan KELLE",
+            "Teknisyen",
+            "Erkek",
+            "M",
+            "S",
+            3,
+            "SCKY20503",
+            4
+          ],
+          [
+            2,
+            "AKDENİZ AĞIR VASITA",
+            "Alaattin ÖZTUNÇ",
+            "Teknisyen",
+            "Erkek",
+            "M",
+            "M",
+            3,
+            "SCKY20503",
+            4
+          ]
+        ]
+      },
+      {
+        "sheetName": "Kodlar",
+        "totalRows": 197,
+        "headers": [
+          "Parça Kodu",
+          "Ürün Adı",
+          "Beden"
+        ],
+        "samplePreview": [
+          [
+            "SCKY21201",
+            "SC MAST TEKN. 0 YAKA TİŞÖRT-XS",
+            "XS",
+            null,
+            "S",
+            "02"
+          ],
+          [
+            "SCKY21202",
+            "SC MAST TEKN. 0 YAKA TİŞÖRT-S",
+            "S",
+            null,
+            "M",
+            "03"
+          ],
+          [
+            "SCKY21203",
+            "SC MAST TEKN. 0 YAKA TİŞÖRT-M",
+            "M",
+            null,
+            "L",
+            "04"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fileName": "SEAT 2025 KIŞ PARÇA KODLARI.XLSX",
+    "fullPath": "C:\\Users\\ctopuz\\Downloads\\SEAT 2025 KIŞ PARÇA KODLARI.XLSX",
+    "sheets": [
+      {
+        "sheetName": "BAŞLIK",
+        "totalRows": 21,
+        "headers": [],
+        "samplePreview": []
+      },
+      {
+        "sheetName": "Personel Listesi",
+        "totalRows": 8746,
+        "headers": [
+          "Personel Adı",
+          "Yetkili Satıcı Kısa Adı",
+          "Bölüm",
+          "Görev",
+          "Üretken / Üretken Değil",
+          "Ek Görev 1",
+          "Ek Görev 2",
+          "Ek Görev 3",
+          "Ek Görev 4",
+          "Kullanıcı Adı",
+          "Varsayılan Marka",
+          "Sigorta Sicil No",
+          "Eğitim Durumu",
+          "Mevcut İşe Giriş Tarihi",
+          "Firm Organisation Id"
+        ],
+        "samplePreview": [
+          [
+            "ABBAS ERTÜRK",
+            "ALTUR",
+            "SATIŞ MÜDÜRLÜĞÜ ",
+            "SATIŞ MÜDÜRÜ",
+            "Üretken Değil",
+            null,
+            null,
+            null,
+            null,
+            "AERTURK2"
+          ],
+          [
+            "ABDULBAKİ ASLAN",
+            "ÖZÖN İSTANBUL",
+            "SATIŞ SONRASI HİZMETLER MÜDÜRLÜĞÜ",
+            "YEDEK PARÇA",
+            "Üretken Değil",
+            null,
+            null,
+            null,
+            null,
+            "AASLAN5"
+          ],
+          [
+            "ABDULBAKİ DEMİRTAŞ",
+            "DOĞU",
+            "VW ATÖLYE",
+            "FORMEN MEKANİK - ELEKTRİK",
+            "Üretken",
+            null,
+            null,
+            null,
+            null,
+            "ADEMIRDAS"
+          ]
+        ]
+      },
+      {
+        "sheetName": "Sheet1",
+        "totalRows": 4441,
+        "headers": [
+          "Personel Adı",
+          "Yetkili Satıcı Kısa Adı",
+          "Görev",
+          "Varsayılan Marka",
+          "Mevcut İşe Giriş Tarihi",
+          "KHP Marka",
+          "KHP Marka Diğer",
+          "Cinsiyet",
+          "Ayak Ölçüsü",
+          "Üst Beden",
+          "Alt Beden"
+        ],
+        "samplePreview": [
+          [
+            "ABDULBAKİ ASLAN",
+            "ÖZÖN İSTANBUL",
+            "YEDEK PARÇA",
+            "A",
+            41821,
+            "VW",
+            "A",
+            "Erkek",
+            "42",
+            "M"
+          ],
+          [
+            "ABDULBAKİ DEMİRTAŞ",
+            "DOĞU",
+            "FORMEN MEKANİK - ELEKTRİK",
+            "V",
+            41162,
+            "VW",
+            "V",
+            "Erkek",
+            "41",
+            "L"
+          ],
+          [
+            "ABDULGANİ PİRAN",
+            "ŞAHİNTAŞ",
+            "TEKNİSYEN - MEKANİK",
+            "V",
+            42331,
+            "V",
+            "S",
+            "Erkek",
+            "42",
+            "M"
+          ]
+        ]
+      },
+      {
+        "sheetName": "Personel Listesi (KHP)",
+        "totalRows": 7,
+        "headers": [
+          "ABDULLAH TUZ",
+          "VOSMER GAZİEMİR",
+          "SATIŞ SONRASI HİZMETLER MÜDÜRLÜĞÜ",
+          "TEKNİK DESTEK UZMANI",
+          "40422",
+          "VW",
+          "VW",
+          "Teknik Destek Uzmanı",
+          "VW",
+          "V",
+          "Erkek",
+          "40",
+          "M",
+          "42"
+        ],
+        "samplePreview": [
+          [
+            "ARİF AKGÖL",
+            "DOĞUŞ OTO ESENYURT",
+            "VW BİNEK ATÖLYE",
+            "TEKNİK DESTEK UZMANI",
+            41548,
+            "VW",
+            null,
+            "Teknik Destek Uzmanı",
+            "VW",
+            "V"
+          ],
+          [
+            "BURHAN KAYA",
+            "VOSMER GAZİEMİR",
+            "SATIŞ SONRASI HİZMETLER MÜDÜRLÜĞÜ",
+            "TEKNİK DESTEK UZMANI",
+            41985,
+            "VW",
+            "VW",
+            "Teknik Destek Uzmanı",
+            "GDM",
+            "GDM"
+          ],
+          [
+            "MEHMET ALİ TOKMAK",
+            "DOĞUŞ OTO KARTAL",
+            "VW BİNEK ATÖLYE",
+            "TEKNİK DESTEK UZMANI",
+            39583,
+            null,
+            null,
+            null,
+            "VW",
+            "V"
+          ]
+        ]
+      },
+      {
+        "sheetName": "PARÇA NO",
+        "totalRows": 293,
+        "headers": [
+          "Gömlek Bay Kışlık - XS",
+          "PSEAT100004XS",
+          "2"
+        ],
+        "samplePreview": [
+          [
+            "Gömlek Bay Kışlık - S",
+            "PSEAT100004S",
+            2
+          ],
+          [
+            "Gömlek Bay Kışlık - M",
+            "PSEAT100004M",
+            2
+          ],
+          [
+            "Gömlek Bay Kışlık - L",
+            "PSEAT100004L",
+            2
+          ]
+        ]
+      },
+      {
+        "sheetName": "sorulacak",
+        "totalRows": 209,
+        "headers": [
+          "Personel Adı",
+          "Yetkili Satıcı Kısa Adı",
+          "Bölge Yöneticisi",
+          "Bölüm",
+          "Görev",
+          "Mevcut İşe Giriş tarihi",
+          "KHP Marka",
+          "KHP Marka Diğer",
+          "KHP Görev Tanımı",
+          "Hizmet Verdiği Üst Marka",
+          "Hizmet Verdiği Marka",
+          "Cinsiyet",
+          "Ayak Ölçüsü",
+          "Üst Beden",
+          "Alt Beden"
+        ],
+        "samplePreview": [
+          [
+            "AHMET İŞCAN",
+            "DOĞUŞ OTO BURSA",
+            "Ömer Naci Masatlıoğlu",
+            "VW BİNEK ATÖLYE",
+            "FORMEN MEKANİK - ELEKTRİK",
+            38457,
+            "A",
+            null,
+            "Teknisyen",
+            "VW"
+          ],
+          [
+            "ANIL KEKİK",
+            "BAŞARAN ANTALYA",
+            "Ömer Naci Masatlıoğlu",
+            "VW ATÖLYE",
+            "TEKNİSYEN - MEKANİK",
+            41092,
+            "S",
+            "V",
+            "Teknisyen",
+            "S"
+          ],
+          [
+            "BURCU BELKIS",
+            "ARK OTO",
+            "Ömer Naci Masatlıoğlu",
+            "VW ATÖLYE",
+            "SERVİS DANIŞMANI",
+            41508,
+            "A",
+            "N",
+            "Servis Danışmanı",
+            "A"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fileName": "SEAT 2026 Yaz Kişi Listesi.xlsx",
+    "fullPath": "C:\\Users\\ctopuz\\Downloads\\SEAT 2026 Yaz Kişi Listesi.xlsx",
+    "sheets": [
+      {
+        "sheetName": "BAŞLIK",
+        "totalRows": 21,
+        "headers": [],
+        "samplePreview": []
+      },
+      {
+        "sheetName": "Personel Listesi",
+        "totalRows": 8746,
+        "headers": [
+          "Personel Adı",
+          "Yetkili Satıcı Kısa Adı",
+          "Bölüm",
+          "Görev",
+          "Üretken / Üretken Değil",
+          "Ek Görev 1",
+          "Ek Görev 2",
+          "Ek Görev 3",
+          "Ek Görev 4",
+          "Kullanıcı Adı",
+          "Varsayılan Marka",
+          "Sigorta Sicil No",
+          "Eğitim Durumu",
+          "Mevcut İşe Giriş Tarihi",
+          "Firm Organisation Id"
+        ],
+        "samplePreview": [
+          [
+            "ABBAS ERTÜRK",
+            "ALTUR",
+            "SATIŞ MÜDÜRLÜĞÜ ",
+            "SATIŞ MÜDÜRÜ",
+            "Üretken Değil",
+            null,
+            null,
+            null,
+            null,
+            "AERTURK2"
+          ],
+          [
+            "ABDULBAKİ ASLAN",
+            "ÖZÖN İSTANBUL",
+            "SATIŞ SONRASI HİZMETLER MÜDÜRLÜĞÜ",
+            "YEDEK PARÇA",
+            "Üretken Değil",
+            null,
+            null,
+            null,
+            null,
+            "AASLAN5"
+          ],
+          [
+            "ABDULBAKİ DEMİRTAŞ",
+            "DOĞU",
+            "VW ATÖLYE",
+            "FORMEN MEKANİK - ELEKTRİK",
+            "Üretken",
+            null,
+            null,
+            null,
+            null,
+            "ADEMIRDAS"
+          ]
+        ]
+      },
+      {
+        "sheetName": "Sheet1",
+        "totalRows": 4441,
+        "headers": [
+          "Personel Adı",
+          "Yetkili Satıcı Kısa Adı",
+          "Görev",
+          "Varsayılan Marka",
+          "Mevcut İşe Giriş Tarihi",
+          "KHP Marka",
+          "KHP Marka Diğer",
+          "Cinsiyet",
+          "Ayak Ölçüsü",
+          "Üst Beden",
+          "Alt Beden"
+        ],
+        "samplePreview": [
+          [
+            "ABDULBAKİ ASLAN",
+            "ÖZÖN İSTANBUL",
+            "YEDEK PARÇA",
+            "A",
+            41821,
+            "VW",
+            "A",
+            "Erkek",
+            "42",
+            "M"
+          ],
+          [
+            "ABDULBAKİ DEMİRTAŞ",
+            "DOĞU",
+            "FORMEN MEKANİK - ELEKTRİK",
+            "V",
+            41162,
+            "VW",
+            "V",
+            "Erkek",
+            "41",
+            "L"
+          ],
+          [
+            "ABDULGANİ PİRAN",
+            "ŞAHİNTAŞ",
+            "TEKNİSYEN - MEKANİK",
+            "V",
+            42331,
+            "V",
+            "S",
+            "Erkek",
+            "42",
+            "M"
+          ]
+        ]
+      },
+      {
+        "sheetName": "Personel Listesi (KHP)",
+        "totalRows": 7,
+        "headers": [
+          "ABDULLAH TUZ",
+          "VOSMER GAZİEMİR",
+          "SATIŞ SONRASI HİZMETLER MÜDÜRLÜĞÜ",
+          "TEKNİK DESTEK UZMANI",
+          "40422",
+          "VW",
+          "VW",
+          "Teknik Destek Uzmanı",
+          "VW",
+          "V",
+          "Erkek",
+          "40",
+          "M",
+          "42"
+        ],
+        "samplePreview": [
+          [
+            "ARİF AKGÖL",
+            "DOĞUŞ OTO ESENYURT",
+            "VW BİNEK ATÖLYE",
+            "TEKNİK DESTEK UZMANI",
+            41548,
+            "VW",
+            null,
+            "Teknik Destek Uzmanı",
+            "VW",
+            "V"
+          ],
+          [
+            "BURHAN KAYA",
+            "VOSMER GAZİEMİR",
+            "SATIŞ SONRASI HİZMETLER MÜDÜRLÜĞÜ",
+            "TEKNİK DESTEK UZMANI",
+            41985,
+            "VW",
+            "VW",
+            "Teknik Destek Uzmanı",
+            "GDM",
+            "GDM"
+          ],
+          [
+            "MEHMET ALİ TOKMAK",
+            "DOĞUŞ OTO KARTAL",
+            "VW BİNEK ATÖLYE",
+            "TEKNİK DESTEK UZMANI",
+            39583,
+            null,
+            null,
+            null,
+            "VW",
+            "V"
+          ]
+        ]
+      },
+      {
+        "sheetName": "Servis Danışmanı",
+        "totalRows": 407,
+        "headers": [
+          "NO",
+          "Yetkili Satıcı Kısa Adı",
+          "Personel Adı",
+          "Görev",
+          "Cinsiyet",
+          "Üst \nBeden",
+          "Alt \nBeden"
+        ],
+        "samplePreview": [
+          [
+            1,
+            "BAŞARAN FETHİYE",
+            "GÖKSEL EROL ",
+            "SERVİS DANIŞMANI",
+            "ERKEK",
+            "L",
+            46
+          ],
+          [
+            2,
+            "Demoto Afyon",
+            "Muhammed Ali DEMİREL",
+            "SERVİS DANIŞMANI",
+            "ERKEK",
+            "M",
+            44
+          ],
+          [
+            3,
+            "Demoto Afyon",
+            "Mevlüt ALTUNTAŞ",
+            "SERVİS DANIŞMANI",
+            "ERKEK",
+            "M",
+            42
+          ]
+        ]
+      },
+      {
+        "sheetName": "Diğer Servis Danışmanı",
+        "totalRows": 46,
+        "headers": [
+          "NO",
+          "Yetkili Satıcı Kısa Adı",
+          "Personel Adı",
+          "Görev",
+          "Cinsiyet",
+          "Üst \nBeden",
+          "Alt \nBeden"
+        ],
+        "samplePreview": [
+          [
+            1,
+            "YAĞCI EDREMİT",
+            "HASAN HÜSEYİN ŞAHAN",
+            "Diğer Servis Danışman",
+            "ERKEK",
+            "L",
+            50
+          ],
+          [],
+          []
+        ]
+      },
+      {
+        "sheetName": "Formen",
+        "totalRows": 1590,
+        "headers": [
+          "NO",
+          "Yetkili Satıcı Kısa Adı",
+          "Personel Adı",
+          "Görev",
+          "Cinsiyet",
+          "Üst \nBeden",
+          "Alt \nBeden"
+        ],
+        "samplePreview": [
+          [
+            1,
+            "BAŞARAN - FETHİYE",
+            "HALİL GÖKMEN",
+            "FORMEN",
+            "ERKEK",
+            "XL",
+            48
+          ],
+          [
+            2,
+            "BAŞARAN - FETHİYE",
+            "GÜNER SARICAN ",
+            "FORMEN",
+            "ERKEK",
+            "L",
+            48
+          ],
+          [
+            3,
+            "Demoto Afyon",
+            "Emre TAŞ",
+            "FORMEN",
+            "ERKEK",
+            "M",
+            44
+          ]
+        ]
+      },
+      {
+        "sheetName": "Mekanik Teknisyen",
+        "totalRows": 1587,
+        "headers": [
+          "NO",
+          "Yetkili Satıcı Kısa Adı",
+          "Personel Adı",
+          "Görev",
+          "Cinsiyet",
+          "Üst \nBeden",
+          "Alt \nBeden"
+        ],
+        "samplePreview": [
+          [
+            1,
+            "BAŞARAN - FETHİYE",
+            "LÜTFİ BERKAY ÖZUZUN ",
+            "MEKANİK TEKNİSYEN",
+            "ERKEK",
+            "M",
+            42
+          ],
+          [
+            2,
+            "BAŞARAN - FETHİYE",
+            "MUHAMMET ESAT KEÇE ",
+            "MEKANİK TEKNİSYEN",
+            "ERKEK",
+            "M",
+            42
+          ],
+          [
+            3,
+            "Demoto Afyon",
+            "Muhammed Enes TINASTEPE",
+            "MEKANİK TEKNİSYEN",
+            "ERKEK",
+            "L",
+            48
+          ]
+        ]
+      },
+      {
+        "sheetName": "Kaporta Teknisyen",
+        "totalRows": 1588,
+        "headers": [
+          "NO",
+          "Yetkili Satıcı Kısa Adı",
+          "Personel Adı",
+          "Görev",
+          "Cinsiyet",
+          "Üst \nBeden",
+          "Alt \nBeden"
+        ],
+        "samplePreview": [
+          [
+            1,
+            "BAŞARAN - FETHİYE",
+            "TOLGA GÜNGÖR",
+            "KAPORTA TEKNİSYEN ",
+            "ERKEK",
+            "L",
+            46
+          ],
+          [
+            2,
+            "BAŞARAN - FETHİYE",
+            "TURGUT ÖZTÜRK",
+            "KAPORTA TEKNİSYEN ",
+            "ERKEK",
+            "M",
+            42
+          ],
+          [
+            3,
+            "Demoto Afyon",
+            "Ali YILDIZ",
+            "KAPORTA TEKNİSYEN ",
+            "ERKEK",
+            "L",
+            42
+          ]
+        ]
+      },
+      {
+        "sheetName": "Master Teknisyen",
+        "totalRows": 1591,
+        "headers": [
+          "NO",
+          "Yetkili Satıcı Kısa Adı",
+          "Personel Adı",
+          "Görev",
+          "Cinsiyet",
+          "Üst \nBeden",
+          "Alt \nBeden"
+        ],
+        "samplePreview": [
+          [
+            1,
+            "BAŞARAN - FETHİYE",
+            "MÜCAHİD DEMİRCİ ",
+            "Master Teknisyen",
+            "Erkek",
+            "L",
+            48
+          ],
+          [
+            2,
+            "YAZICIOĞLU",
+            "İSMAİL KAYACAN",
+            "Master Teknisyen",
+            "Erkek",
+            "L",
+            46
+          ],
+          []
+        ]
+      },
+      {
+        "sheetName": "GarantiDispozisyon",
+        "totalRows": 1570,
+        "headers": [
+          "NO",
+          "Yetkili Satıcı Kısa Adı",
+          "Personel Adı",
+          "Görev",
+          "Cinsiyet",
+          "Üst \nBeden",
+          "Alt \nBeden"
+        ],
+        "samplePreview": [
+          [
+            1,
+            "BAŞARAN - FETHİYE",
+            "SEYFİ İÇÖZ",
+            "GarantiDispozisyon",
+            "ERKEK",
+            "L",
+            46
+          ],
+          [
+            2,
+            "Demoto Afyon",
+            "Mehmet KARAKAYA",
+            "GarantiDispozisyon",
+            "ERKEK",
+            "M",
+            46
+          ],
+          [
+            3,
+            "Demoto Afyon",
+            "Salim DÜLGER",
+            "GarantiDispozisyon",
+            "ERKEK",
+            "L",
+            46
+          ]
+        ]
+      },
+      {
+        "sheetName": "PAKETLER",
+        "totalRows": 22,
+        "headers": [
+          "Servis Danışmanı",
+          "Pantolon",
+          "2"
+        ],
+        "samplePreview": [
+          [
+            null,
+            "Tshirt Beyaz",
+            2
+          ],
+          [
+            null,
+            "Tshirt Kırmızı",
+            2
+          ],
+          []
+        ]
+      },
+      {
+        "sheetName": "PARÇA NO DETAY",
+        "totalRows": 211,
+        "headers": [
+          "SERVİS DANIŞMAN POLO YAKA T-SHIRT BAY - XS",
+          "PSEAT200002XS",
+          "2"
+        ],
+        "samplePreview": [
+          [
+            "SERVİS DANIŞMAN POLO YAKA T-SHIRT BAY - S",
+            "PSEAT200002S",
+            2
+          ],
+          [
+            "SERVİS DANIŞMAN POLO YAKA T-SHIRT BAY - M",
+            "PSEAT200002M",
+            2
+          ],
+          [
+            "SERVİS DANIŞMAN POLO YAKA T-SHIRT BAY - L",
+            "PSEAT200002L",
+            2
+          ]
+        ]
+      },
+      {
+        "sheetName": "PARÇA NO",
+        "totalRows": 18,
+        "headers": [],
+        "samplePreview": []
+      },
+      {
+        "sheetName": "sorulacak",
+        "totalRows": 209,
+        "headers": [
+          "Personel Adı",
+          "Yetkili Satıcı Kısa Adı",
+          "Bölge Yöneticisi",
+          "Bölüm",
+          "Görev",
+          "Mevcut İşe Giriş tarihi",
+          "KHP Marka",
+          "KHP Marka Diğer",
+          "KHP Görev Tanımı",
+          "Hizmet Verdiği Üst Marka",
+          "Hizmet Verdiği Marka",
+          "Cinsiyet",
+          "Ayak Ölçüsü",
+          "Üst Beden",
+          "Alt Beden"
+        ],
+        "samplePreview": [
+          [
+            "AHMET İŞCAN",
+            "DOĞUŞ OTO BURSA",
+            "Ömer Naci Masatlıoğlu",
+            "VW BİNEK ATÖLYE",
+            "FORMEN MEKANİK - ELEKTRİK",
+            38457,
+            "A",
+            null,
+            "Teknisyen",
+            "VW"
+          ],
+          [
+            "ANIL KEKİK",
+            "BAŞARAN ANTALYA",
+            "Ömer Naci Masatlıoğlu",
+            "VW ATÖLYE",
+            "TEKNİSYEN - MEKANİK",
+            41092,
+            "S",
+            "V",
+            "Teknisyen",
+            "S"
+          ],
+          [
+            "BURCU BELKIS",
+            "ARK OTO",
+            "Ömer Naci Masatlıoğlu",
+            "VW ATÖLYE",
+            "SERVİS DANIŞMANI",
+            41508,
+            "A",
+            "N",
+            "Servis Danışmanı",
+            "A"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fileName": "Skoda Barkodlar 2025 KIŞ.XLSX",
+    "fullPath": "C:\\Users\\ctopuz\\Downloads\\Skoda Barkodlar 2025 KIŞ.XLSX",
+    "sheets": [
+      {
+        "sheetName": "2025 KIŞ",
+        "totalRows": 260,
+        "headers": [
+          "Parça Tanımı",
+          null,
+          null,
+          null,
+          "Beden",
+          "2025 Parça Kodu",
+          "KİŞİ BAŞI VERİLECEK \nADETLER"
+        ],
+        "samplePreview": [
+          [
+            "Servis Danışman Kışlık Gömlek Bay",
+            null,
+            null,
+            null,
+            "XS Beden",
+            "PSKD100025XS",
+            3
+          ],
+          [
+            "Servis Danışman Kışlık Gömlek Bay",
+            null,
+            null,
+            null,
+            "S Beden",
+            "PSKD100025S",
+            3
+          ],
+          [
+            "Servis Danışman Kışlık Gömlek Bay",
+            null,
+            null,
+            null,
+            "M Beden",
+            "PSKD100025M",
+            3
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fileName": "Skoda Barkodlar 2026 YAZ.XLSX",
+    "fullPath": "C:\\Users\\ctopuz\\Downloads\\Skoda Barkodlar 2026 YAZ.XLSX",
+    "sheets": [
+      {
+        "sheetName": "Sayfa2",
+        "totalRows": 110,
+        "headers": [
+          "Parça Tanımı",
+          null,
+          null,
+          null,
+          "Beden",
+          "2026 Parça Kodu",
+          "KİŞİ BAŞI VERİLECEK ADETLER"
+        ],
+        "samplePreview": [
+          [
+            "Servis Dnş. MİS Garanti Hasar YP Pant Bay",
+            null,
+            null,
+            null,
+            "38 Beden",
+            "PSKD200010XS",
+            2
+          ],
+          [
+            "Servis Dnş. MİS Garanti Hasar YP Pant Bay",
+            null,
+            null,
+            null,
+            "40 Beden",
+            "PSKD200010S",
+            2
+          ],
+          [
+            "Servis Dnş. MİS Garanti Hasar YP Pant Bay",
+            null,
+            null,
+            null,
+            "42 Beden",
+            "PSKD200010M",
+            2
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fileName": "VW 2025 KIŞ Parça Kodları (1).xlsx",
+    "fullPath": "C:\\Users\\ctopuz\\Downloads\\VW 2025 KIŞ Parça Kodları (1).xlsx",
+    "sheets": [
+      {
+        "sheetName": "VW KIŞ 2025",
+        "totalRows": 588,
+        "headers": [
+          "Atölye Personeli Pantolon Kışlık - Erkek",
+          null,
+          null,
+          null,
+          "38 Beden",
+          "PVWK100004XS",
+          "2"
+        ],
+        "samplePreview": [
+          [
+            "Atölye Personeli Pantolon Kışlık - Erkek",
+            null,
+            null,
+            null,
+            "40 Beden",
+            "PVWK100004S",
+            2
+          ],
+          [
+            "Atölye Personeli Pantolon Kışlık - Erkek",
+            null,
+            null,
+            null,
+            "42 Beden",
+            "PVWK100004M",
+            2
+          ],
+          [
+            "Atölye Personeli Pantolon Kışlık - Erkek",
+            null,
+            null,
+            null,
+            "44 Beden",
+            "PVWK100004L",
+            2
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fileName": "VW 2025 KIŞ Parça Kodları.xlsx",
+    "fullPath": "C:\\Users\\ctopuz\\Downloads\\VW 2025 KIŞ Parça Kodları.xlsx",
+    "sheets": [
+      {
+        "sheetName": "VW KIŞ 2025",
+        "totalRows": 588,
+        "headers": [
+          "Atölye Personeli Pantolon Kışlık - Erkek",
+          null,
+          null,
+          null,
+          "38 Beden",
+          "PVWK100004XS",
+          "2"
+        ],
+        "samplePreview": [
+          [
+            "Atölye Personeli Pantolon Kışlık - Erkek",
+            null,
+            null,
+            null,
+            "40 Beden",
+            "PVWK100004S",
+            2
+          ],
+          [
+            "Atölye Personeli Pantolon Kışlık - Erkek",
+            null,
+            null,
+            null,
+            "42 Beden",
+            "PVWK100004M",
+            2
+          ],
+          [
+            "Atölye Personeli Pantolon Kışlık - Erkek",
+            null,
+            null,
+            null,
+            "44 Beden",
+            "PVWK100004L",
+            2
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fileName": "VW 2026 KIŞ Parça Kodları.xlsx",
+    "fullPath": "C:\\Users\\ctopuz\\Downloads\\VW 2026 KIŞ Parça Kodları.xlsx",
+    "sheets": [
+      {
+        "sheetName": "VW KIŞ 2026",
+        "totalRows": 652,
+        "headers": [
+          "Atölye Personeli Pantolon Kışlık - Erkek",
+          null,
+          null,
+          null,
+          "38 Beden",
+          "PVWK100004XS",
+          "2"
+        ],
+        "samplePreview": [
+          [
+            "Atölye Personeli Pantolon Kışlık - Erkek",
+            null,
+            null,
+            null,
+            "40 Beden",
+            "PVWK100004S",
+            2
+          ],
+          [
+            "Atölye Personeli Pantolon Kışlık - Erkek",
+            null,
+            null,
+            null,
+            "42 Beden",
+            "PVWK100004M",
+            2
+          ],
+          [
+            "Atölye Personeli Pantolon Kışlık - Erkek",
+            null,
+            null,
+            null,
+            "44 Beden",
+            "PVWK100004L",
+            2
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "fileName": "VW 2026 YAZ PARÇA KODLARI & VERİLECEK ADETLER.XLSX",
+    "fullPath": "C:\\Users\\ctopuz\\Downloads\\VW 2026 YAZ PARÇA KODLARI & VERİLECEK ADETLER.XLSX",
+    "sheets": [
+      {
+        "sheetName": "VW KIYAFET",
+        "totalRows": 558,
+        "headers": [
+          "40",
+          "PVWK100001S",
+          "Acil Servis Pantolon Kışlık - (40 beden)"
+        ],
+        "samplePreview": [
+          [
+            42,
+            "PVWK100001M",
+            "Acil Servis Pantolon Kışlık - (42 beden)"
+          ],
+          [
+            44,
+            "PVWK100001L",
+            "Acil Servis Pantolon Kışlık - (44 beden)"
+          ],
+          [
+            46,
+            "PVWK100001XL",
+            "Acil Servis Pantolon Kışlık - (46 beden)"
+          ]
+        ]
+      },
+      {
+        "sheetName": "Sheet2",
+        "totalRows": 2,
+        "headers": [],
+        "samplePreview": []
+      },
+      {
+        "sheetName": "Sayfa1",
+        "totalRows": 409,
+        "headers": [
+          "PVWK200074XS",
+          "Atölye Personeli Pantolon - Erkek - 38 BEDEN",
+          "2"
+        ],
+        "samplePreview": [
+          [
+            "PVWK200074S",
+            "Atölye Personeli Pantolon - Erkek - 40 BEDEN",
+            2
+          ],
+          [
+            "PVWK200074M",
+            "Atölye Personeli Pantolon - Erkek - 42 BEDEN",
+            2
+          ],
+          [
+            "PVWK200074L",
+            "Atölye Personeli Pantolon - Erkek - 44 BEDEN",
+            2
+          ]
+        ]
+      }
+    ]
+  }
+]

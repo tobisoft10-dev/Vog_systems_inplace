@@ -1,0 +1,1772 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+  --midnight: #050505;
+  --royal: #0a0a0a;
+  --accent: #D4AF37;
+  --accent-soft: rgba(212, 175, 55, 0.15);
+  --accent-glow: rgba(212, 175, 55, 0.4);
+  --glass: rgba(255, 255, 255, 0.02);
+  --glass-border: rgba(255, 255, 255, 0.06);
+  --text-primary: #ffffff;
+  --text-secondary: #a1a1aa;
+  --text-muted: rgba(255, 255, 255, 0.4);
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --input-bg: rgba(0, 0, 0, 0.5);
+  --input-border: rgba(255, 255, 255, 0.1);
+  --input-color: #ffffff;
+  --card-bg: linear-gradient(135deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%);
+  --card-border: 1px solid rgba(255, 255, 255, 0.06);
+  --font-main: 'Outfit', sans-serif;
+  --font-heading: 'Playfair Display', serif;
+  --transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  --glass-blur: 40px;
+  --glass-saturation: 150%;
+  --laminar-shadow: 0 30px 60px rgba(0,0,0,0.8), 0 10px 20px rgba(0,0,0,0.5);
+  --prism-border: linear-gradient(135deg, rgba(212, 175, 55, 0.4) 0%, rgba(255, 255, 255, 0.05) 50%, rgba(212, 175, 55, 0.2) 100%);
+  --container-pad: 3.5rem;
+  scroll-behavior: smooth;
+  --color-success: #10b981;
+  --color-success-bg: rgba(16, 185, 129, 0.1);
+  --color-warning: #f59e0b;
+  --color-warning-bg: rgba(245, 158, 11, 0.1);
+  --color-danger: #ef4444;
+  --color-danger-bg: rgba(239, 68, 68, 0.1);
+  --color-info: #D4AF37;
+  --color-info-bg: rgba(212, 175, 55, 0.1);
+  --color-price: #D4AF37;
+}
+
+body {
+  margin: 0;
+  background-color: var(--midnight);
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+:root.light-mode {
+  --midnight: #FAFAFA;
+  --royal: #FFFFFF;
+  --accent: #B28900;
+  --accent-soft: rgba(178, 137, 0, 0.1);
+  --accent-glow: rgba(178, 137, 0, 0.3);
+  --glass: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(0, 0, 0, 0.06);
+  --text-primary: #111111;
+  --text-secondary: #52525B;
+  --text-muted: #A1A1AA;
+  --border-subtle: rgba(0, 0, 0, 0.06);
+  --input-bg: #FFFFFF;
+  --input-border: rgba(0, 0, 0, 0.15);
+  --input-color: #111111;
+  --card-bg: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(250, 250, 250, 0.9) 100%);
+  --card-border: 1px solid rgba(0, 0, 0, 0.06);
+  --laminar-shadow: 0 10px 40px rgba(0, 0, 0, 0.04), 0 2px 10px rgba(0, 0, 0, 0.02);
+  --prism-border: linear-gradient(135deg, rgba(178, 137, 0, 0.2) 0%, rgba(0, 0, 0, 0.03) 50%, rgba(178, 137, 0, 0.1) 100%);
+  --color-success: #059669;
+  --color-success-bg: rgba(5, 150, 105, 0.08);
+  --color-warning: #b45309;
+  --color-warning-bg: rgba(180, 83, 9, 0.08);
+  --color-danger: #dc2626;
+  --color-danger-bg: rgba(220, 38, 38, 0.08);
+  --color-info: #B28900;
+  --color-info-bg: rgba(178, 137, 0, 0.08);
+  --color-price: #B28900;
+}
+
+/* ========================================================
+   LIGHT MODE — Full Component Override System
+   ======================================================== */
+
+/* Background aurora → soft & clean */
+:root.light-mode body::before {
+  background:
+    radial-gradient(circle at 10% 20%, rgba(0, 180, 216, 0.06) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(99, 102, 241, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0) 0%, var(--midnight) 100%);
+}
+
+/* Noise texture → barely visible */
+:root.light-mode body::after {
+  opacity: 0.02;
+}
+
+/* Gradient text → indigo in light globally */
+:root.light-mode .gradient-text {
+  background: linear-gradient(135deg, #111111 0%, var(--accent) 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: none !important;
+}
+
+/* Hero & home page gradient-text */
+:root.light-mode .hero-section .gradient-text,
+:root.light-mode .home-page .gradient-text {
+  background: linear-gradient(135deg, #1e1b4b 0%, var(--accent) 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: none !important;
+}
+
+/* Glass panels → solid white w/ shadow */
+:root.light-mode .glass {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(15, 23, 42, 0.08);
+  box-shadow: 0 4px 24px rgba(15, 23, 42, 0.06);
+}
+
+:root.light-mode .glass-card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow: 0 2px 16px rgba(15, 23, 42, 0.05);
+}
+
+:root.light-mode .prism-glass {
+  background: #ffffff;
+  background-image: none;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 4px 24px rgba(15, 23, 42, 0.06);
+}
+
+:root.light-mode .prism-glass::before {
+  background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(0, 180, 216, 0.04) 0%, transparent 50%);
+}
+
+/* Primary button → dark & sharp */
+:root.light-mode .btn-primary {
+  background: #111111;
+  color: #ffffff;
+}
+
+:root.light-mode .btn-primary:hover {
+  background: #1e293b;
+  color: #ffffff;
+}
+
+/* Navbar override → white glass w/ shadow */
+:root.light-mode nav.glass {
+  background: rgba(255, 255, 255, 0.92) !important;
+  border-color: rgba(15, 23, 42, 0.08) !important;
+  box-shadow: 0 4px 30px rgba(15, 23, 42, 0.08) !important;
+  backdrop-filter: blur(40px) saturate(180%) !important;
+}
+
+:root.light-mode nav.glass a,
+:root.light-mode nav.glass span,
+:root.light-mode nav.glass button {
+  color: #111111 !important;
+}
+
+:root.light-mode nav.glass img {
+  filter: brightness(1) invert(0) drop-shadow(0 0 4px rgba(0,0,0,0.05)) !important;
+}
+
+/* Customer Sidebar override */
+:root.light-mode aside {
+  background: #ffffff !important;
+  border-color: rgba(15, 23, 42, 0.06) !important;
+  box-shadow: 2px 0 20px rgba(15, 23, 42, 0.04) !important;
+}
+
+:root.light-mode aside a,
+:root.light-mode aside span,
+:root.light-mode aside div {
+  color: #334155;
+}
+
+:root.light-mode aside a:hover,
+:root.light-mode aside a.active {
+  color: #111111 !important;
+}
+
+/* Admin sidebar */
+:root.light-mode .admin-sidebar-premium {
+  background: #ffffff !important;
+  border-right: 1px solid rgba(15, 23, 42, 0.06) !important;
+  box-shadow: 2px 0 20px rgba(15, 23, 42, 0.04) !important;
+}
+
+/* Header bar */
+:root.light-mode header {
+  color: #111111;
+}
+
+/* Heading overrides — portal pages ONLY (not hero/home) */
+:root.light-mode .customer-layout-premium h1,
+:root.light-mode .customer-layout-premium h2,
+:root.light-mode .customer-layout-premium h3,
+:root.light-mode .customer-layout-premium h4,
+:root.light-mode .admin-layout-premium h1,
+:root.light-mode .admin-layout-premium h2,
+:root.light-mode .admin-layout-premium h3,
+:root.light-mode .admin-layout-premium h4 {
+  color: #111111 !important;
+}
+
+/* Table styling */
+:root.light-mode table {
+  background: #ffffff;
+}
+
+:root.light-mode thead tr {
+  background: #f1f5f9 !important;
+  border-bottom: 2px solid rgba(15, 23, 42, 0.06) !important;
+}
+
+:root.light-mode th {
+  color: #475569 !important;
+  background: #f1f5f9 !important;
+}
+
+:root.light-mode td {
+  color: #334155 !important;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.04) !important;
+}
+
+:root.light-mode tbody tr:hover {
+  background: rgba(0, 180, 216, 0.03) !important;
+}
+
+/* Input fields → clean white w/ borders */
+:root.light-mode input,
+:root.light-mode select,
+:root.light-mode textarea {
+  background: #ffffff !important;
+  border-color: rgba(15, 23, 42, 0.15) !important;
+  color: #111111 !important;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04) !important;
+}
+
+:root.light-mode input::placeholder,
+:root.light-mode textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+:root.light-mode input:focus,
+:root.light-mode select:focus,
+:root.light-mode textarea:focus {
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 0 3px rgba(0, 180, 216, 0.12) !important;
+}
+
+:root.light-mode option {
+  background: #ffffff !important;
+  color: #111111 !important;
+}
+
+/* Scrollbar */
+:root.light-mode ::-webkit-scrollbar-thumb {
+  background: rgba(15, 23, 42, 0.15) !important;
+}
+
+:root.light-mode ::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.03) !important;
+}
+
+/* Badges & status pills */
+:root.light-mode .order-select-card {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.08);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+:root.light-mode .order-select-card:hover {
+  background: rgba(0, 180, 216, 0.03);
+  border-color: var(--accent);
+  box-shadow: 0 8px 24px rgba(0, 180, 216, 0.1);
+}
+
+:root.light-mode .order-select-card.selected {
+  background: rgba(0, 180, 216, 0.04);
+  border-color: var(--accent);
+  box-shadow: 0 0 20px rgba(0, 180, 216, 0.1);
+}
+
+/* Footer override */
+:root.light-mode footer {
+  background: #111111 !important;
+  border-top-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+:root.light-mode footer h4,
+:root.light-mode footer a,
+:root.light-mode footer span,
+:root.light-mode footer div,
+:root.light-mode footer p {
+  color: inherit;
+}
+
+/* RFID Tunnel → light-friendly */
+:root.light-mode .rfid-tunnel-box {
+  background: radial-gradient(circle at 50% 50%, #e2e8f0, #f1f5f9);
+  border-color: rgba(15, 23, 42, 0.1);
+  box-shadow: inset 0 0 30px rgba(15, 23, 42, 0.04);
+}
+
+/* PDF viewport */
+:root.light-mode .pdf-spec-sheet-viewport {
+  background: #f8fafc !important;
+  border-color: rgba(15, 23, 42, 0.08) !important;
+}
+
+/* ========================================================
+   LIGHT MODE — Text Color Defaults
+   ======================================================== */
+
+:root.light-mode .customer-layout-premium,
+:root.light-mode .admin-layout-premium {
+  color: #334155;
+}
+
+:root.light-mode .customer-layout-premium h1,
+:root.light-mode .customer-layout-premium h2,
+:root.light-mode .customer-layout-premium h3,
+:root.light-mode .customer-layout-premium h4,
+:root.light-mode .admin-layout-premium h1,
+:root.light-mode .admin-layout-premium h2,
+:root.light-mode .admin-layout-premium h3,
+:root.light-mode .admin-layout-premium h4 {
+  color: #111111;
+}
+
+/* Table cells and headers */
+:root.light-mode .customer-layout-premium table,
+:root.light-mode .admin-layout-premium table {
+  color: #334155 !important;
+}
+
+:root.light-mode .customer-layout-premium td,
+:root.light-mode .customer-layout-premium th,
+:root.light-mode .admin-layout-premium td,
+:root.light-mode .admin-layout-premium th {
+  color: #334155 !important;
+}
+
+/* Input and select within portals */
+:root.light-mode .customer-layout-premium input,
+:root.light-mode .customer-layout-premium select,
+:root.light-mode .customer-layout-premium textarea,
+:root.light-mode .admin-layout-premium input,
+:root.light-mode .admin-layout-premium select,
+:root.light-mode .admin-layout-premium textarea {
+  background: #ffffff !important;
+  color: #111111 !important;
+  border-color: rgba(15, 23, 42, 0.15) !important;
+}
+
+/* Buttons — keep normal/light buttons readable with dark text, but exclude dark/primary/action/gradient buttons */
+:root.light-mode .customer-layout-premium button:not(.btn-primary):not(.btn-logout):not([type="submit"]):not([style*="background"]),
+:root.light-mode .admin-layout-premium button:not(.btn-primary):not(.btn-logout):not([type="submit"]):not([style*="background"]) {
+  color: #334155;
+}
+
+/* Primary and dark buttons in portals must stay white in light mode */
+:root.light-mode .btn-primary,
+:root.light-mode button.btn-primary,
+:root.light-mode button[type="submit"]:not(.login-btn),
+:root.light-mode button.shimmer[style*="background"] {
+  color: #ffffff !important;
+}
+
+/* Soft red logout button for sidebar in light mode */
+:root.light-mode .btn-logout,
+:root.light-mode button.btn-logout {
+  color: #dc2626 !important;
+  background: rgba(220, 38, 38, 0.08) !important;
+  border: 1px solid rgba(220, 38, 38, 0.2) !important;
+}
+
+:root.light-mode .btn-logout:hover,
+:root.light-mode button.btn-logout:hover {
+  background: #dc2626 !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 20px rgba(220, 38, 38, 0.3) !important;
+}
+
+/* Breadcrumb labels & muted text */
+:root.light-mode .customer-layout-premium [style*="rgba(255,255,255,0.4)"],
+:root.light-mode .customer-layout-premium [style*="rgba(255,255,255,0.5)"],
+:root.light-mode .customer-layout-premium [style*="rgba(255,255,255,0.6)"],
+:root.light-mode .customer-layout-premium [style*="rgba(255, 255, 255, 0.4)"],
+:root.light-mode .customer-layout-premium [style*="rgba(255, 255, 255, 0.5)"],
+:root.light-mode .customer-layout-premium [style*="rgba(255, 255, 255, 0.6)"] {
+  color: #64748b !important;
+}
+
+/* Fix rgba(255,255,255,...) backgrounds → light equivalents */
+:root.light-mode .customer-layout-premium [style*="background: rgba(255,255,255"],
+:root.light-mode .admin-layout-premium [style*="background: rgba(255,255,255"],
+:root.light-mode .customer-layout-premium [style*="background:rgba(255,255,255"],
+:root.light-mode .admin-layout-premium [style*="background:rgba(255,255,255"] {
+  background: rgba(15, 23, 42, 0.03) !important;
+}
+
+/* Fix rgba(255,255,255,...) borders → dark equivalents */
+:root.light-mode .customer-layout-premium [style*="solid rgba(255,255,255"],
+:root.light-mode .customer-layout-premium [style*="border-color: rgba(255,255,255"],
+:root.light-mode .admin-layout-premium [style*="solid rgba(255,255,255"],
+:root.light-mode .admin-layout-premium [style*="border-color: rgba(255,255,255"] {
+  border-color: rgba(15, 23, 42, 0.08) !important;
+}
+
+/* ========================================================
+   LIGHT MODE — Public Pages Protection
+   Hero, home stats, glass cards on dark BG stay WHITE
+   ======================================================== */
+
+/* Make Hero Section Light and Vibrant in Light Mode */
+:root.light-mode .hero-section {
+  background: linear-gradient(135deg, rgba(248, 250, 252, 0.85), rgba(248, 250, 252, 0.98)), url('https://www.vogtekstil.com.tr/wp-content/uploads/2017/04/slider5.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+}
+
+/* Fix Hero Buttons for Light Background */
+:root.light-mode .hero-section .btn-primary {
+  background: var(--accent) !important;
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: 0 10px 25px var(--accent-glow) !important;
+}
+
+:root.light-mode .hero-section a[href="/products"] {
+  background: rgba(15, 23, 42, 0.05) !important;
+  border-color: rgba(15, 23, 42, 0.15) !important;
+  color: #111111 !important;
+}
+
+:root.light-mode .hero-section a[href="/products"]:hover {
+  background: rgba(15, 23, 42, 0.1) !important;
+}
+
+/* Home page sections with dark backgrounds — white text */
+:root.light-mode .home-page .animate-up,
+:root.light-mode .home-page .animate-up *:not(.btn-primary):not(a[href="/products"]):not(.gradient-text) {
+  color: inherit;
+}
+
+:root.light-mode .home-page section h2,
+:root.light-mode .home-page section p {
+  color: inherit;
+}
+
+/* Login page — always dark themed, no override */
+:root.light-mode .login-page,
+:root.light-mode .login-page * {
+  /* Login stays dark themed */
+}
+
+/* Footer — keep white text on dark footer bg */
+:root.light-mode footer {
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --accent: #00E5FF;
+  color: #f8fafc !important;
+}
+
+:root.light-mode .layout footer [style*="color: white"],
+:root.light-mode .layout footer [style*="color: '#fff'"],
+:root.light-mode .layout footer [style*="color: '#ffffff'"] {
+  color: #ffffff !important;
+}
+
+:root.light-mode footer .glass-card {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+:root.light-mode footer a {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+:root.light-mode footer a:hover {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Spec sheet header text */
+:root.light-mode .pdf-spec-sheet h2 {
+  color: #111111 !important;
+}
+
+/* Sidebar active item highlight */
+:root.light-mode aside button[style*="background"],
+:root.light-mode aside a[style*="background"] {
+  color: #111111 !important;
+}
+
+/* ========================================================
+   LIGHT MODE — Neon Color → Rich Color Mapping
+   Dark mode neon colors become deeper, more readable versions
+   ======================================================== */
+
+/* Forest/Emerald Green (#10b981, #059669) → Deep Forest Green */
+:root.light-mode .customer-layout-premium [style*="color: rgb(16, 185"],
+:root.light-mode .customer-layout-premium [style*="color: rgb(5, 150"],
+:root.light-mode .admin-layout-premium [style*="color: rgb(16, 185"],
+:root.light-mode .admin-layout-premium [style*="color: rgb(5, 150"] {
+  color: #065f46 !important;
+}
+
+/* Sky Blue (#38bdf8, #3b82f6) → Deep Ocean Blue */
+:root.light-mode .customer-layout-premium [style*="color: rgb(56, 189"],
+:root.light-mode .customer-layout-premium [style*="color: rgb(59, 130"],
+:root.light-mode .admin-layout-premium [style*="color: rgb(56, 189"],
+:root.light-mode .admin-layout-premium [style*="color: rgb(59, 130"] {
+  color: #0369a1 !important;
+}
+
+/* Amber/Orange (#f59e0b) → Rich Amber */
+:root.light-mode .customer-layout-premium [style*="color: rgb(245, 158"],
+:root.light-mode .admin-layout-premium [style*="color: rgb(245, 158"] {
+  color: #b45309 !important;
+}
+
+/* Red (#ef4444) → Deep Red */
+:root.light-mode .customer-layout-premium [style*="color: rgb(239, 68"],
+:root.light-mode .admin-layout-premium [style*="color: rgb(239, 68"] {
+  color: #b91c1c !important;
+}
+
+/* Turquoise/Cyan (#00E5FF, #00f3ff) → Deep Ocean Blue */
+:root.light-mode [style*="color: rgb(0, 229, 255)"],
+:root.light-mode [style*="color: rgb(0, 243, 255)"],
+:root.light-mode [style*="color: #00E5FF"],
+:root.light-mode [style*="color: #00e5ff"],
+:root.light-mode [style*="color: #00f3ff"],
+:root.light-mode [style*="color:#00E5FF"],
+:root.light-mode [style*="color:#00e5ff"],
+:root.light-mode [style*="color:#00f3ff"],
+:root.light-mode .neon-text-blue {
+  color: #0369a1 !important;
+}
+
+:root.light-mode [style*="border-color: rgb(0, 229, 255)"],
+:root.light-mode [style*="border-color: #00E5FF"],
+:root.light-mode [style*="border-color: #00f3ff"],
+:root.light-mode [style*="border-color:#00E5FF"],
+:root.light-mode [style*="border-color:#00e5ff"],
+:root.light-mode [style*="border-color:#00f3ff"] {
+  border-color: #0369a1 !important;
+}
+
+:root.light-mode [style*="background: rgba(0, 229, 255"],
+:root.light-mode [style*="background: rgba(0, 243, 255"],
+:root.light-mode [style*="background:rgba(0, 229, 255"],
+:root.light-mode [style*="background:rgba(0, 243, 255"] {
+  background: rgba(3, 105, 161, 0.08) !important;
+  border-color: rgba(3, 105, 161, 0.2) !important;
+}
+
+/* Green backgrounds (badges, status pills) → deeper green bg */
+:root.light-mode .customer-layout-premium [style*="background: rgba(0, 255, 102"],
+:root.light-mode .customer-layout-premium [style*="background: rgba(0,255,102"],
+:root.light-mode .admin-layout-premium [style*="background: rgba(0, 255, 102"],
+:root.light-mode .admin-layout-premium [style*="background: rgba(0,255,102"] {
+  background: rgba(5, 150, 105, 0.08) !important;
+  border-color: rgba(5, 150, 105, 0.2) !important;
+}
+
+/* Green dots (status indicators) → darker green */
+:root.light-mode [style*="background: rgb(0, 255, 102)"],
+:root.light-mode [style*="background: rgb(0, 255"] {
+  background: #059669 !important;
+  box-shadow: 0 0 10px rgba(5, 150, 105, 0.4) !important;
+}
+
+/* Green text-shadow → remove neon glow in light mode */
+:root.light-mode .customer-layout-premium [style*="textShadow"],
+:root.light-mode .admin-layout-premium [style*="textShadow"] {
+  text-shadow: none !important;
+}
+
+/* Neon box-shadow glows → subtle shadows in light mode */
+:root.light-mode .customer-layout-premium [style*="boxShadow: 0 0"],
+:root.light-mode .customer-layout-premium [style*="box-shadow: 0 0"] {
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06) !important;
+}
+
+/* Inline neon color overrides for light mode readability */
+:root.light-mode [style*="color: #00ff66"],
+:root.light-mode [style*="color: rgb(0, 255, 102)"],
+:root.light-mode [style*="color:#00ff66"] {
+  color: var(--color-success) !important;
+}
+
+:root.light-mode [style*="color: #ff4b4b"],
+:root.light-mode [style*="color: rgb(255, 75, 75)"],
+:root.light-mode [style*="color:#ff4b4b"] {
+  color: var(--color-danger) !important;
+}
+
+
+
+/* Mobile bottom bar */
+:root.light-mode .mobile-bottom-bar {
+  background: #ffffff !important;
+  border-top: 1px solid rgba(15, 23, 42, 0.06) !important;
+  box-shadow: 0 -4px 20px rgba(15, 23, 42, 0.06) !important;
+}
+
+:root.light-mode .mobile-bottom-bar a,
+:root.light-mode .mobile-bottom-bar span {
+  color: #475569 !important;
+}
+
+:root.light-mode .mobile-bottom-bar a.active span {
+  color: var(--accent) !important;
+}
+
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
+}
+
+.glass {
+  background: var(--glass);
+  backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturation));
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturation));
+  border: 1px solid var(--glass-border);
+  border-radius: 4rem;
+  box-shadow: var(--laminar-shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(var(--glass-blur)) saturate(180%);
+  border: var(--card-border);
+  box-shadow: var(--laminar-shadow);
+  transition: var(--transition);
+}
+
+.prism-glass {
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(60px) saturate(300%);
+  border: 1px solid transparent;
+  background-image: linear-gradient(var(--midnight), var(--midnight)), var(--prism-border);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-shadow: var(--laminar-shadow), inset 0 0 30px rgba(255,255,255,0.02);
+  position: relative;
+}
+
+.prism-glass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255,255,255,0.08) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.holographic {
+  position: relative;
+  overflow: hidden;
+}
+
+.holographic::after {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+  background: linear-gradient(135deg, 
+    transparent 0%, 
+    rgba(255,255,255,0.05) 45%, 
+    rgba(255,255,255,0.2) 50%, 
+    rgba(255,255,255,0.05) 55%, 
+    transparent 100%
+  );
+  transform: rotate(-45deg);
+  pointer-events: none;
+  transition: 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.holographic:hover::after {
+  transform: rotate(-45deg) translate(20%, 20%);
+}
+
+.btn-primary {
+  background: #ffffff;
+  color: #02040a;
+  padding: 1.2rem 2.5rem;
+  border-radius: 100px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: var(--transition);
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.15);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.3);
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #fff 0%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 10px rgba(230,0,0,0.2));
+}
+
+section {
+  padding: clamp(4rem, 10vw, 8rem) 0;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+  display: none;
+  z-index: 101;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--text-primary);
+  position: absolute;
+  transition: var(--transition);
+}
+
+.hamburger span:nth-child(1) { top: 0; }
+.hamburger span:nth-child(2) { top: 50%; transform: translateY(-50%); }
+.hamburger span:nth-child(3) { bottom: 0; }
+
+.hamburger.open span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
+
+/* Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-up {
+  opacity: 0;
+}
+
+.animate-up.revealed {
+  animation: fadeInUp 1s forwards cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+
+/* Responsive Grid Utilities */
+.grid-stack {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+  gap: 2rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 6rem;
+}
+
+/* Handheld Terminal Optimization (Zebra/Honeywell) */
+@media (max-width: 480px) {
+  :root {
+    --container-pad: 1rem;
+  }
+  
+  .glass {
+    border-radius: 1rem;
+    padding: 1rem !important;
+  }
+
+  h1 { font-size: 2rem !important; }
+  h2 { font-size: 1.5rem !important; }
+  h3 { font-size: 1.2rem !important; }
+
+  .btn-primary, button {
+    min-height: 48px; /* Large touch targets */
+    padding: 0.8rem 1.5rem !important;
+    font-size: 0.8rem !important;
+  }
+
+  .desktop-nav {
+    display: none !important;
+  }
+
+  /* Compact grid for terminals */
+  .grid-terminal {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* High contrast for industrial visibility */
+  .terminal-card {
+    background: #1a1f2e;
+    border: 2px solid var(--accent);
+    box-shadow: 0 4px 20px rgba(0, 239, 184, 0.1);
+  }
+}
+
+/* Responsive Design System - Modern Tiered Architecture */
+@media (max-width: 1300px) {
+  :root { --container-pad: 2rem; }
+  .hero-section .container > div { padding: 5rem 4rem !important; }
+}
+
+@media (max-width: 1100px) {
+  .hero-section .container > div { grid-template-columns: 1fr !important; text-align: center; }
+  .hero-section .container > div > div:last-child { display: none; } /* Hide the floating card on small tablets to save space */
+  .hero-section .container > div div:first-child { display: flex; flex-direction: column; align-items: center; }
+  h1 { font-size: clamp(3rem, 10vw, 5rem) !important; letter-spacing: -3px !important; }
+}
+
+@media (max-width: 768px) {
+  :root { --container-pad: 1.5rem; }
+  .navbar { width: calc(100% - 2rem) !important; padding: 0.6rem 1.5rem !important; top: 1rem !important; }
+  .nav-logo { height: 32px !important; }
+  .desktop-nav { display: none !important; }
+  .hamburger { display: block; }
+  
+  section { padding: 6rem 0 !important; }
+  h1 { font-size: 2.8rem !important; letter-spacing: -2px !important; line-height: 1 !important; }
+  h2 { font-size: 2.2rem !important; letter-spacing: -1px !important; }
+  
+  .glass { padding: 1.5rem !important; border-radius: 2rem !important; }
+  .hero-section .container > div { padding: 4rem 1.5rem !important; border-radius: 3rem !important; }
+  
+  .btn-primary, .btn-secondary { width: 100%; text-align: center; padding: 1.2rem 2rem !important; }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 2.2rem !important; }
+  p { font-size: 1rem !important; }
+  .navbar { border-radius: 30px !important; }
+}
+
+/* Global Responsive Overrides & Utility Classes */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 1.5rem;
+  border-radius: 1.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
+}
+
+.table-responsive::-webkit-scrollbar {
+  height: 6px;
+}
+.table-responsive::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+}
+
+.scroll-tabs {
+  overflow-x: auto !important;
+  max-width: 100% !important;
+  white-space: nowrap !important;
+  display: flex !important;
+  gap: 1rem !important;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 0.8rem !important;
+}
+
+.scroll-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+/* Dynamic Grid Resiliency to prevent horizontal overflow */
+.grid-stack {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)) !important;
+  gap: 2rem !important;
+}
+
+/* Auto-wrap for B2B dashboards & panels */
+@media (max-width: 1024px) {
+  .glass, .glass-card, .prism-glass {
+    padding: 2.5rem 1.8rem !important;
+    border-radius: 2.5rem !important;
+  }
+  
+  /* Make custom double-column grids wrap vertically */
+  .grid-2 {
+    grid-template-columns: 1fr !important;
+    gap: 3rem !important;
+  }
+  
+  .responsive-grid-split {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .glass, .glass-card, .prism-glass {
+    padding: 1.8rem 1.2rem !important;
+    border-radius: 1.8rem !important;
+  }
+  
+  /* Safe fonts and alignments on mobile */
+  .mobile-text-center {
+    text-align: center !important;
+  }
+  
+  .mobile-flex-column {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 1.5rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .glass, .glass-card, .prism-glass {
+    padding: 1.5rem 1rem !important;
+    border-radius: 1.2rem !important;
+  }
+}
+
+/* --- High-End RFID Tunnel & Order Cards styling --- */
+
+/* Selectable Order Cards */
+.order-select-card {
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 1.5rem;
+  padding: 1.6rem 1.8rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.order-select-card:hover {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(0, 229, 255, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(0, 229, 255, 0.1);
+}
+
+.order-select-card.selected {
+  background: rgba(0, 229, 255, 0.03);
+  border-color: var(--accent);
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.15), inset 0 0 15px rgba(0, 229, 255, 0.1);
+}
+
+/* RFID Tunnel Visualizer */
+.rfid-tunnel-box {
+  height: 250px;
+  background: radial-gradient(circle at 50% 50%, rgba(10, 15, 30, 0.8), rgba(4, 7, 18, 0.95));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 2rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.8);
+}
+
+.rfid-tunnel-scanner-window {
+  position: absolute;
+  width: 140px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 229, 255, 0.05), transparent);
+  border-left: 1px dashed rgba(0, 229, 255, 0.2);
+  border-right: 1px dashed rgba(0, 229, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rfid-scan-laser {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, #00E5FF, transparent);
+  box-shadow: 0 0 15px #00E5FF, 0 0 30px #00E5FF;
+  animation: laserSweep 3s infinite ease-in-out;
+}
+
+.rfid-conveyor-belt {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: repeating-linear-gradient(90deg, #111 0px, #111 10px, #333 10px, #333 20px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+/* Animated tags passing on belt */
+.rfid-conveyor-item {
+  position: absolute;
+  bottom: 44px;
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  animation: itemTravel 4s infinite linear;
+}
+
+.rfid-conveyor-item.scanned {
+  animation: itemTravel 4s infinite linear, itemGlow 4s infinite linear;
+}
+
+/* Animations */
+@keyframes laserSweep {
+  0% { left: 0%; opacity: 0.2; }
+  25% { opacity: 1; }
+  50% { left: 100%; opacity: 0.2; }
+  75% { opacity: 1; }
+  100% { left: 0%; opacity: 0.2; }
+}
+
+@keyframes itemTravel {
+  0% { left: -10%; }
+  100% { left: 110%; }
+}
+
+@keyframes itemGlow {
+  40% {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  }
+  50% {
+    background: rgba(0, 229, 255, 0.1);
+    border-color: #00E5FF;
+    color: #00E5FF;
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.6);
+    transform: scale(1.1);
+  }
+  60% {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    transform: scale(1);
+  }
+}
+
+/* B2B Order Form Split Screen Layout */
+.order-split-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: 3rem;
+  align-items: start;
+  width: 100%;
+}
+
+@media (max-width: 1100px) {
+  .order-split-grid {
+    grid-template-columns: 1fr !important;
+    gap: 3rem !important;
+  }
+}
+
+/* Premium PDF Spec Sheet Column Container */
+.pdf-spec-sheet {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  border-radius: 2.5rem;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  box-shadow: var(--laminar-shadow);
+  position: sticky;
+  top: 2rem;
+}
+
+@media (max-width: 1100px) {
+  .pdf-spec-sheet {
+    position: relative !important;
+    top: 0 !important;
+    padding: 1.5rem !important;
+    border-radius: 1.8rem !important;
+  }
+}
+
+/* Premium PDF Spec Sheet Zoom */
+.pdf-spec-sheet-viewport img {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.pdf-spec-sheet-viewport:hover img {
+  transform: scale(1.04);
+}
+
+.pdf-spec-sheet-viewport:hover .hover-zoom-overlay {
+  opacity: 1 !important;
+}
+
+/* ========================================================
+   LIGHT MODE — Public Pages (About, Sustainability, etc.) Overrides
+   ======================================================== */
+
+/* Fix glass panels and cards shadow in light mode */
+:root.light-mode .glass,
+:root.light-mode .glass-card,
+:root.light-mode .about-page .glass,
+:root.light-mode .sustainability-page .glass {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-color: rgba(15, 23, 42, 0.08) !important;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05) !important;
+}
+
+/* Ensure container backgrounds align with current theme */
+:root.light-mode .sustainability-page section[style*="background"],
+:root.light-mode .about-page section[style*="background"] {
+  background: #f8fafc !important;
+}
+
+
+
+/* Fix hardcoded black/dark hex backgrounds in Light Mode */
+:root.light-mode [style*="background: #05070a"],
+:root.light-mode [style*="background:#05070a"],
+:root.light-mode [style*="background: #0a0a0a"],
+:root.light-mode [style*="background:#0a0a0a"],
+:root.light-mode [style*="background: #0a0f1e"],
+:root.light-mode [style*="background:#0a0f1e"],
+:root.light-mode [style*="background: #0a0d14"],
+:root.light-mode [style*="background:#0a0d14"],
+:root.light-mode [style*="background: #1a1a1a"],
+:root.light-mode [style*="background:#1a1a1a"],
+:root.light-mode [style*="background: #000"],
+:root.light-mode [style*="background:#000"],
+:root.light-mode [style*="background: rgba(4, 7, 18, 0.8)"],
+:root.light-mode [style*="background:rgba(4, 7, 18, 0.8)"],
+:root.light-mode [style*="background: rgba(4,7,18,0.8)"],
+:root.light-mode [style*="background:rgba(4,7,18,0.8)"] {
+  background: var(--midnight) !important;
+}
+
+/* Fix #333 borders in Light Mode */
+:root.light-mode [style*="border: 1px solid #333"],
+:root.light-mode [style*="border:1px solid #333"],
+:root.light-mode [style*="border-color: #333"],
+:root.light-mode [style*="border-color:#333"] {
+  border-color: rgba(15, 23, 42, 0.15) !important;
+}
+
+/* ========================================================
+   RESPONSIVE DESIGN SYSTEM (MOBILE FIXES)
+   ======================================================== */
+
+.responsive-flex {
+  display: flex;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 1024px) {
+  .responsive-flex {
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .responsive-flex {
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+
+  /* Global scaling */
+  h1 { font-size: 2rem !important; }
+  h2 { font-size: 1.5rem !important; }
+  h3 { font-size: 1.25rem !important; }
+
+  /* Cards */
+  .glass-card {
+    padding: 1.5rem !important;
+    border-radius: 1.5rem !important;
+  }
+
+  /* Hide specific mobile stuff */
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  /* Turn sidebars into bottom navigation bars */
+  .admin-sidebar-premium,
+  .customer-sidebar-premium {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    top: auto !important;
+    width: 100% !important;
+    height: 70px !important;
+    flex-direction: row !important;
+    z-index: 9999 !important;
+    padding: 0 1rem !important;
+    border-radius: 20px 20px 0 0 !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    border-top: 1px solid var(--glass-border) !important;
+    background: var(--midnight) !important;
+    box-shadow: 0 -10px 40px rgba(0,0,0,0.5) !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    gap: 1rem !important;
+  }
+
+  .admin-sidebar-premium nav,
+  .customer-sidebar-premium nav {
+    flex-direction: row !important;
+    gap: 0.5rem !important;
+    width: max-content !important;
+  }
+
+  .admin-sidebar-premium a,
+  .customer-sidebar-premium a {
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0.5rem !important;
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    min-width: 60px !important;
+    gap: 0.3rem !important;
+  }
+  
+  .admin-sidebar-premium a span:last-child,
+  .customer-sidebar-premium a span:last-child {
+    font-size: 0.55rem !important;
+    letter-spacing: 0 !important;
+  }
+
+  .admin-sidebar-premium .sidebar-logo,
+  .customer-sidebar-premium .sidebar-logo,
+  .admin-sidebar-premium > div:last-child,
+  .customer-sidebar-premium > div:last-child {
+    display: none !important;
+  }
+
+  /* Adjust main content padding to make room for bottom nav */
+  .admin-layout-content,
+  .customer-layout-content {
+    margin-left: 0 !important;
+    padding: 1rem !important;
+    padding-bottom: 90px !important;
+    width: 100% !important;
+  }
+
+  /* Overrides for specific layouts that use inline flex */
+  .seat-management > div {
+    flex-direction: column !important;
+  }
+  
+  .seat-management > div > div {
+    width: 100% !important;
+    min-width: 100% !important;
+    flex: unset !important;
+  }
+
+  /* Fix hardware dashboard split layout */
+  .hardware-dashboard-split {
+    flex-direction: column !important;
+  }
+  .hardware-dashboard-split > div {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+
+  /* Fix grid layouts */
+  .grid-2, .grid-3, .grid-4 {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ========================================================
+   PREMIUM COMPACTNESS & VISUAL ENHANCEMENT SYSTEM
+   ======================================================== */
+
+/* Global Headings Scale-Down Override */
+h1 {
+  font-size: clamp(1.8rem, 4.5vw, 2.8rem) !important;
+  letter-spacing: -1.5px !important;
+  line-height: 1.1 !important;
+}
+
+h2 {
+  font-size: clamp(1.4rem, 3.5vw, 2.0rem) !important;
+  letter-spacing: -1px !important;
+  line-height: 1.2 !important;
+}
+
+h3 {
+  font-size: clamp(1.15rem, 2.5vw, 1.5rem) !important;
+  letter-spacing: -0.5px !important;
+  line-height: 1.25 !important;
+}
+
+h4 {
+  font-size: clamp(1rem, 2vw, 1.25rem) !important;
+  letter-spacing: 0 !important;
+}
+
+/* Table Rows & Cells Compactness Override */
+table th {
+  padding: 0.8rem 1.2rem !important;
+  font-size: 0.75rem !important;
+  font-weight: 900 !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
+}
+
+table td {
+  padding: 0.8rem 1.2rem !important;
+  font-size: 0.9rem !important;
+}
+
+/* Custom list items inside cards and panels */
+.prism-glass.holographic {
+  padding: 2.2rem 2.2rem !important; /* Tighter padding for order cards */
+  gap: 1.8rem !important;
+  min-height: auto !important; /* Remove excessive height */
+  border-radius: 2.5rem !important;
+}
+
+/* Scale down the card title sizes */
+.prism-glass.holographic div[style*="font-size: 2.8rem"],
+.prism-glass.holographic div[style*="font-size:2.8rem"] {
+  font-size: 1.8rem !important;
+}
+
+.prism-glass.holographic div[style*="gap: 3rem"],
+.prism-glass.holographic div[style*="gap:3rem"] {
+  gap: 1.5rem !important;
+}
+
+/* Order/Shipment details container items */
+.glass-card {
+  padding: 2rem !important;
+}
+
+/* Shrink sub-containers in cards / lists */
+.glass div[style*="padding: 2rem"],
+.glass div[style*="padding: 2.5rem"],
+.glass div[style*="padding:2rem"],
+.glass div[style*="padding:2.5rem"] {
+  padding: 1.2rem !important;
+  border-radius: 1.2rem !important;
+}
+
+.glass div[style*="gap: 2.5rem"],
+.glass div[style*="gap:2.5rem"] {
+  gap: 1.2rem !important;
+}
+
+/* Elegant Table Hover Effects & UI Polish */
+tbody tr {
+  transition: background-color 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+tbody tr:hover {
+  background: rgba(56, 189, 248, 0.05) !important;
+}
+
+:root.light-mode tbody tr:hover {
+  background: rgba(2, 132, 199, 0.04) !important;
+}
+
+/* ========================================================
+   MOBILE SIZING MATRIX CARD STEPPER & LAYOUT
+   ======================================================== */
+.mobile-size-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 100%;
+}
+
+.mobile-size-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--glass-border);
+  border-radius: 1.5rem;
+  padding: 1rem 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: var(--laminar-shadow);
+}
+
+.mobile-size-card.active {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--text-primary);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+.mobile-size-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  flex: 1;
+  min-width: 140px;
+}
+
+.mobile-size-label {
+  font-size: 1.25rem;
+  font-weight: 950;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+}
+
+.mobile-size-specs {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  white-space: normal;
+  word-break: break-word;
+  line-height: 1.4;
+}
+
+.mobile-stepper {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  border-radius: 100px;
+  padding: 0.3rem 0.4rem;
+  transition: border-color 0.2s ease;
+}
+
+.mobile-stepper.active {
+  border-color: var(--text-primary);
+}
+
+.stepper-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--glass-border);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-primary);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease;
+}
+
+.stepper-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--text-primary);
+}
+
+.stepper-btn:active {
+  transform: scale(0.9);
+}
+
+.stepper-input {
+  width: 45px;
+  border: none;
+  background: transparent;
+  color: var(--text-primary);
+  font-weight: 950;
+  font-size: 1.15rem;
+  text-align: center;
+  outline: none;
+  -moz-appearance: textfield;
+}
+
+.stepper-input::-webkit-outer-spin-button,
+.stepper-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* ========================================================
+   LIGHT MODE — Visibility & Accessibility Overrides
+   ======================================================== */
+:root.light-mode h1,
+:root.light-mode h2,
+:root.light-mode h3,
+:root.light-mode h4,
+:root.light-mode h5,
+:root.light-mode h6 {
+  color: var(--text-primary) !important;
+}
+
+:root.light-mode p,
+:root.light-mode li,
+:root.light-mode label {
+  color: var(--text-secondary) !important;
+}
+
+/* Override inline styling for white text in light mode */
+:root.light-mode [style*="color: white"]:not(.category-card-premium *):not(.process-step-num *):not(footer *):not(.login-page *):not(.btn-primary):not(.btn-primary *):not(button[style*="linear-gradient"]):not(button[style*="linear-gradient"] *):not(button[style*="var(--accent)"]):not(button[style*="var(--accent)"] *):not(button[style*="background"]):not(button[style*="background"] *):not(.mobile-bottom-bar):not(.mobile-bottom-bar *):not(.force-white-text):not(.force-white-text *):not(.sorter-wall-badge):not(.sorter-wall-badge *),
+:root.light-mode [style*="color:white"]:not(.category-card-premium *):not(.process-step-num *):not(footer *):not(.login-page *):not(.btn-primary):not(.btn-primary *):not(button[style*="linear-gradient"]):not(button[style*="linear-gradient"] *):not(button[style*="var(--accent)"]):not(button[style*="var(--accent)"] *):not(button[style*="background"]):not(button[style*="background"] *):not(.mobile-bottom-bar):not(.mobile-bottom-bar *):not(.force-white-text):not(.force-white-text *):not(.sorter-wall-badge):not(.sorter-wall-badge *),
+:root.light-mode [style*="color: #fff"]:not(.category-card-premium *):not(.process-step-num *):not(footer *):not(.login-page *):not(.btn-primary):not(.btn-primary *):not(button[style*="linear-gradient"]):not(button[style*="linear-gradient"] *):not(button[style*="var(--accent)"]):not(button[style*="var(--accent)"] *):not(button[style*="background"]):not(button[style*="background"] *):not(.mobile-bottom-bar):not(.mobile-bottom-bar *):not(.force-white-text):not(.force-white-text *):not(.sorter-wall-badge):not(.sorter-wall-badge *),
+:root.light-mode [style*="color:#fff"]:not(.category-card-premium *):not(.process-step-num *):not(footer *):not(.login-page *):not(.btn-primary):not(.btn-primary *):not(button[style*="linear-gradient"]):not(button[style*="linear-gradient"] *):not(button[style*="var(--accent)"]):not(button[style*="var(--accent)"] *):not(button[style*="background"]):not(button[style*="background"] *):not(.mobile-bottom-bar):not(.mobile-bottom-bar *):not(.force-white-text):not(.force-white-text *):not(.sorter-wall-badge):not(.sorter-wall-badge *),
+:root.light-mode [style*="color: #ffffff"]:not(.category-card-premium *):not(.process-step-num *):not(footer *):not(.login-page *):not(.btn-primary):not(.btn-primary *):not(button[style*="linear-gradient"]):not(button[style*="linear-gradient"] *):not(button[style*="var(--accent)"]):not(button[style*="var(--accent)"] *):not(button[style*="background"]):not(button[style*="background"] *):not(.mobile-bottom-bar):not(.mobile-bottom-bar *):not(.force-white-text):not(.force-white-text *):not(.sorter-wall-badge):not(.sorter-wall-badge *),
+:root.light-mode [style*="color:#ffffff"]:not(.category-card-premium *):not(.process-step-num *):not(footer *):not(.login-page *):not(.btn-primary):not(.btn-primary *):not(button[style*="linear-gradient"]):not(button[style*="linear-gradient"] *):not(button[style*="var(--accent)"]):not(button[style*="var(--accent)"] *):not(button[style*="background"]):not(button[style*="background"] *):not(.mobile-bottom-bar):not(.mobile-bottom-bar *):not(.force-white-text):not(.force-white-text *):not(.sorter-wall-badge):not(.sorter-wall-badge *),
+:root.light-mode [style*="color: rgb(255, 255, 255)"]:not(.category-card-premium *):not(.process-step-num *):not(footer *):not(.login-page *):not(.btn-primary):not(.btn-primary *):not(button[style*="linear-gradient"]):not(button[style*="linear-gradient"] *):not(button[style*="var(--accent)"]):not(button[style*="var(--accent)"] *):not(button[style*="background"]):not(button[style*="background"] *):not(.mobile-bottom-bar):not(.mobile-bottom-bar *):not(.force-white-text):not(.force-white-text *):not(.sorter-wall-badge):not(.sorter-wall-badge *),
+:root.light-mode [style*="color:rgb(255,255,255)"]:not(.category-card-premium *):not(.process-step-num *):not(footer *):not(.login-page *):not(.btn-primary):not(.btn-primary *):not(button[style*="linear-gradient"]):not(button[style*="linear-gradient"] *):not(button[style*="var(--accent)"]):not(button[style*="var(--accent)"] *):not(button[style*="background"]):not(button[style*="background"] *):not(.mobile-bottom-bar):not(.mobile-bottom-bar *):not(.force-white-text):not(.force-white-text *):not(.sorter-wall-badge):not(.sorter-wall-badge *) {
+  color: var(--text-primary) !important;
+}
+
+:root.light-mode [style*="color: rgba(255, 255, 255"]:not(.category-card-premium *):not(.process-step-num *):not(footer *):not(.login-page *):not(.btn-primary):not(.btn-primary *):not(button[style*="linear-gradient"]):not(button[style*="linear-gradient"] *):not(button[style*="var(--accent)"]):not(button[style*="var(--accent)"] *):not(button[style*="background"]):not(button[style*="background"] *):not(.mobile-bottom-bar):not(.mobile-bottom-bar *):not(.force-white-text):not(.force-white-text *):not(.sorter-wall-badge):not(.sorter-wall-badge *),
+:root.light-mode [style*="color:rgba(255,255,255"]:not(.category-card-premium *):not(.process-step-num *):not(footer *):not(.login-page *):not(.btn-primary):not(.btn-primary *):not(button[style*="linear-gradient"]):not(button[style*="linear-gradient"] *):not(button[style*="var(--accent)"]):not(button[style*="var(--accent)"] *):not(button[style*="background"]):not(button[style*="background"] *):not(.mobile-bottom-bar):not(.mobile-bottom-bar *):not(.force-white-text):not(.force-white-text *):not(.sorter-wall-badge):not(.sorter-wall-badge *) {
+  color: var(--text-secondary) !important;
+}
+
+/* Sorter wall color badges and explicit force-white elements */
+.force-white-text,
+.sorter-wall-badge,
+:root.light-mode .force-white-text,
+:root.light-mode .sorter-wall-badge,
+:root.light-mode span.force-white-text,
+:root.light-mode span.sorter-wall-badge,
+:root.light-mode div.force-white-text,
+:root.light-mode div.sorter-wall-badge,
+:root.light-mode strong.force-white-text {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Make sure glass elements have readable text in light mode */
+:root.light-mode .glass,
+:root.light-mode .glass-card,
+:root.light-mode .prism-glass {
+  color: var(--text-secondary) !important;
+}
+:root.light-mode .glass h1,
+:root.light-mode .glass h2,
+:root.light-mode .glass h3,
+:root.light-mode .glass h4,
+:root.light-mode .glass-card h1,
+:root.light-mode .glass-card h2,
+:root.light-mode .glass-card h3,
+:root.light-mode .glass-card h4 {
+  color: var(--text-primary) !important;
+}
+
+/* Ensure category cards keep white/light text over their dark overlay images in Light Mode */
+:root.light-mode .category-card-premium h3,
+:root.light-mode .category-card-premium .category-card-subtitle {
+  color: #ffffff !important;
+}
+:root.light-mode .category-card-premium p {
+  color: #cbd5e1 !important;
+}
+
+/* Style for background numbers in process step cards to prevent overlap readability issues in Light Mode */
+.process-step-num {
+  color: rgba(255, 255, 255, 0.04) !important;
+}
+:root.light-mode .process-step-num {
+  color: rgba(15, 23, 42, 0.04) !important;
+}
+
+/* Scroll to Top Button */
+.scroll-to-top-btn {
+  position: fixed;
+  right: 2rem;
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+  background: var(--text-primary);
+}
+
+:root.light-mode .scroll-to-top-btn {
+  color: #ffffff !important;
+}
+
+:root:not(.light-mode) .scroll-to-top-btn {
+  color: #0a0f1e !important;
+}
+
+.scroll-to-top-btn:hover {
+  transform: scale(1.1);
+  background: var(--accent) !important;
+  color: #ffffff !important;
+}
+
+
+
+h1, h2, h3, h4, h5, h6, .brand-font {
+  font-family: var(--font-heading) !important;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.btn-primary, .btn-secondary, button {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 4px !important;
+  font-family: 'Outfit', sans-serif;
+}
+.glass, .glass-card, .glass-panel {
+  border-radius: 4px !important;
+}
+
+/* Seat Management Excel Simulator Custom Grid Styles */
+.seat-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .seat-grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.excel-grid-wrapper {
+  overflow: auto;
+  min-height: 400px;
+  max-height: 600px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Scrollbar styles for Excel simulator grid */
+.excel-grid-wrapper::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.excel-grid-wrapper::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 6px;
+}
+
+.excel-grid-wrapper::-webkit-scrollbar-thumb {
+  background: rgba(16, 124, 65, 0.35); /* Excel green thumb */
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  border-radius: 6px;
+}
+
+.excel-grid-wrapper::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 124, 65, 0.6);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+/* Dark mode scrollbars */
+:root:not(.light-mode) .excel-grid-wrapper::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+:root:not(.light-mode) .excel-grid-wrapper::-webkit-scrollbar-thumb {
+  background: rgba(16, 124, 65, 0.55);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+:root:not(.light-mode) .excel-grid-wrapper::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 124, 65, 0.85);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+/* Light mode specific scrollbar hover overrides */
+:root.light-mode .excel-grid-wrapper::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.03);
+}
+
+:root.light-mode .excel-grid-wrapper::-webkit-scrollbar-thumb {
+  background: rgba(16, 124, 65, 0.3);
+}
+
+:root.light-mode .excel-grid-wrapper::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 124, 65, 0.55);
+}
+
+/* Hide scrollbar for Excel-style tab bar */
+.excel-tabs-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Force label action button white text when enabled in light mode */
+:root.light-mode button.label-action-btn:not(:disabled) {
+  color: #ffffff !important;
+}
+
+/* Hide number input spinners on desktop only */
+@media (min-width: 769px) {
+  input[type=number]::-webkit-outer-spin-button,
+  input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+}

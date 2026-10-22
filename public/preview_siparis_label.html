@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sipariş Koli Etiketi</title>
+    <style>
+        @page { size: 100mm 80mm; margin: 0; }
+        body {
+            margin: 0; padding: 2.5mm; width: 100mm; height: 80mm;
+            font-family: 'Segoe UI', Arial, sans-serif; background: #fff; color: #000; box-sizing: border-box;
+        }
+        .label-box {
+            width: 95mm; height: 75mm; border: 2.5px solid #000; border-radius: 4px;
+            padding: 2mm 2.5mm; box-sizing: border-box; display: flex; flex-direction: row; position: relative;
+        }
+        .main-content { width: 75mm; display: flex; flex-direction: column; padding-right: 2mm; box-sizing: border-box; }
+        
+        .barcode-side {
+            width: 17mm;
+            border-left: 2px dashed #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            box-sizing: border-box;
+            overflow: visible;
+        }
+        .rotated-bc {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 66mm;
+            height: 16mm;
+            margin-left: -33mm;
+            margin-top: -8mm;
+            transform: rotate(-90deg);
+            transform-origin: center center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .rotated-bc svg {
+            width: 64mm !important;
+            height: 15mm !important;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #000; padding-bottom: 1mm; margin-bottom: 1.2mm; }
+        .logo-title { font-size: 11pt; font-weight: 900; letter-spacing: 0.5px; }
+        .badge-bulk { font-size: 7.5pt; font-weight: bold; background: #0275d8; color: #fff; padding: 1.5px 5px; border-radius: 2px; }
+        .field-lbl { font-size: 5.5pt; color: #555; text-transform: uppercase; font-weight: bold; }
+        .field-val { font-size: 9.5pt; font-weight: bold; }
+        .order-meta-grid {
+            display: grid; grid-template-columns: 1.2fr 1.8fr 1fr; gap: 1mm;
+            border: 1.5px solid #000; border-radius: 3px; padding: 1.2mm 1.5mm; margin-bottom: 1.2mm; background: #fdfdfd;
+        }
+        .box-highlight { background: #000; color: #fff; text-align: center; border-radius: 2px; padding: 1px 0; }
+        .box-highlight .field-lbl { color: #ccc; }
+        .box-highlight .field-val { color: #fff; font-size: 11pt; }
+        table.items-tbl { width: 100%; border-collapse: collapse; font-size: 6.8pt; flex-grow: 1; }
+        table.items-tbl th, table.items-tbl td { border: 1px solid #000; padding: 1mm 1.5mm; text-align: left; }
+        table.items-tbl th { background: #f0f0f0; font-weight: bold; }
+        .qty-col { text-align: center !important; font-weight: bold; width: 32px; }
+    </style>
+</head>
+<body>
+    <div class="label-box">
+        <div class="main-content">
+            <div class="header">
+                <span class="logo-title">VOG TEKSTİL - FORD</span>
+                <span class="badge-bulk">SEVKİYAT KOLİSİ</span>
+            </div>
+            
+            <div class="order-meta-grid">
+                <div><div class="field-lbl">SİPARİŞ NO</div><div class="field-val" style="color:#0275d8; font-size:11pt;">#16903</div></div>
+                <div><div class="field-lbl">MÜŞTERİ / CARİ</div><div class="field-val">DOĞUŞ OTO PAZ.</div></div>
+                <div class="box-highlight">
+                    <div class="field-lbl">KOLİ NO</div>
+                    <div class="field-val">1 / 1</div>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 1mm;">
+                <div class="field-lbl">ÜRÜN / MODEL TANIMI</div>
+                <div class="field-val" style="font-size:8.5pt;">2026 KIŞLIK FORD SOFTSHELL MONT (24ST)</div>
+            </div>
+
+            <table class="items-tbl">
+                <thead>
+                    <tr>
+                        <th style="width: 25%;">Beden</th>
+                        <th>Stok / SKU Kodu</th>
+                        <th class="qty-col">Koli İçi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><b>L</b> Beden</td><td>153.01.0001</td><td class="qty-col">2 Adet</td></tr>
+                </tbody>
+                <tfoot>
+                    <tr style="background:#eef7ff;">
+                        <td colspan="2" style="text-align:right; font-weight:bold;">Koli Toplamı / Sipariş Toplamı:</td>
+                        <td class="qty-col" style="font-size:8pt; color:#0275d8;">2 / 2</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="barcode-side">
+            <div class="rotated-bc"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384.1 67.0" width="384.1" height="67.0" style="max-width: 100%; display: block; margin: 0 auto;"><rect x="0.0" y="0" width="4.6" height="50" fill="#000000"/><rect x="6.9" y="0" width="2.3" height="50" fill="#000000"/><rect x="13.8" y="0" width="2.3" height="50" fill="#000000"/><rect x="25.3" y="0" width="2.3" height="50" fill="#000000"/><rect x="32.2" y="0" width="6.9" height="50" fill="#000000"/><rect x="43.7" y="0" width="4.6" height="50" fill="#000000"/><rect x="50.6" y="0" width="4.6" height="50" fill="#000000"/><rect x="59.8" y="0" width="6.9" height="50" fill="#000000"/><rect x="69.0" y="0" width="2.3" height="50" fill="#000000"/><rect x="75.9" y="0" width="6.9" height="50" fill="#000000"/><rect x="87.4" y="0" width="2.3" height="50" fill="#000000"/><rect x="92.0" y="0" width="4.6" height="50" fill="#000000"/><rect x="101.2" y="0" width="2.3" height="50" fill="#000000"/><rect x="108.1" y="0" width="6.9" height="50" fill="#000000"/><rect x="117.3" y="0" width="4.6" height="50" fill="#000000"/><rect x="126.5" y="0" width="4.6" height="50" fill="#000000"/><rect x="135.7" y="0" width="2.3" height="50" fill="#000000"/><rect x="140.3" y="0" width="6.9" height="50" fill="#000000"/><rect x="151.8" y="0" width="2.3" height="50" fill="#000000"/><rect x="158.7" y="0" width="4.6" height="50" fill="#000000"/><rect x="165.6" y="0" width="6.9" height="50" fill="#000000"/><rect x="177.1" y="0" width="2.3" height="50" fill="#000000"/><rect x="181.7" y="0" width="4.6" height="50" fill="#000000"/><rect x="193.2" y="0" width="6.9" height="50" fill="#000000"/><rect x="202.4" y="0" width="2.3" height="50" fill="#000000"/><rect x="211.6" y="0" width="6.9" height="50" fill="#000000"/><rect x="220.8" y="0" width="4.6" height="50" fill="#000000"/><rect x="227.7" y="0" width="2.3" height="50" fill="#000000"/><rect x="236.9" y="0" width="4.6" height="50" fill="#000000"/><rect x="243.8" y="0" width="6.9" height="50" fill="#000000"/><rect x="253.0" y="0" width="4.6" height="50" fill="#000000"/><rect x="264.5" y="0" width="2.3" height="50" fill="#000000"/><rect x="273.7" y="0" width="2.3" height="50" fill="#000000"/><rect x="278.3" y="0" width="2.3" height="50" fill="#000000"/><rect x="285.2" y="0" width="4.6" height="50" fill="#000000"/><rect x="292.1" y="0" width="6.9" height="50" fill="#000000"/><rect x="303.6" y="0" width="2.3" height="50" fill="#000000"/><rect x="310.5" y="0" width="6.9" height="50" fill="#000000"/><rect x="322.0" y="0" width="4.6" height="50" fill="#000000"/><rect x="328.9" y="0" width="4.6" height="50" fill="#000000"/><rect x="340.4" y="0" width="2.3" height="50" fill="#000000"/><rect x="349.6" y="0" width="2.3" height="50" fill="#000000"/><rect x="354.2" y="0" width="4.6" height="50" fill="#000000"/><rect x="365.7" y="0" width="6.9" height="50" fill="#000000"/><rect x="374.9" y="0" width="2.3" height="50" fill="#000000"/><rect x="379.5" y="0" width="4.6" height="50" fill="#000000"/><text x="192.0" y="65.0" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13px" font-weight="bold" fill="#000000">16903-KOLI-1</text></svg></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOG Tekstil - Kurumsal Teknik Kapsam ve Operasyonel Plan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a1a1a;
+            --accent: #c5a059;
+            --text: #333;
+            --light-bg: #f9f9f9;
+            --border: #e0e0e0;
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm;
+            margin: 10mm auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        @media print {
+            body { background: none; }
+            .page { 
+                margin: 0; 
+                box-shadow: none;
+                width: 100%;
+            }
+            .no-print { display: none; }
+        }
+
+        header {
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo-img {
+            height: 70px;
+            width: auto;
+            object-fit: contain;
+            background: transparent;
+            padding: 0;
+            border-radius: 0;
+        }
+
+        .logo-text {
+            font-weight: 700;
+            font-size: 24px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--primary);
+        }
+
+        .document-type {
+            font-weight: 400;
+            font-size: 14px;
+            color: var(--accent);
+            text-align: right;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--accent);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-left: 4px solid var(--accent);
+            padding-left: 15px;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--primary);
+            margin-top: 20px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .version-badge {
+            background: var(--primary);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid var(--border);
+            margin: 30px 0;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .feature-item {
+            background: var(--light-bg);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 3px solid var(--accent);
+        }
+
+        .feature-title {
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 5px;
+            font-size: 15px;
+        }
+
+        .check-icon {
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        .pending-icon {
+            color: #f39c12;
+            font-weight: bold;
+        }
+
+        .feature-desc {
+            font-size: 13px;
+            color: #666;
+            margin-left: 25px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 25px;
+            margin: 5px 0;
+        }
+
+        li {
+            font-size: 13px;
+            position: relative;
+            margin-bottom: 5px;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--accent);
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        footer {
+            margin-top: 60px;
+            font-size: 12px;
+            color: #999;
+            text-align: center;
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+        }
+
+        .btn-print {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-print:hover {
+            background: #b08d4a;
+        }
+        /* Sayfa Sonu Düzenlemeleri (Print Optimization) */
+        h2 { 
+            page-break-after: avoid; 
+            break-after: avoid; 
+        }
+
+        .feature-item, .feature-grid {
+            page-break-inside: avoid;
+            break-inside: avoid;
+        }
+
+        .footer {
+            page-break-inside: avoid;
+            break-inside: avoid;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page">
+        <header>
+            <div class="logo-container">
+                <img src="public/vog_logo.png" alt="VOG Logo" class="logo-img">
+            </div>
+            <div class="document-type">
+                KURUMSAL TEKNİK KAPSAM BELGESİ<br>
+                <span class="version-badge">V1.1 (Premium Enterprise)</span>
+            </div>
+        </header>
+
+        <h1>Dijital Dönüşüm & Akıllı Üretim Ekosistemi</h1>
+        <p>Bu belge, VOG Tekstil'in üretim, lojistik ve müşteri yönetimi süreçlerini uçtan uca dijitalleştiren "VOG Enterprise" platformunun teknik mimarisini, mevcut yeteneklerini ve gelecek vizyonunu kapsamaktadır.</p>
+
+        <hr>
+
+        <h2>1. STRATEJİK TASARIM VE KULLANICI DENEYİMİ (UX)</h2>
+        <p>Sistem, tekstil endüstrisinin dinamik yapısına uygun olarak "Hız ve Hassasiyet" odağıyla tasarlanmıştır.</p>
+        
+        <div class="feature-grid">
+            <div class="feature-item">
+                <div class="feature-title"><span class="check-icon">✓</span> Multi-Tenant Global Altyapı</div>
+                <ul class="feature-desc">
+                    <li><b>Dil & SEO:</b> Türkçe ve İngilizce dillerinde tam yerelleştirilmiş içerik ve meta-veriler.</li>
+                    <li><b>Responsive Dinamikler:</b> 10.1 inç endüstriyel tabletlerden 27 inç yönetici monitörlerine kadar tam uyumluluk.</li>
+                </ul>
+            </div>
+            <div class="feature-item">
+                <div class="feature-title"><span class="check-icon">✓</span> Endüstriyel Arayüz Standartları</div>
+                <div class="feature-desc">Atölye ortamında (eldivenli kullanım dahil) hata riskini minimize eden "Large Touch Target" (48px+) buton mimarisi.</div>
+            </div>
+        </div>
+
+        <h2>2. B2B MÜŞTERİ YÖNETİMİ VE AKILLI SİPARİŞ</h2>
+        <p>Müşterilerinizin sipariş verme sürecini bir "Deneyim" haline getiren dijital portal yetenekleri:</p>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <div class="feature-title"><span class="check-icon">✓</span> Hiyerarşik Bayi Yönetimi</div>
+                <div class="feature-desc">Müşterilerin kendi alt bayilerini (Sub-customers) yönetebildiği, yetki tabanlı erişim kontrolü sunan yapı.</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-title"><span class="check-icon">✓</span> Tekstil Spesifik Matris Girişi</div>
+                <ul class="feature-desc">
+                    <li><b>Boyut Dağılımı:</b> S'den XXL'e kadar kumaş ve model bazlı miktar girişi.</li>
+                    <li><b>Anlık Maliyet Analizi:</b> Seçilen beden ve kumaş türüne göre üretim maliyetlerinin otomatik projeksiyonu.</li>
+                    <li><b>Dosya Havuzu:</b> Nakış/Baskı logolarının yüksek çözünürlüklü olarak siparişe eklenmesi.</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>3. OPERASYONEL ÜRETİM TAKİBİ (OMS)</h2>
+        <p>Ham maddeden bitmiş ürüne kadar her aşamanın dijital izi:</p>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <div class="feature-title"><span class="check-icon">✓</span> 10 Aşamalı Üretim Hattı</div>
+                <div class="feature-desc">Kumaş Testi > Pastal > Kesim > Tasnif > Dikim > Ütü > Kalite Kontrol > Paketleme > Koli > Sevkiyat.</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-title"><span class="check-icon">✓</span> Kalite Güvence (QA) Protokolü</div>
+                <div class="feature-desc">Hata payını sıfırlayan dijital kontrol listeleri ve hatalı ürünlerin fotoğraflı dokümantasyonu.</div>
+            </div>
+        </div>
+
+        <h2>4. AKILLI LOJİSTİK VE SORTER ENTEGRASYONU</h2>
+        <p>Lojistik darboğazlarını ortadan kaldıran yüksek teknoloji modülü:</p>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <div class="feature-title"><span class="check-icon">✓</span> High-Speed Sorter Takibi</div>
+                <div class="feature-desc">Saatte 800+ ürün ayrıştırma kapasiteli Sorter makinesi ile gerçek zamanlı veri senkronizasyonu.</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-title"><span class="check-icon">✓</span> RFID / Anten Tünel Denetimi</div>
+                <div class="feature-desc">SICK RFID sistemleri ile fiziksel koli içeriğinin %100 dijital doğrulanması ve Logo ERP faturalama tetiklemesi.</div>
+            </div>
+        </div>
+
+        <h2>5. YOL HARİTASI (GELECEK VİZYONU)</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <div class="feature-title"><span class="pending-icon">○</span> AI Predictive Delivery</div>
+                <div class="feature-desc">Üretim hızı verilerini kullanarak müşterilere "Kesin Teslimat Tarihi" sunan yapay zeka desteği.</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-title"><span class="pending-icon">○</span> Global Payment Gateways</div>
+                <div class="feature-desc">Uluslararası müşteriler için Stripe/PayPal üzerinden dijital ödeme entegrasyonu.</div>
+            </div>
+        </div>
+
+        <footer>
+        </footer>
+    </div>
+
+</body>
+</html>

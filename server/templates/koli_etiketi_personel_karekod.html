@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Personel Koli Etiketi</title>
+    <style>
+        @page {
+            size: 100mm 80mm;
+            margin: 0;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100mm;
+            height: 80mm;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .label-container {
+            width: 95mm;
+            height: 75mm;
+            border: 2.5px solid #000;
+            border-radius: 4px;
+            padding: 2mm 2.5mm;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+        }
+        .content-left {
+            width: 71mm;
+            display: flex;
+            flex-direction: column;
+            padding-right: 2mm;
+            box-sizing: border-box;
+        }
+        .barcode-sidebar {
+            width: 21mm;
+            border-left: 2px dashed #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            box-sizing: border-box;
+            padding: 2mm 1mm;
+        }
+        .rotated-barcode {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5mm;
+        }
+        .rotated-barcode svg {
+            width: 18mm !important;
+            height: 18mm !important;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #000;
+            padding-bottom: 1mm;
+            margin-bottom: 1.2mm;
+        }
+        .logo {
+            font-size: 11pt;
+            font-weight: 900;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        .badge {
+            font-size: 7.5pt;
+            font-weight: bold;
+            background-color: #000;
+            color: #fff;
+            padding: 1.5px 5px;
+            border-radius: 2px;
+        }
+        .dealer-row {
+            margin-bottom: 1.2mm;
+        }
+        .field-lbl {
+            font-size: 5.5pt;
+            color: #555;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .field-val {
+            font-size: 9.5pt;
+            font-weight: bold;
+        }
+        .grid-box {
+            display: grid;
+            grid-template-columns: 1.4fr 1.2fr 0.8fr 0.8fr;
+            gap: 1mm;
+            border: 1.5px solid #000;
+            border-radius: 3px;
+            padding: 1.2mm 1.5mm;
+            margin-bottom: 1.2mm;
+            background-color: #fdfdfd;
+        }
+        table.product-list {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 6.8pt;
+            flex-grow: 1;
+        }
+        table.product-list th, table.product-list td {
+            border: 1px solid #000;
+            padding: 1mm 1.5mm;
+            text-align: left;
+        }
+        table.product-list th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+        table.product-list td.qty {
+            text-align: center;
+            font-weight: bold;
+            width: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="label-container">
+        <!-- LEFT MAIN CONTENT -->
+        <div class="content-left">
+            <!-- HEADER -->
+            <div class="header">
+                <div class="logo">VOG TEKSTİL - {{brand}}</div>
+                <div class="badge">PERSONEL KOLİSİ</div>
+            </div>
+
+            <!-- BAYI ADI -->
+            <div class="dealer-row">
+                <div class="field-lbl">BAYİ / SERVİS ADI</div>
+                <div class="field-val">{{dealer_name}}</div>
+            </div>
+
+            <!-- GRID INFO -->
+            <div class="grid-box">
+                <div>
+                    <div class="field-lbl">PERSONEL İSMİ</div>
+                    <div class="field-val" style="color: #d9534f;">{{staff_name}}</div>
+                </div>
+                <div>
+                    <div class="field-lbl">BÖLÜM / GÖREV</div>
+                    <div class="field-val">{{department}}</div>
+                </div>
+                <div>
+                    <div class="field-lbl">CİNSİYET</div>
+                    <div class="field-val">{{gender}}</div>
+                </div>
+                <div>
+                    <div class="field-lbl">BEDEN</div>
+                    <div class="field-val">{{top_size}}</div>
+                </div>
+            </div>
+
+            <!-- PRODUCT LIST TABLE -->
+            <table class="product-list">
+                <thead>
+                    <tr>
+                        <th>Parça / SKU</th>
+                        <th>Ürün Adı</th>
+                        <th class="qty">Adet</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{product_rows}}
+                </tbody>
+                <tfoot>
+                    <tr style="background: #f9f9f9;">
+                        <td colspan="2" style="text-align: right; font-weight: bold;">Toplam:</td>
+                        <td class="qty">{{total_qty}}</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <!-- RIGHT SIDEBAR VERTICAL LARGE BARCODE -->
+        <div class="barcode-sidebar">
+            <div class="rotated-barcode">
+                {{barcode_svg}}
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            if (!window.location.search.includes('noprint=true')) {
+                setTimeout(() => { window.print(); }, 500);
+            }
+        });
+    </script>
+</body>
+</html>

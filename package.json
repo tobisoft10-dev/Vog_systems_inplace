@@ -1,0 +1,52 @@
+{
+  "name": "vog-tekstil-premium",
+  "private": true,
+  "version": "1.0.3",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "server": "node server/app.js",
+    "download-logo": "node scratch/download_logo.cjs",
+    "download-original": "node scratch/download_original_assets.cjs",
+    "crawl-catalog": "node scratch/crawl_catalog.cjs",
+    "download-scraped-assets": "node scratch/download_scraped_assets.cjs",
+    "skills": "skills",
+    "skills:list": "skills list",
+    "skills:find": "skills find"
+  },
+  "dependencies": {
+    "@bwip-js/browser": "^4.11.2",
+    "@supabase/supabase-js": "^2.117.3",
+    "crypto-js": "^4.2.0",
+    "framer-motion": "^12.40.0",
+    "jsonwebtoken": "^9.0.3",
+    "jspdf": "^4.2.1",
+    "jspdf-autotable": "^5.0.7",
+    "node-machine-id": "^1.1.12",
+    "puppeteer": "^24.42.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-router-dom": "^7.13.2",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@playwright/test": "^1.64.1",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-basic-ssl": "^2.3.0",
+    "@vitejs/plugin-react": "^6.0.1",
+    "docx": "^9.7.1",
+    "eslint": "^9.39.4",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.4.0",
+    "skills": "^1.7.0",
+    "supertest": "^7.2.2",
+    "vite": "^8.0.1",
+    "vitest": "^4.1.9"
+  }
+}

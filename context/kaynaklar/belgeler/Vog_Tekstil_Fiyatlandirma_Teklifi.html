@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOG Tekstil - Teknik Teklif ve Fiyatlandırma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a1a1a;
+            --accent: #c5a059;
+            --text: #333;
+            --light-bg: #f9f9f9;
+            --border: #e0e0e0;
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm;
+            margin: 10mm auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        @media print {
+            body { background: none; }
+            .page { 
+                margin: 0; 
+                box-shadow: none;
+                width: 100%;
+            }
+            .no-print { display: none; }
+        }
+
+        header {
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo-img {
+            height: 70px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .logo-text {
+            font-weight: 700;
+            font-size: 24px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--primary);
+        }
+
+        .document-type {
+            font-weight: 400;
+            font-size: 14px;
+            color: var(--accent);
+            text-align: right;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--accent);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 5px;
+        }
+
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        .price-table th {
+            text-align: left;
+            background: var(--primary);
+            color: white;
+            padding: 12px 15px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .price-table td {
+            padding: 15px;
+            border-bottom: 1px solid var(--border);
+            font-size: 14px;
+            vertical-align: top;
+        }
+
+        .price-table tr:hover {
+            background-color: #fefcf8;
+        }
+
+        .item-title {
+            font-weight: 600;
+            color: var(--primary);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .item-desc {
+            font-size: 12px;
+            color: #666;
+            display: block;
+        }
+
+        .price-col {
+            font-weight: 700;
+            color: var(--primary);
+            text-align: right;
+            white-space: nowrap;
+            width: 120px;
+        }
+
+        .total-section {
+            margin-top: 40px;
+            background: var(--light-bg);
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid var(--accent);
+        }
+
+        .total-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+        .total-row.grand-total {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--accent);
+            border-top: 2px solid var(--accent);
+            padding-top: 15px;
+            margin-top: 15px;
+        }
+
+        .terms {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #777;
+        }
+
+        footer {
+            margin-top: 60px;
+            font-size: 12px;
+            color: #999;
+            text-align: center;
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+        }
+
+        .btn-print {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-print:hover {
+            background: #b08d4a;
+        }
+
+        .badge-fixed {
+            background: #e1f5fe;
+            color: #0277bd;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        /* Sayfa Sonu Düzenlemeleri (Print Optimization) */
+        h2 { 
+            page-break-after: avoid; 
+            break-after: avoid; 
+        }
+        
+        .feature-item, tr, .total-section, .terms {
+            page-break-inside: avoid;
+            break-inside: avoid;
+        }
+        
+        .feature-grid {
+            display: grid;
+            gap: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page">
+        <header>
+            <div class="logo-container">
+                <img src="public/vog_logo.png" alt="VOG Logo" class="logo-img">
+            </div>
+            <div class="document-type">
+                FİYATLANDIRMA TEKLİFİ<br>
+                <span style="font-size: 11px;">Ref: VOG-2026-001</span>
+            </div>
+        </header>
+
+        <h1>VOG Enterprise - Yatırım Planı</h1>
+        <p>Aşağıda detaylandırılan fiyatlandırma, VOG Tekstil'in dijital dönüşüm operasyonunun teknik geliştirme, entegrasyon ve lisanslama süreçlerini kapsamaktadır.</p>
+
+        <h2>MODÜLER YATIRIM KALEMLERİ</h2>
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>Geliştirme Modülü / Servis</th>
+                    <th>Açıklama</th>
+                    <th style="text-align: right;">Bütçe (TL)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="item-title">Kurumsal Kimlik & UX Design</span>
+                        <span class="badge-fixed">Tek Seferlik</span>
+                    </td>
+                    <td>
+                        <span class="item-desc">Premium Glassmorphism tasarım dili, Multi-language altyapı ve Responsive uyum.</span>
+                    </td>
+                    <td class="price-col">55.000 ₺</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="item-title">B2B Müşteri Portalı</span>
+                        <span class="badge-fixed">Tek Seferlik</span>
+                    </td>
+                    <td>
+                        <span class="item-desc">Bayi hiyerarşisi, sipariş matrisi, geçmiş sipariş yönetimi ve katalog entegrasyonu.</span>
+                    </td>
+                    <td class="price-col">110.000 ₺</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="item-title">OMS Üretim Takibi (Backend)</span>
+                        <span class="badge-fixed">Tek Seferlik</span>
+                    </td>
+                    <td>
+                        <span class="item-desc">10 aşamalı üretim hattı, QC raporlama ve Node.js & PostgreSQL gerçek zamanlı sunucu altyapısı.</span>
+                    </td>
+                    <td class="price-col">135.000 ₺</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="item-title">RFID & Sorter Entegrasyonu</span>
+                        <span class="badge-fixed">Entegrasyon</span>
+                    </td>
+                    <td>
+                        <span class="item-desc">SICK RFID Tüneli ve PLC Sorter verilerinin gerçek zamanlı dashboard senkronizasyonu.</span>
+                    </td>
+                    <td class="price-col">105.000 ₺</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="item-title">Logo ERP Senkronizasyonu</span>
+                        <span class="badge-fixed">Kurulum</span>
+                    </td>
+                    <td>
+                        <span class="item-desc">Otomatik faturalama ve ürün stoklarının Logo yazılımı ile çift taraflı eşleşmesi.</span>
+                    </td>
+                    <td class="price-col">80.000 ₺</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>YILLIK BAKIM VE DESTEK</h2>
+        <table class="price-table">
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="item-title">Bakım, Destek & Hosting</span>
+                        <span class="item-desc">7/24 Teknik destek, sunucu yönetimi, güvenlik güncellemeleri ve yedekleme periyotları.</span>
+                    </td>
+                    <td class="price-col" style="vertical-align: middle;">60.000 ₺ / Yıl</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="total-section">
+            <div class="total-row">
+                <span>Toplam Proje Geliştirme Bedeli (Tek Seferlik)</span>
+                <span>485.000 ₺</span>
+            </div>
+            <div class="total-row">
+                <span>Yıllık Bakım & Destek (Opsiyonel)</span>
+                <span>60.000 ₺</span>
+            </div>
+            <div class="total-row grand-total">
+                <span>TOPLAM YATIRIM BEDELİ</span>
+                <span>545.000 ₺</span>
+            </div>
+        </div>
+
+        <h2>PROJE TESLİMAT TAKVİMİ</h2>
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>Faz / Aşama</th>
+                    <th>Süre</th>
+                    <th>Teslim Edilecek Çıktılar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Faz 1: Analiz & Tasarım</strong></td>
+                    <td>2 Hafta</td>
+                    <td>UI/UX Onayları, Veritabanı Mimarisi, Marka Kimliği Uygulaması.</td>
+                </tr>
+                <tr>
+                    <td><strong>Faz 2: B2B Portal & Katalog</strong></td>
+                    <td>2 Hafta</td>
+                    <td>Müşteri Girişi, Akıllı Sipariş Formu, Ürün Katalog Yönetimi.</td>
+                </tr>
+                <tr>
+                    <td><strong>Faz 3: OMS & Üretim Takibi</strong></td>
+                    <td>2 Hafta</td>
+                    <td>10 Aşamalı Takip Hattı, Admin Dashboard, QC Raporlama.</td>
+                </tr>
+                <tr>
+                    <td><strong>Faz 4: Entegrasyon & Test</strong></td>
+                    <td>2 Hafta</td>
+                    <td>RFID Sorter Bağlantısı, Logo ERP Entegrasyonu, Final QA Testleri.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="total-section">
+            <div class="total-row">
+                <span>Toplam Tahmini Teslimat Süresi:</span>
+                <span style="font-weight: 700;">8 Hafta (2 Ay)</span>
+            </div>
+        </div>
+
+        <div class="terms">
+            <strong>DETAYLI ÖDEME KOŞULLARI:</strong>
+            <ul>
+                <li><strong>Peşinat (%40):</strong> İş başlangıcı öncesi faturalandırılır.</li>
+                <li><strong>Ara Ödeme (%30):</strong> B2B Portal (Sipariş Paneli) tesliminde faturalandırılır.</li>
+                <li><strong>Final Ödemesi (%30):</strong> Sistem anahtar teslimi ve eğitimler sonrası tahsil edilir.</li>
+                <li><strong>Vergi:</strong> Fiyatlara KDV (%20) dahil değildir.</li>
+            </ul>
+        </div>
+
+        <footer>
+        </footer>
+    </div>
+
+</body>
+</html>

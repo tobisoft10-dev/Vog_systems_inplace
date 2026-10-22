@@ -1,0 +1,73 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Node Dependencies & Build
+node_modules
+server/node_modules
+dist
+dist-ssr
+assets/
+*.local
+
+# Flutter & Dart Build and Caches
+vog_terminal_flutter/.dart_tool/
+vog_terminal_flutter/build/
+vog_terminal_flutter/.flutter-plugins
+vog_terminal_flutter/.flutter-plugins-dependencies
+vog_terminal_flutter/android/.gradle/
+vog_terminal_flutter/android/local.properties
+vog_terminal_flutter/android/app/.cxx/
+.dart_tool/
+build/
+.cxx/
+
+# Editor directories and temporary files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.graphify
+.gstack
+~$*
+*.tmp
+tmp_*
+server/tmp_*
+server/drivers/temp_*
+
+# Environment & Secret files
+.env
+.env.*
+license.key
+
+# Scratch & Temporary runtime directories
+scratch/
+server/scratch/
+logo_xml_outbox/
+
+# Large binaries, APKs, executables & archives
+*.zip
+*.apk
+*.exe
+!VogTunnelDriver.exe
+chrome_kiosk_profile/
+dnSpy/
+mydrivers_extracted/
+backups/
+uploads/
+output_pdf/
+
+# Large temporary sheets
+ziWSFHEp
+chrome/
+Audi_2026_Yaz1.pdf

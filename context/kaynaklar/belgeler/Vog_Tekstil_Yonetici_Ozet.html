@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOG Enterprise - Yönetici Özeti ve Değer Raporu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a1a1a;
+            --accent: #c5a059;
+            --text: #333;
+            --light-bg: #f9f9f9;
+            --border: #e0e0e0;
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm;
+            margin: 10mm auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        header {
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-img {
+            height: 60px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .document-type {
+            font-weight: 700;
+            font-size: 14px;
+            color: var(--accent);
+            text-align: right;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .intro-box {
+            background-color: var(--light-bg);
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 5px solid var(--accent);
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .value-section {
+            margin-bottom: 40px;
+        }
+
+        .value-card {
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            page-break-inside: avoid;
+        }
+
+        .value-title {
+            font-weight: 700;
+            color: var(--accent);
+            font-size: 18px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .value-desc {
+            font-size: 14px;
+            color: var(--text);
+        }
+
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .benefit-item {
+            background: #fff;
+            border: 1px solid var(--border);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .benefit-icon {
+            font-size: 24px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .benefit-label {
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--primary);
+        }
+
+        .summary-footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            font-size: 13px;
+            color: #666;
+            text-align: center;
+        }
+
+        @media print {
+            body { background: none; }
+            .page { margin: 0; box-shadow: none; width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page">
+        <header>
+            <img src="public/vog_logo.png" alt="VOG Logo" class="logo-img">
+            <div class="document-type">YÖNETİCİ ÖZETİ & DEĞER RAPORU</div>
+        </header>
+
+        <h1>VOG Enterprise: Geleceğin Akıllı Fabrikasına Dönüşüm</h1>
+
+        <div class="intro-box">
+            "Bu yatırım, sadece bir yazılım projesi değil; VOG Tekstil'i global pazarda 'Hatasız Üretim ve Kusursuz Lojistik' ile ayrıştıracak teknolojik bir sıçramadır."
+        </div>
+
+        <div class="value-section">
+            <div class="value-card">
+                <div class="value-title">💎 Prestij ve Global Vitrin (B2B Portal)</div>
+                <div class="value-desc">
+                    Dünyanın her yerindeki müşterileriniz, telefon veya e-postaya ihtiyaç duymadan, size özel şık bir platform üzerinden 7/24 sipariş verebilecek. Bu, müşterileriniz gözünde kurumsallığınızı en üst seviyeye taşır.
+                </div>
+            </div>
+
+            <div class="value-card">
+                <div class="value-title">📊 Şeffaf Üretim ve Hız (OMS Takip)</div>
+                <div class="value-desc">
+                    Üretimin hangi bandında ne kadar ürün bekliyor? Hangi aşamada yavaşlama var? Artık tahminlerle değil, saniyelik verilerle operasyonu yönetebileceksiniz. Bu, teslimat sürelerini garantilemenizi sağlar.
+                </div>
+            </div>
+
+            <div class="value-card">
+                <div class="value-title">🚀 Teknolojik Otomasyon (IoT & RFID)</div>
+                <div class="value-desc">
+                    Çuvalların içini açmadan, antenler yardımıyla içindeki ürünleri saniyeler içinde doğrulayabiliyoruz. Sorter makinesi ile otomatik ayrıştırma yaparak sevkiyat hatalarını tamamen (SIFIR) seviyesine indiriyoruz.
+                </div>
+            </div>
+
+            <div class="value-card">
+                <div class="value-title">⚙️ Finansal Doğruluk (Logo ERP Entegrasyonu)</div>
+                <div class="value-desc">
+                    Sistemdeki her hareket, arka planda Logo muhasebe sisteminize işlenir. Manuel veri girişi, hatalı fatura veya yanlış stok kayıtları tarihe karışır. Personel verimliliği %50 artar.
+                </div>
+            </div>
+        </div>
+
+        <h2 style="font-size: 20px; color: var(--primary);">Bu Yatırım Ne Kazandıracak?</h2>
+        <div class="benefit-grid">
+            <div class="benefit-item">
+                <span class="benefit-icon">⏱️</span>
+                <span class="benefit-label">Hata Payında %100 Azalma</span>
+            </div>
+            <div class="benefit-item">
+                <span class="benefit-icon">📈</span>
+                <span class="benefit-label">Üretim Verimliliğinde %30 Artış</span>
+            </div>
+            <div class="benefit-item">
+                <span class="benefit-icon">🌍</span>
+                <span class="benefit-label">Global Marka Prestiji</span>
+            </div>
+            <div class="benefit-item">
+                <span class="benefit-icon">💻</span>
+                <span class="benefit-label">Tam Dijital Kontrol Mekanizması</span>
+            </div>
+        </div>
+
+        <div class="summary-footer">
+            VOG Tekstil Stratejik Dijital Dönüşüm Yol Haritası - 2026
+        </div>
+    </div>
+
+</body>
+</html>

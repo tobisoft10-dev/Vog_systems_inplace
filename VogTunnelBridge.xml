@@ -1,0 +1,9 @@
+﻿<service>
+  <id>VogTunnelBridge</id>
+  <name>VOG Webhook Proxy Bridge</name>
+  <description>VOG Textile RFID Tunnel Webhook Proxy Bridge Service (Port 3881).</description>
+  <executable>powershell.exe</executable>
+  <arguments>-NoProfile -ExecutionPolicy Bypass -File "C:\vog_system\server\vog_webhook_bridge.ps1" -ListenPort 3881 -TargetUrl "http://192.168.1.251:3001/api/tunnel/kiosk/scan-tag"</arguments>
+  <log mode="roll"/>
+  <onfailure action="restart" delay="10 sec"/>
+</service>

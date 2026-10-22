@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Koli Etiketi - 16706</title>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+    <style>
+        /* Etiket Boyutları ve Kenar Boşlukları */
+        @page {
+            size: 100mm 80mm;
+            margin: 0;
+            /* Yazıcıdan taşmaması için sıfır marjin */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100mm;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        .label-container {
+            width: 98mm; /* Slightly smaller than 100 to avoid edge clipping */
+            min-height: 78mm; /* Let it grow, but minimum almost full height */
+            border: 2px solid #000;
+            border-radius: 4px;
+            padding: 2mm; /* Reduced padding */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            margin: 1mm auto; /* Center the label container */
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #000;
+            padding-bottom: 1mm;
+            margin-bottom: 1mm;
+        }
+
+        .logo {
+            font-size: 14pt;
+            font-weight: 900;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .status {
+            font-size: 10pt;
+            font-weight: bold;
+            background-color: #000;
+            color: #fff;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1mm;
+        }
+
+        .field {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .label {
+            font-size: 6pt;
+            color: #555;
+            text-transform: uppercase;
+        }
+
+        .value {
+            font-size: 10pt;
+            font-weight: bold;
+        }
+
+        .value.large {
+            font-size: 14pt;
+        }
+
+        .barcode-container {
+            text-align: center;
+            margin-top: auto; /* Push to bottom of current container */
+            border-top: 1px dashed #000;
+            padding-top: 1mm;
+            page-break-inside: avoid;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 5pt;
+            color: #333;
+            margin-top: 1mm;
+            page-break-inside: avoid;
+        }
+        
+        /* Table Styles for Product List */
+        table.product-list {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1mm;
+            margin-bottom: 1mm;
+            font-size: 7pt;
+            page-break-inside: auto;
+        }
+        table.product-list thead {
+            display: table-header-group;
+        }
+        table.product-list tfoot {
+            display: table-footer-group;
+        }
+        table.product-list tr {
+            page-break-inside: avoid;
+            page-break-after: auto;
+        }
+        table.product-list th, table.product-list td {
+            border: 1px solid #000;
+            padding: 1mm;
+            text-align: left;
+        }
+        table.product-list th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+        table.product-list td.qty {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body onload="generateBarcode()">
+
+    <div class="label-container">
+        <!-- HEADER -->
+        <div class="header">
+            <div class="logo">VOG TEKSTİL</div>
+            <div class="status">RFID ONAYLI</div>
+        </div>
+
+            <!-- CONTENT -->
+            <div class="content">
+                <div class="row">
+                    <div class="field">
+                        <span class="label">Sipariş No (Order ID)</span>
+                        <span class="value large">#{{ORDER_ID}}</span>
+                    </div>
+                    <div class="field" style="text-align: right;">
+                        <span class="label">Tarih</span>
+                        <span class="value" id="currentDate"></span>
+                    </div>
+                </div>
+                
+                <!-- Product List Table -->
+                <table class="product-list">
+                    <thead>
+                        <tr>
+                            <th>Ürün Kodu</th>
+                            <th>Açıklama</th>
+                            <th>Miktar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{PRODUCT_ROWS}}
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2" style="text-align: right; font-weight: bold; border: 1px solid #000; padding: 1mm;">Toplam Adet:</td>
+                            <td class="qty" style="border: 1px solid #000; padding: 1mm; font-weight: bold; font-size: 10pt;">{{TOTAL_QTY}}</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <!-- BARCODE -->
+            <div class="barcode-container">
+                <svg id="barcode"></svg>
+            </div>
+
+            <div class="footer">
+                ISO 9001:2015 STANDARDS - DO NOT FOLD
+            </div>
+        </div>
+
+        <script>
+            function generateBarcode() {
+                JsBarcode("#barcode", "{{BARCODE_STRING}}", {
+                    format: "CODE128",
+                    lineColor: "#000",
+                    width: 2,
+                    height: 40,
+                    displayValue: true,
+                    fontSize: 14,
+                    margin: 0
+                });
+
+                // Set current date
+                const today = new Date();
+                document.getElementById('currentDate').innerText = today.toLocaleDateString('tr-TR');
+
+                // Automatically open print dialog
+                setTimeout(() => {
+                    window.print();
+                }, 500);
+            }
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOG Enterprise - Altyapı ve Donanım Gereksinimleri</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a1a1a;
+            --accent: #c5a059;
+            --text: #333;
+            --light-bg: #f9f9f9;
+            --border: #e0e0e0;
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm;
+            margin: 10mm auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        header {
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-img {
+            height: 60px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .document-type {
+            font-weight: 700;
+            font-size: 14px;
+            color: var(--accent);
+            text-align: right;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--accent);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 5px;
+        }
+
+        .spec-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 25px;
+            page-break-inside: avoid;
+        }
+
+        .spec-table th {
+            text-align: left;
+            background: var(--light-bg);
+            padding: 10px 15px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #555;
+            text-transform: uppercase;
+        }
+
+        .spec-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid var(--border);
+            font-size: 14px;
+        }
+
+        .spec-label {
+            font-weight: 600;
+            color: var(--primary);
+            width: 30%;
+        }
+
+        .badge-req {
+            background-color: #ffebee;
+            color: #c62828;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 700;
+        }
+
+        .badge-rec {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 700;
+        }
+
+        .note-box {
+            background: #fff8e1;
+            padding: 15px;
+            border-left: 4px solid #ffca28;
+            border-radius: 4px;
+            font-size: 13px;
+            margin-top: 20px;
+        }
+
+        @media print {
+            body { background: none; }
+            .page { margin: 0; box-shadow: none; width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page">
+        <header>
+            <img src="public/vog_logo.png" alt="VOG Logo" class="logo-img">
+            <div class="document-type">ALTYAPI VE DONANIM ANALİZİ</div>
+        </header>
+
+        <h1>VOG Enterprise - Fiziksel ve Dijital Altyapı İhtiyaçları</h1>
+        <p style="font-size: 14px;">Sistemin sağlıklı, güvenli ve gerçek zamanlı çalışabilmesi için gerekli olan minimum ve önerilen donanım standartları aşağıda sunulmuştur.</p>
+
+        <h2>1. Sunucu ve Veritabanı Gereksinimleri</h2>
+        <table class="spec-table">
+            <thead>
+                <tr>
+                    <th>Bileşen</th>
+                    <th>Minimum Gereksinim <span class="badge-req">ZORUNLU</span></th>
+                    <th>Önerilen Yapı <span class="badge-rec">OPTIMAL</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="spec-label">İşletim Sistemi</td>
+                    <td>Windows Server 2019+</td>
+                    <td>Windows Server 2022 / 2025</td>
+                </tr>
+                <tr>
+                    <td class="spec-label">İşlemci (CPU)</td>
+                    <td>4 Çekirdek (Intel Xeon / Epyc)</td>
+                    <td>8+ Çekirdek (Modern Server CPU)</td>
+                </tr>
+                <tr>
+                    <td class="spec-label">Bellek (RAM)</td>
+                    <td>16 GB RAM</td>
+                    <td>32 GB+ RAM</td>
+                </tr>
+                <tr>
+                    <td class="spec-label">Depolama (SSD)</td>
+                    <td>250 GB NVMe / SSD</td>
+                    <td>500 GB+ Raid 10 / NVMe</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>2. Endüstriyel Donanım Bileşenleri</h2>
+        <table class="spec-table">
+            <thead>
+                <tr>
+                    <th>Donanım</th>
+                    <th>Açıklama ve Görevi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="spec-label">RFID Tünel Sistemi</td>
+                    <td>SICK veya muadili endüstriyel RFID antenleri ve okuyucu üniteleri (Depo giriş/çıkış tüneli).</td>
+                </tr>
+                <tr>
+                    <td class="spec-label">PLC Kontrol Ünitesi</td>
+                    <td>Sorter (Açıştırma) makineleri için sinyal tetikleyici ve yönlendirici kontrolcü.</td>
+                </tr>
+                <tr>
+                    <td class="spec-label">Endüstriyel Tabletler</td>
+                    <td>Üretim hattı istasyonları için 10" darbelere dayanıklı (IP65) Android/iOS el terminalleri.</td>
+                </tr>
+                <tr>
+                    <td class="spec-label">Barkod Okuyucular</td>
+                    <td>Kablosuz (WiFi) 2D karekod ve barkod okuyucular.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>3. Ağ ve Bağlantı Altyapısı</h2>
+        <p style="font-size: 14px;">Sistem "Real-time" (Gerçek zamanlı) çalıştığı için ağ kalitesi projenin kalbidir.</p>
+        <ul style="font-size: 14px; color: #555;">
+            <li><strong>Lokal Ağ (LAN):</strong> Tüm üretim hattı ve okuma istasyonları için Gigabit (1000 Mbps) kablolu ağ altyapısı.</li>
+            <li><strong>Kablosuz Ağ (WiFi):</strong> El terminalleri için fabrikada kesintisiz kapsama alanı sunan WiFi 6 standartında endüstriyel Access Point'ler.</li>
+            <li><strong>İnternet Güvenliği:</strong> B2B portalın dış dünyaya açılabilmesi için statik IP ve SSL 256-bit Güvenlik Sertifikası.</li>
+        </ul>
+
+        <h2>4. Veri Güvenliği ve KVKK</h2>
+        <div class="note-box">
+            <strong>Önemli Güvenlik Notu:</strong> Sistem verileri (Müşteri, Sipariş, Üretim) VOG Tekstil'in kendi sunucularında, Türkiye sınırları içerisinde barındırılacaktır. Günlük "SQL Dump" yedekleme ve "Database Replication" teknolojileri ile veri kaybı riski minimize edilmektedir.
+        </div>
+
+        <div style="margin-top: 50px; font-size: 12px; text-align: center; color: #999; border-top: 1px solid var(--border); padding-top: 20px;">
+            VOG Enterprise - Teknik Gereksinim Kılavuzu - 2026
+        </div>
+    </div>
+
+</body>
+</html>

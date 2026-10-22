@@ -1,0 +1,8 @@
+{
+  "power": 26,
+  "rssiThreshold": -55,
+  "autoComplete": true,
+  "autoPrintOnExit": true,
+  "exitDebounceMs": 2000,
+  "minBoxItems": 1
+}

@@ -1,0 +1,650 @@
+[
+  {
+    "id": "9c77fb91-b755-4bd9-b659-f45f0b5df2a4",
+    "sku": "KIYAFETYAZ-TSHIRT-FORMEN-2XL",
+    "brand": "NISSAN",
+    "product_name": "Formen Tshirt-2XL",
+    "size": "2XL",
+    "barcode": "901620100106",
+    "code39": "901620100106"
+  },
+  {
+    "id": "1cf2e34a-10b6-4241-8129-972be89ca1ae",
+    "sku": "KIYAFETYAZ-TSHIRT-FORMEN-3XL",
+    "brand": "NISSAN",
+    "product_name": "Formen Tshirt-3XL",
+    "size": "3XL",
+    "barcode": "901620100107",
+    "code39": "901620100107"
+  },
+  {
+    "id": "bfc5e487-7348-4bbb-af84-41a812946820",
+    "sku": "KIYAFETYAZ-TSHIRT-FORMEN-4XL",
+    "brand": "NISSAN",
+    "product_name": "Formen Tshirt-4XL",
+    "size": "4XL",
+    "barcode": "901620100108",
+    "code39": "901620100108"
+  },
+  {
+    "id": "febec622-1c68-4248-839d-4f5a28f9fbcb",
+    "sku": "KIYAFETYAZ-TSHIRT-FORMEN-L",
+    "brand": "NISSAN",
+    "product_name": "Formen Tshirt-L",
+    "size": "L",
+    "barcode": "901620100104",
+    "code39": "901620100104"
+  },
+  {
+    "id": "5e0bc799-c1f3-4c89-9703-701a9e4aa367",
+    "sku": "KIYAFETYAZ-TSHIRT-FORMEN-M",
+    "brand": "NISSAN",
+    "product_name": "Formen Tshirt-M",
+    "size": "M",
+    "barcode": "901620100103",
+    "code39": "901620100103"
+  },
+  {
+    "id": "576e9901-c984-45b2-b561-31924e2b873d",
+    "sku": "KIYAFETYAZ-TSHIRT-FORMEN-S",
+    "brand": "NISSAN",
+    "product_name": "Formen Tshirt-S",
+    "size": "S",
+    "barcode": "901620100102",
+    "code39": "901620100102"
+  },
+  {
+    "id": "8abc31be-ea6d-4b95-bf4c-c3ff74108b7c",
+    "sku": "KIYAFETYAZ-TSHIRT-FORMEN-XL",
+    "brand": "NISSAN",
+    "product_name": "Formen Tshirt-XL",
+    "size": "XL",
+    "barcode": "901620100105",
+    "code39": "901620100105"
+  },
+  {
+    "id": "f5d2fd80-eab9-4d92-a035-87cc359e621c",
+    "sku": "KIYAFETYAZ-TSHIRT-FORMEN-XS",
+    "brand": "NISSAN",
+    "product_name": "Formen Tshirt-XS",
+    "size": "XS",
+    "barcode": "901620100101",
+    "code39": "901620100101"
+  },
+  {
+    "id": "fdd8a88d-9b1b-4813-a7d5-d5dc68e6005d",
+    "sku": "KIYAFETYAZ-TSHIRT-MASTER-2XL",
+    "brand": "NISSAN",
+    "product_name": "Master Teknisyen Tshirt-2XL",
+    "size": "2XL",
+    "barcode": "901420100106",
+    "code39": "901420100106"
+  },
+  {
+    "id": "bc16dc2e-3a3b-4c78-a546-57fbb2da91ce",
+    "sku": "KIYAFETYAZ-TSHIRT-MASTER-3XL",
+    "brand": "NISSAN",
+    "product_name": "Master Teknisyen Tshirt-3XL",
+    "size": "3XL",
+    "barcode": "901420100107",
+    "code39": "901420100107"
+  },
+  {
+    "id": "41855308-a88e-41b9-9440-88842842b1a5",
+    "sku": "KIYAFETYAZ-TSHIRT-MASTER-4XL",
+    "brand": "NISSAN",
+    "product_name": "Master Teknisyen Tshirt-4XL",
+    "size": "4XL",
+    "barcode": "901420100108",
+    "code39": "901420100108"
+  },
+  {
+    "id": "d4822f86-3483-4be4-8c0a-f543be50215e",
+    "sku": "KIYAFETYAZ-TSHIRT-MASTER-L",
+    "brand": "NISSAN",
+    "product_name": "Master Teknisyen Tshirt-L",
+    "size": "L",
+    "barcode": "901420100104",
+    "code39": "901420100104"
+  },
+  {
+    "id": "675e8cb1-6b15-4b18-ab9f-ca8b1f5be937",
+    "sku": "KIYAFETYAZ-TSHIRT-MASTER-M",
+    "brand": "NISSAN",
+    "product_name": "Master Teknisyen Tshirt-M",
+    "size": "M",
+    "barcode": "901420100103",
+    "code39": "901420100103"
+  },
+  {
+    "id": "1bb6bed2-e5d5-46b3-be70-d8a381c47166",
+    "sku": "KIYAFETYAZ-TSHIRT-MASTER-S",
+    "brand": "NISSAN",
+    "product_name": "Master Teknisyen Tshirt-S",
+    "size": "S",
+    "barcode": "901420100102",
+    "code39": "901420100102"
+  },
+  {
+    "id": "df53a58c-589a-4228-9cf4-9ce0e6ae5118",
+    "sku": "KIYAFETYAZ-TSHIRT-MASTER-XL",
+    "brand": "NISSAN",
+    "product_name": "Master Teknisyen Tshirt-XL",
+    "size": "XL",
+    "barcode": "901420100105",
+    "code39": "901420100105"
+  },
+  {
+    "id": "ce7308f0-705d-418c-b863-3dfa32a093d4",
+    "sku": "KIYAFETYAZ-TSHIRT-MASTER-XS",
+    "brand": "NISSAN",
+    "product_name": "Master Teknisyen Tshirt-XS",
+    "size": "XS",
+    "barcode": "901420100101",
+    "code39": "901420100101"
+  },
+  {
+    "id": "55ad4196-7dd3-4624-8916-08ca7dced808",
+    "sku": "KIYAFETYAZ-PANTOLON-2XL",
+    "brand": "NISSAN",
+    "product_name": "Pantolon(Master - Teknisyen - Formen)-2XL",
+    "size": "2XL",
+    "barcode": "903020100106",
+    "code39": "903020100106"
+  },
+  {
+    "id": "63f6f63e-886e-47ac-aa6b-a7c66de1c170",
+    "sku": "KIYAFETYAZ-PANTOLON-3XL",
+    "brand": "NISSAN",
+    "product_name": "Pantolon(Master - Teknisyen - Formen)-3XL",
+    "size": "3XL",
+    "barcode": "903020100107",
+    "code39": "903020100107"
+  },
+  {
+    "id": "ffaea466-a89a-4471-a894-e2556d22ddf2",
+    "sku": "KIYAFETYAZ-PANTOLON-4XL",
+    "brand": "NISSAN",
+    "product_name": "Pantolon(Master - Teknisyen - Formen)-4XL",
+    "size": "4XL",
+    "barcode": "903020100108",
+    "code39": "903020100108"
+  },
+  {
+    "id": "c23d6db6-a26a-4f66-8fdd-791ef6cfa9b2",
+    "sku": "KIYAFETYAZ-PANTOLON-L",
+    "brand": "NISSAN",
+    "product_name": "Pantolon(Master - Teknisyen - Formen)-L",
+    "size": "L",
+    "barcode": "903020100104",
+    "code39": "903020100104"
+  },
+  {
+    "id": "89ced2a2-1989-439c-9aa2-135f355aee4b",
+    "sku": "KIYAFETYAZ-PANTOLON-M",
+    "brand": "NISSAN",
+    "product_name": "Pantolon(Master - Teknisyen - Formen)-M",
+    "size": "M",
+    "barcode": "903020100103",
+    "code39": "903020100103"
+  },
+  {
+    "id": "7834a2df-795a-4240-8529-5c10460fbbe9",
+    "sku": "KIYAFETYAZ-PANTOLON-S",
+    "brand": "NISSAN",
+    "product_name": "Pantolon(Master - Teknisyen - Formen)-S",
+    "size": "S",
+    "barcode": "903020100102",
+    "code39": "903020100102"
+  },
+  {
+    "id": "26ea29ca-7a8c-43a2-b87f-633405468f47",
+    "sku": "KIYAFETYAZ-PANTOLON-XL",
+    "brand": "NISSAN",
+    "product_name": "Pantolon(Master - Teknisyen - Formen)-XL",
+    "size": "XL",
+    "barcode": "903020100105",
+    "code39": "903020100105"
+  },
+  {
+    "id": "3339b1ad-abcc-472a-8021-0bdbd43c05bf",
+    "sku": "KIYAFETYAZ-PANTOLON-XS",
+    "brand": "NISSAN",
+    "product_name": "Pantolon(Master - Teknisyen - Formen)-XS",
+    "size": "XS",
+    "barcode": "903020100101",
+    "code39": "903020100101"
+  },
+  {
+    "id": "faf740a5-8c90-4e7d-a651-5517cd67453c",
+    "sku": "KIYAFETYAZ-TSHIRT-SRVDAN-2XL",
+    "brand": "NISSAN",
+    "product_name": "Servis Danışmanı Tshirt - Erkek-2XL",
+    "size": "2XL",
+    "barcode": "901020100106",
+    "code39": "901020100106"
+  },
+  {
+    "id": "dac356da-33be-432e-96b3-01d53629124f",
+    "sku": "KIYAFETYAZ-TSHIRT-SRVDAN-3XL",
+    "brand": "NISSAN",
+    "product_name": "Servis Danışmanı Tshirt - Erkek-3XL",
+    "size": "3XL",
+    "barcode": "901020100107",
+    "code39": "901020100107"
+  },
+  {
+    "id": "ce1e5676-0675-4061-b758-93b3805b79cc",
+    "sku": "KIYAFETYAZ-TSHIRT-SRVDAN-4XL",
+    "brand": "NISSAN",
+    "product_name": "Servis Danışmanı Tshirt - Erkek-4XL",
+    "size": "4XL",
+    "barcode": "901020100108",
+    "code39": "901020100108"
+  },
+  {
+    "id": "57854ba3-98d1-4367-a488-6c05d975913e",
+    "sku": "KIYAFETYAZ-TSHIRT-SRVDAN-L",
+    "brand": "NISSAN",
+    "product_name": "Servis Danışmanı Tshirt - Erkek-L",
+    "size": "L",
+    "barcode": "901020100104",
+    "code39": "901020100104"
+  },
+  {
+    "id": "cf445987-4dc9-409f-bca0-992b87162ebe",
+    "sku": "KIYAFETYAZ-TSHIRT-SRVDAN-M",
+    "brand": "NISSAN",
+    "product_name": "Servis Danışmanı Tshirt - Erkek-M",
+    "size": "M",
+    "barcode": "901020100103",
+    "code39": "901020100103"
+  },
+  {
+    "id": "22173b63-6d8f-49c0-8be5-7feb108b1c14",
+    "sku": "KIYAFETYAZ-TSHIRT-SRVDAN-S",
+    "brand": "NISSAN",
+    "product_name": "Servis Danışmanı Tshirt - Erkek-S",
+    "size": "S",
+    "barcode": "901020100102",
+    "code39": "901020100102"
+  },
+  {
+    "id": "4a58e837-2665-4b55-a467-1e8121bcc1ca",
+    "sku": "KIYAFETYAZ-TSHIRT-SRVDAN-XL",
+    "brand": "NISSAN",
+    "product_name": "Servis Danışmanı Tshirt - Erkek-XL",
+    "size": "XL",
+    "barcode": "901020100105",
+    "code39": "901020100105"
+  },
+  {
+    "id": "8d463cc3-bb66-47fa-b252-0e22fcc7e58b",
+    "sku": "KIYAFETYAZ-TSHIRT-SRVDAN-XS",
+    "brand": "NISSAN",
+    "product_name": "Servis Danışmanı Tshirt - Erkek-XS",
+    "size": "XS",
+    "barcode": "901020100101",
+    "code39": "901020100101"
+  },
+  {
+    "id": "e6b34e7e-f713-4b1b-9098-09edca19e145",
+    "sku": "KIYAFETYAZ-TSHIRT-SRVDANBYN-2XL",
+    "brand": "NISSAN",
+    "product_name": "Servis Danışmanı Tshirt - Kadın-2XL",
+    "size": "2XL",
+    "barcode": "901120100106",
+    "code39": "901120100106"
+  },
+  {
+    "id": "b5d8cda3-9fe8-4ca2-bde3-bdaaa5326b4d",
+    "sku": "KIYAFETYAZ-TSHIRT-SRVDANBYN-3XL",
+    "brand": "NISSAN",
+    "product_name": "Servis Danışmanı Tshirt - Kadın-3XL",
+    "size": "3XL",
+    "barcode": "901120100107",
+    "code39": "901120100107"
+  },
+  {
+    "id": "41c8b612-e04b-4ad4-b097-6b45d322c73f",
+    "sku": "KIYAFETYAZ-TSHIRT-SRVDANBYN-4XL",
+    "brand": "NISSAN",
+    "product_name": "Servis Danışmanı Tshirt - Kadın-4XL",
+    "size": "4XL",
+    "barcode": "901120100108",
+    "code39": "901120100108"
+  },
+  {
+    "id": "1f859e51-bdf7-4dc6-a86b-0cc61f116165",
+    "sku": "KIYAFETYAZ-TSHIRT-SRVDANBYN-L",
+    "brand": "NISSAN",
+    "product_name": "Servis Danışmanı Tshirt - Kadın-L",
+    "size": "L",
+    "barcode": "901120100104",
+    "code39": "901120100104"
+  },
+  {
+    "id": "739d7cad-e261-4ad9-9836-db15504d4c9e",
+    "sku": "KIYAFETYAZ-TSHIRT-SRVDANBYN-M",
+    "brand": "NISSAN",
+    "product_name": "Servis Danışmanı Tshirt - Kadın-M",
+    "size": "M",
+    "barcode": "901120100103",
+    "code39": "901120100103"
+  },
+  {
+    "id": "7a965e9b-f78e-435d-ba59-2aa9474d2fde",
+    "sku": "KIYAFETYAZ-TSHIRT-SRVDANBYN-S",
+    "brand": "NISSAN",
+    "product_name": "Servis Danışmanı Tshirt - Kadın-S",
+    "size": "S",
+    "barcode": "901120100102",
+    "code39": "901120100102"
+  },
+  {
+    "id": "d791d78b-734c-468d-9b16-600e1ae85bbf",
+    "sku": "KIYAFETYAZ-TSHIRT-SRVDANBYN-XL",
+    "brand": "NISSAN",
+    "product_name": "Servis Danışmanı Tshirt - Kadın-XL",
+    "size": "XL",
+    "barcode": "901120100105",
+    "code39": "901120100105"
+  },
+  {
+    "id": "45858849-e23d-42b5-ae5b-7648d5de7714",
+    "sku": "KIYAFETYAZ-TSHIRT-SRVDANBYN-XS",
+    "brand": "NISSAN",
+    "product_name": "Servis Danışmanı Tshirt - Kadın-XS",
+    "size": "XS",
+    "barcode": "901120100101",
+    "code39": "901120100101"
+  },
+  {
+    "id": "f85ec0f5-7aef-40b5-a8ed-9a5197718eb1",
+    "sku": "KIYAFETYAZ-TSHIRT-TEKNISYEN-2XL",
+    "brand": "NISSAN",
+    "product_name": "Teknisyen Tshirt-2XL",
+    "size": "2XL",
+    "barcode": "901520100106",
+    "code39": "901520100106"
+  },
+  {
+    "id": "449c5692-7b68-48dd-ac3a-97f246812a51",
+    "sku": "KIYAFETYAZ-TSHIRT-TEKNISYEN-3XL",
+    "brand": "NISSAN",
+    "product_name": "Teknisyen Tshirt-3XL",
+    "size": "3XL",
+    "barcode": "901520100107",
+    "code39": "901520100107"
+  },
+  {
+    "id": "2d76c635-7ecb-4eb9-ac63-ab4c587ffc5e",
+    "sku": "KIYAFETYAZ-TSHIRT-TEKNISYEN-4XL",
+    "brand": "NISSAN",
+    "product_name": "Teknisyen Tshirt-4XL",
+    "size": "4XL",
+    "barcode": "901520100108",
+    "code39": "901520100108"
+  },
+  {
+    "id": "11b2571d-2b2b-4912-95fa-002f74e1ace9",
+    "sku": "KIYAFETYAZ-TSHIRT-TEKNISYEN-L",
+    "brand": "NISSAN",
+    "product_name": "Teknisyen Tshirt-L",
+    "size": "L",
+    "barcode": "901520100104",
+    "code39": "901520100104"
+  },
+  {
+    "id": "a50ea1c2-a4ed-47db-8a48-c8bbb9f75c22",
+    "sku": "KIYAFETYAZ-TSHIRT-TEKNISYEN-M",
+    "brand": "NISSAN",
+    "product_name": "Teknisyen Tshirt-M",
+    "size": "M",
+    "barcode": "901520100103",
+    "code39": "901520100103"
+  },
+  {
+    "id": "fd98e3a3-6002-4ffa-9490-509fde409632",
+    "sku": "KIYAFETYAZ-TSHIRT-TEKNISYEN-S",
+    "brand": "NISSAN",
+    "product_name": "Teknisyen Tshirt-S",
+    "size": "S",
+    "barcode": "901520100102",
+    "code39": "901520100102"
+  },
+  {
+    "id": "493b3cac-cda8-4791-8998-6e43177d1bb9",
+    "sku": "KIYAFETYAZ-TSHIRT-TEKNISYEN-XL",
+    "brand": "NISSAN",
+    "product_name": "Teknisyen Tshirt-XL",
+    "size": "XL",
+    "barcode": "901520100105",
+    "code39": "901520100105"
+  },
+  {
+    "id": "f868f82a-a0b0-4232-8cad-4584ba8cd507",
+    "sku": "KIYAFETYAZ-TSHIRT-TEKNISYEN-XS",
+    "brand": "NISSAN",
+    "product_name": "Teknisyen Tshirt-XS",
+    "size": "XS",
+    "barcode": "901520100101",
+    "code39": "901520100101"
+  },
+  {
+    "id": "18bbc8f7-e999-48b8-af84-e1881acec175",
+    "sku": "KIYAFETYAZ-TSHIRT-VALE-2XL",
+    "brand": "NISSAN",
+    "product_name": "Vale Tshirt-2XL",
+    "size": "2XL",
+    "barcode": "901720100106",
+    "code39": "901720100106"
+  },
+  {
+    "id": "6db6d223-5654-47bb-bffc-a877b3bb7b25",
+    "sku": "KIYAFETYAZ-TSHIRT-VALE-3XL",
+    "brand": "NISSAN",
+    "product_name": "Vale Tshirt-3XL",
+    "size": "3XL",
+    "barcode": "901720100107",
+    "code39": "901720100107"
+  },
+  {
+    "id": "cd30c926-bd78-48f4-86cc-ea0cedd1e8f8",
+    "sku": "KIYAFETYAZ-TSHIRT-VALE-4XL",
+    "brand": "NISSAN",
+    "product_name": "Vale Tshirt-4XL",
+    "size": "4XL",
+    "barcode": "901720100108",
+    "code39": "901720100108"
+  },
+  {
+    "id": "95f669b3-1f22-4969-bcea-197998c992e8",
+    "sku": "KIYAFETYAZ-TSHIRT-VALE-L",
+    "brand": "NISSAN",
+    "product_name": "Vale Tshirt-L",
+    "size": "L",
+    "barcode": "901720100104",
+    "code39": "901720100104"
+  },
+  {
+    "id": "34342323-4c8f-4ee2-88b5-b8b1d7c5d9cc",
+    "sku": "KIYAFETYAZ-TSHIRT-VALE-M",
+    "brand": "NISSAN",
+    "product_name": "Vale Tshirt-M",
+    "size": "M",
+    "barcode": "901720100103",
+    "code39": "901720100103"
+  },
+  {
+    "id": "ec669143-96aa-4dfe-8951-b0ccd339d3cd",
+    "sku": "KIYAFETYAZ-TSHIRT-VALE-S",
+    "brand": "NISSAN",
+    "product_name": "Vale Tshirt-S",
+    "size": "S",
+    "barcode": "901720100102",
+    "code39": "901720100102"
+  },
+  {
+    "id": "2e9e117a-5b1d-4be8-aabc-b27dde50756c",
+    "sku": "KIYAFETYAZ-TSHIRT-VALE-XL",
+    "brand": "NISSAN",
+    "product_name": "Vale Tshirt-XL",
+    "size": "XL",
+    "barcode": "901720100105",
+    "code39": "901720100105"
+  },
+  {
+    "id": "439f152d-76f3-43eb-ab67-cf33a4d86678",
+    "sku": "KIYAFETYAZ-TSHIRT-VALE-XS",
+    "brand": "NISSAN",
+    "product_name": "Vale Tshirt-XS",
+    "size": "XS",
+    "barcode": "901720100101",
+    "code39": "901720100101"
+  },
+  {
+    "id": "58ed75f0-c57e-4eac-aedd-a226cef1fef4",
+    "sku": "KIYAFETYAZ-TSHIRT-YP-2XL",
+    "brand": "NISSAN",
+    "product_name": "Yedek Parça Tshirt-2XL",
+    "size": "2XL",
+    "barcode": "901220100106",
+    "code39": "901220100106"
+  },
+  {
+    "id": "8b3c287f-579d-4a22-a25d-d4de88a8cc43",
+    "sku": "KIYAFETYAZ-TSHIRT-YP-3XL",
+    "brand": "NISSAN",
+    "product_name": "Yedek Parça Tshirt-3XL",
+    "size": "3XL",
+    "barcode": "901220100107",
+    "code39": "901220100107"
+  },
+  {
+    "id": "2e23cd42-d9bc-435b-80a8-997bee413cd4",
+    "sku": "KIYAFETYAZ-TSHIRT-YP-4XL",
+    "brand": "NISSAN",
+    "product_name": "Yedek Parça Tshirt-4XL",
+    "size": "4XL",
+    "barcode": "901220100108",
+    "code39": "901220100108"
+  },
+  {
+    "id": "e6dae756-d83a-45ec-92e4-658c1cfffe85",
+    "sku": "KIYAFETYAZ-TSHIRT-YP-L",
+    "brand": "NISSAN",
+    "product_name": "Yedek Parça Tshirt-L",
+    "size": "L",
+    "barcode": "901220100104",
+    "code39": "901220100104"
+  },
+  {
+    "id": "6329d96a-fff4-4823-994e-c179cf888241",
+    "sku": "KIYAFETYAZ-TSHIRT-YP-M",
+    "brand": "NISSAN",
+    "product_name": "Yedek Parça Tshirt-M",
+    "size": "M",
+    "barcode": "901220100103",
+    "code39": "901220100103"
+  },
+  {
+    "id": "3eddd328-b109-4c0b-8729-316ee15de159",
+    "sku": "KIYAFETYAZ-TSHIRT-YP-S",
+    "brand": "NISSAN",
+    "product_name": "Yedek Parça Tshirt-S",
+    "size": "S",
+    "barcode": "901220100102",
+    "code39": "901220100102"
+  },
+  {
+    "id": "f6f3ed51-6611-451e-b07f-3ee7764e9ff8",
+    "sku": "KIYAFETYAZ-TSHIRT-YP-XL",
+    "brand": "NISSAN",
+    "product_name": "Yedek Parça Tshirt-XL",
+    "size": "XL",
+    "barcode": "901220100105",
+    "code39": "901220100105"
+  },
+  {
+    "id": "6f14af92-51f2-4a5d-882f-f78fc7dbd870",
+    "sku": "KIYAFETYAZ-TSHIRT-YP-XS",
+    "brand": "NISSAN",
+    "product_name": "Yedek Parça Tshirt-XS",
+    "size": "XS",
+    "barcode": "901220100101",
+    "code39": "901220100101"
+  },
+  {
+    "id": "f8406a9b-569b-4ed3-9189-9ca672d9c282",
+    "sku": "KIYAFETYAZ-TSHIRT-YKMC-2XL",
+    "brand": "NISSAN",
+    "product_name": "Yıkamacı Tshirt-2XL",
+    "size": "2XL",
+    "barcode": "901320100106",
+    "code39": "901320100106"
+  },
+  {
+    "id": "90ee9670-875c-434b-b740-f16c8d9b9285",
+    "sku": "KIYAFETYAZ-TSHIRT-YKMC-3XL",
+    "brand": "NISSAN",
+    "product_name": "Yıkamacı Tshirt-3XL",
+    "size": "3XL",
+    "barcode": "901320100107",
+    "code39": "901320100107"
+  },
+  {
+    "id": "fc1ee268-0f50-4550-b0e2-b7fafa5d97a5",
+    "sku": "KIYAFETYAZ-TSHIRT-YKMC-4XL",
+    "brand": "NISSAN",
+    "product_name": "Yıkamacı Tshirt-4XL",
+    "size": "4XL",
+    "barcode": "901320100108",
+    "code39": "901320100108"
+  },
+  {
+    "id": "0ef0be66-04c3-4c4d-8d68-24adee5b670e",
+    "sku": "KIYAFETYAZ-TSHIRT-YKMC-L",
+    "brand": "NISSAN",
+    "product_name": "Yıkamacı Tshirt-L",
+    "size": "L",
+    "barcode": "901320100104",
+    "code39": "901320100104"
+  },
+  {
+    "id": "ba52715c-a209-4a27-8978-60b1d2722962",
+    "sku": "KIYAFETYAZ-TSHIRT-YKMC-M",
+    "brand": "NISSAN",
+    "product_name": "Yıkamacı Tshirt-M",
+    "size": "M",
+    "barcode": "901320100103",
+    "code39": "901320100103"
+  },
+  {
+    "id": "1118189a-1923-45e7-858d-625199b2a532",
+    "sku": "KIYAFETYAZ-TSHIRT-YKMC-S",
+    "brand": "NISSAN",
+    "product_name": "Yıkamacı Tshirt-S",
+    "size": "S",
+    "barcode": "901320100102",
+    "code39": "901320100102"
+  },
+  {
+    "id": "a2a7676f-f5c4-4a89-ab5a-9ac5a56401a3",
+    "sku": "KIYAFETYAZ-TSHIRT-YKMC-XL",
+    "brand": "NISSAN",
+    "product_name": "Yıkamacı Tshirt-XL",
+    "size": "XL",
+    "barcode": "901320100105",
+    "code39": "901320100105"
+  },
+  {
+    "id": "a19c62aa-e050-4392-881d-a8f2c4a72e0c",
+    "sku": "KIYAFETYAZ-TSHIRT-YKMC-XS",
+    "brand": "NISSAN",
+    "product_name": "Yıkamacı Tshirt-XS",
+    "size": "XS",
+    "barcode": "901320100101",
+    "code39": "901320100101"
+  }
+]

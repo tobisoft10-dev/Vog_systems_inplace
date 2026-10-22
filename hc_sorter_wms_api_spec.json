@@ -1,0 +1,108 @@
+{
+  "info": {
+    "title": "HC Robotics Sorter (Lightning Broadcast Mini) - VOG WMS API Specification",
+    "version": "1.0.0",
+    "description": "Standard REST JSON Interface between HC Robotics Sorter PLC and VOG WMS Backend",
+    "server": {
+      "host": "192.168.1.251",
+      "port": 3001,
+      "baseUrl": "http://192.168.1.251:3001"
+    }
+  },
+  "endpoints": [
+    {
+      "name": "1. 心跳状态接口 (Heartbeat / Status)",
+      "method": "POST",
+      "url": "http://192.168.1.251:3001/wms/common/status",
+      "frequency": "Every 3 seconds",
+      "request_json_sample": {
+        "systemId": "sort001",
+        "timestamp": 1724587200000,
+        "status": "RUNNING"
+      },
+      "response_json_sample": {
+        "success": true,
+        "msg": "",
+        "errorCode": ""
+      }
+    },
+    {
+      "name": "2. 目的格口查询接口 (Destination Query)",
+      "method": "POST",
+      "url": "http://192.168.1.251:3001/wms/white/destination/query",
+      "description": "Triggered when Sorter camera/laser reads barcode. WMS returns target chute number (1-60).",
+      "request_json_sample": {
+        "systemId": "sort001",
+        "barcode": "8680010000018",
+        "weight": 0.45,
+        "length": 300,
+        "width": 200,
+        "height": 50
+      },
+      "response_json_sample": {
+        "success": true,
+        "chuteNo": 15,
+        "physicalCode": "A1-15",
+        "planWallId": "M145-WALL-1",
+        "planIndexInWall": 15,
+        "destination": "DOĞUŞ OTO PAZARLAMA",
+        "productName": "2026 Kışlık Ford Softshell Mont",
+        "msg": "",
+        "errorCode": ""
+      }
+    },
+    {
+      "name": "3. 分拣落格完成接口 (Mission / Drop Complete)",
+      "method": "POST",
+      "url": "http://192.168.1.251:3001/wms/white/mission/finish",
+      "description": "Triggered when parcel is successfully dropped into the chute.",
+      "request_json_sample": {
+        "systemId": "sort001",
+        "barcode": "8680010000018",
+        "chuteNo": 15,
+        "status": "success",
+        "uniqueId": "TASK-1724587201"
+      },
+      "response_json_sample": {
+        "success": true,
+        "msg": "",
+        "errorCode": ""
+      }
+    },
+    {
+      "name": "4. 异常故障上报接口 (Error / Fault Happen)",
+      "method": "POST",
+      "url": "http://192.168.1.251:3001/wms/white/error/happen",
+      "description": "Triggered when mechanical jam, parcel lost or sensor error happens.",
+      "request_json_sample": {
+        "systemId": "sort001",
+        "errorCode": "CONVEYOR_PARCEL_LOST",
+        "recoverCode": "CONVEYOR_RECOVER",
+        "level": "B",
+        "uniqueId": "ERR-9921",
+        "deviceType": "CONVEYOR",
+        "deviceId": "sort001-SITE-1-CONVEYOR"
+      },
+      "response_json_sample": {
+        "success": true,
+        "msg": "",
+        "errorCode": ""
+      }
+    },
+    {
+      "name": "5. 异常恢复接口 (Error Recover)",
+      "method": "POST",
+      "url": "http://192.168.1.251:3001/wms/white/error/recover",
+      "request_json_sample": {
+        "systemId": "sort001",
+        "uniqueId": "ERR-9921",
+        "recoverCode": "CONVEYOR_RECOVER"
+      },
+      "response_json_sample": {
+        "success": true,
+        "msg": "",
+        "errorCode": ""
+      }
+    }
+  ]
+}

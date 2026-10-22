@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takipsan - Proje Teklif Briefi (RFP) - VOG Enterprise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a1a1a;
+            --accent: #c5a059;
+            --text: #333;
+            --light-bg: #f9f9f9;
+            --border: #e0e0e0;
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm;
+            margin: 10mm auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        header {
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-img {
+            height: 60px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .document-type {
+            font-weight: 700;
+            font-size: 14px;
+            color: var(--accent);
+            text-align: right;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .brief-intro {
+            background-color: var(--light-bg);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            font-size: 14px;
+            border-left: 5px solid var(--accent);
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-top: 30px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .requirement-group {
+            margin-bottom: 20px;
+        }
+
+        .requirement-item {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .requirement-item::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .req-title {
+            font-weight: 700;
+            font-size: 15px;
+            color: var(--primary);
+            display: block;
+        }
+
+        .req-desc {
+            font-size: 13px;
+            color: #555;
+            display: block;
+            margin-top: 3px;
+        }
+
+        .tech-tags {
+            margin-top: 5px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #eee;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 600;
+            color: #666;
+            margin-right: 5px;
+            text-transform: uppercase;
+        }
+
+        .footer-note {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px solid var(--accent);
+            font-size: 13px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        @media print {
+            body { background: none; margin: 20mm; }
+            .page { margin: 0; box-shadow: none; width: 100%; }
+            @page { margin: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page">
+        <header>
+            <img src="public/vog_logo.png" alt="VOG Logo" class="logo-img">
+            <div class="document-type">PROJECT BRIEF / RFP (TEKLİF İSTEME)</div>
+        </header>
+
+        <h1>VOG Enterprise: Akıllı Üretim ve Lojistik Ekosistemi</h1>
+        <div class="brief-intro">
+            VOG Tekstil olarak, üretimden global sevkiyata kadar olan tüm süreçlerimizi "Sıfır Hata" vizyonuyla dijitalleştirmeyi hedefliyoruz. Bu kapsamda, Takipsan'dan aşağıda detaylandırılan modüller ve teknik yetenekler çerçevesinde bir çözüm ve fiyatlandırma teklifi beklemekteyiz.
+        </div>
+
+        <h2>1. B2B Global Sipariş Portalı</h2>
+        <div class="requirement-group">
+            <div class="requirement-item">
+                <span class="req-title">Tekstil Spesifik Sipariş Girişi</span>
+                <span class="req-desc">Global bayilerimiz için Renk/Beden matris yapısında, hızlı ve toplu sipariş girişine imkan tanıyan web/mobil portalı.</span>
+                <div class="tech-tags"><span class="tag">Responsive</span> <span class="tag">Multi-Language</span></div>
+            </div>
+            <div class="requirement-item">
+                <span class="req-title">Logo ERP Finansal Entegrasyon</span>
+                <span class="req-desc">Sipariş anında Logo üzerinden risk/limit kontrolü ve onay sonrası otomatik sipariş/iş emri kaydı.</span>
+                <div class="tech-tags"><span class="tag">Logo Objects</span> <span class="tag">Real-time Sync</span></div>
+            </div>
+        </div>
+
+        <h2>2. OMS - Operasyonel Üretim Takibi</h2>
+        <div class="requirement-group">
+            <div class="requirement-item">
+                <span class="req-title">10 Duraklı Üretim Hattı Yönetimi</span>
+                <span class="req-desc">Kumaş testinden sevkiyata kadar olan 10 ana üretim aşamasının (Kesim, Dikim, Ütü vb.) barkod/RFID ile anlık izlenmesi.</span>
+            </div>
+            <div class="requirement-item">
+                <span class="req-title">Dijital Kalite Kontrol (QC)</span>
+                <span class="req-desc">Hata türlerine göre özelleştirilebilir dijital formlar ve "Tamir" bandına otomatik yönlendirme algoritmaları.</span>
+            </div>
+        </div>
+
+        <h2>3. Akıllı Lojistik ve Donanım Sinerjisi</h2>
+        <div class="requirement-group">
+            <div class="requirement-item">
+                <span class="req-title">RFID Anten Tüneli Entegrasyonu</span>
+                <span class="req-desc">SICK veya muadili RFID anten sistemleriyle, kolileri açmadan saniyeler içinde %100 içerik doğrulaması.</span>
+                <div class="tech-tags"><span class="tag">Bulk Read</span> <span class="tag">RFID/IoT</span></div>
+            </div>
+            <div class="requirement-item">
+                <span class="req-title">Sorter (Ayrıştırıcı) Makinesi Entegrasyonu</span>
+                <span class="req-desc">PLC sistemimizle konuşan, RFID verisine göre kolileri ilgili sevkiyat kapılarına (Almanya, İngiltere vb.) otonom yönlendiren yapı.</span>
+                <div class="tech-tags"><span class="tag">PLC / Modbus</span> <span class="tag">Industrial IoT</span></div>
+            </div>
+        </div>
+
+        <h2>4. Teknik ve Tasarım Standartları</h2>
+        <div class="requirement-group">
+            <div class="requirement-item">
+                <span class="req-title">Premium Kurumsal Arayüz</span>
+                <span class="req-desc">Marka prestijimizi globalde temsil edecek, Inter font ailesi ve modern UX standartlarında "Premium" tasarım dili.</span>
+            </div>
+            <div class="requirement-item">
+                <span class="req-title">Endüstriyel Tablet Uyumluluğu</span>
+                <span class="req-desc">Atölye ortamında eldivenli kullanıma uygun, yüksek kontrastlı ve geniş dokunmatik hedefli (min 48px) UI mimarisi.</span>
+            </div>
+        </div>
+
+        <!-- Footer kaldırıldı -->
+    </div>
+
+</body>
+</html>

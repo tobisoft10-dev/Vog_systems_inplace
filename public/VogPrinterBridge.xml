@@ -1,0 +1,9 @@
+<service>
+  <id>VogPrinterBridge</id>
+  <name>VOG RFID ve Koli Yazici Servisi</name>
+  <description>SATO CL4NX Plus RFID ve Godex G530 Koli Etiket Yazici Otomasyon Servisi</description>
+  <executable>C:\vog_system\VogPrinterBridge.exe</executable>
+  <logmode>rotate</logmode>
+  <logpath>C:\vog_system\logs</logpath>
+  <onfailure action="restart" delay="5 sec"/>
+</service>

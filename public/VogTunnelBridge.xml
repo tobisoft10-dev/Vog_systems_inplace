@@ -1,0 +1,8 @@
+<service>
+  <id>VogTunnelBridge</id>
+  <name>VOG Native Tunnel Driver (VogTunnelBridge)</name>
+  <description>VOG Tekstil Impinj RFID Tunnel Native Hardware Driver</description>
+  <executable>C:\vog_system\VogTunnelDriver.exe</executable>
+  <logmode>rotate</logmode>
+  <logpath>C:\vog_system</logpath>
+</service>

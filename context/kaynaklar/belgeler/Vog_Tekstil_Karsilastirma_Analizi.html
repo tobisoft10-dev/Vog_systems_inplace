@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOG Enterprise vs Takipsan - Karşılaştırmalı Analiz Raporu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a1a1a;
+            --accent: #c5a059;
+            --text: #333;
+            --light-bg: #f9f9f9;
+            --border: #e0e0e0;
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm;
+            margin: 10mm auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        header {
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-img {
+            height: 60px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .document-type {
+            font-weight: 700;
+            font-size: 14px;
+            color: var(--accent);
+            text-align: right;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .intro-box {
+            background-color: var(--light-bg);
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 5px solid var(--accent);
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .analysis-section {
+            margin-bottom: 40px;
+        }
+
+        .analysis-card {
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            page-break-inside: avoid;
+        }
+
+        .analysis-title {
+            font-weight: 700;
+            color: var(--accent);
+            font-size: 18px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .analysis-desc {
+            font-size: 14px;
+            color: var(--text);
+        }
+
+        .summary-footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            font-size: 13px;
+            color: #666;
+            text-align: center;
+        }
+
+        @media print {
+            body { background: none; margin: 20mm; }
+            .page { margin: 0; box-shadow: none; width: 100%; }
+            @page { margin: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page">
+        <header>
+            <img src="public/vog_logo.png" alt="VOG Logo" class="logo-img">
+            <div class="document-type">STRATEJİK ANALİZ VE KARŞILAŞTIRMA</div>
+        </header>
+
+        <h1>VOG Enterprise vs Takipsan: Mimari ve Stratejik Değerlendirme</h1>
+
+        <div class="intro-box">
+            "Takipsan'ın sistem mimarisini ve çözüm yaklaşımlarını incelediğimde, VOG Enterprise ile aramızdaki farkı sadece bir yazılım farkı değil, bir 'vizyon ve teknoloji kuşağı' farkı olarak görüyorum."
+        </div>
+
+        <div class="analysis-section">
+            <div class="analysis-card">
+                <div class="analysis-title">🚀 Mimari ve Teknoloji Modernliği</div>
+                <div class="analysis-desc">
+                    Takipsan'ın kullandığı <b>PHP Laravel + Bootstrap</b> yapısını, bizim <b>React 19 + Vite</b> mimarimizle karşılaştırdığımda, bizim çok daha hızlı, modüler ve akıcı bir kullanıcı deneyimi sunduğumuzu görüyorum. Takipsan klasik bir paket program mantığındayken, biz geleceğin SPA (Single Page Application) standartlarını uyguluyoruz.
+                </div>
+            </div>
+
+            <div class="analysis-card">
+                <div class="analysis-title">🧵 Sektörel Derinlik (Tekstil Genetiği)</div>
+                <div class="analysis-desc">
+                    Takipsan genel lojistik ihtiyaçlarına (U-Logs, U-Shops) hitap ederken; ben bizim sistemimizde tekstil üretiminin tam kalbine dokunan bir yapı kurguladım. B2B portalımızdaki renk/beden matrislerinden, kesim ve dikim bandı takip detaylarına kadar her şey, sektörün gerçek ihtiyaçlarına göre "terzi dikimi" hazırlandı.
+                </div>
+            </div>
+
+            <div class="analysis-card">
+                <div class="analysis-title">⚙️ Endüstriyel Otomasyon ve IoT Gücü</div>
+                <div class="analysis-desc">
+                    En büyük farkımız burada: Takipsan veriyi sadece takip ediyor, biz ise yönetiyoruz. İş akışlarımızda kullandığımız <b>SICK RFID Tünelleri</b> ve <b>PLC tabanlı Sorter</b> makineleri ile entegre yapımız, sistemimizi basit bir yazılımın ötesine taşıyarak fabrikanın otonom beyni haline getiriyor.
+                </div>
+            </div>
+
+            <div class="analysis-card">
+                <div class="analysis-title">📊 ERP Entegrasyonu ve Finansal Akıl</div>
+                <div class="analysis-desc">
+                    Takipsan'ın genel vaatlerinin aksine, biz <b>Logo ERP</b> ile kusursuz bir senkronizasyon yakaladık. Risk analizinden iş emri tetiklemeye kadar her şeyin manuel müdahale gerektirmeden arka planda yürümesi, operasyonel verimliliğimizi Takipsan'ın standart yapısına göre kat kat artırıyor.
+                </div>
+            </div>
+
+            <div class="analysis-card">
+                <div class="analysis-title">💎 Prestij ve Global Marka Algısı</div>
+                <div class="analysis-desc">
+                    Arayüz tasarımımızda kullandığımız premium estetik ve modern UX, müşterilerimize sadece bir araç değil, global bir prestij sunuyor. Takipsan'ın standart iş yazılımı görünümüne karşın, VOG Enterprise tam bir "Global Vitrin" (Showcase) niteliğinde.
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer kaldırıldı -->
+    </div>
+
+</body>
+</html>

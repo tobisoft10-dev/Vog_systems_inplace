@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOG Enterprise - Detaylı İşlem Akışları</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a1a1a;
+            --accent: #c5a059;
+            --text: #333;
+            --light-bg: #f9f9f9;
+            --border: #e0e0e0;
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm;
+            margin: 10mm auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        header {
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-img {
+            height: 60px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .document-type {
+            font-weight: 700;
+            font-size: 14px;
+            color: var(--accent);
+            text-align: right;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--accent);
+            margin-top: 30px;
+            margin-bottom: 20px;
+            background: var(--light-bg);
+            padding: 10px;
+            border-radius: 6px;
+        }
+
+        .flow-container {
+            margin-bottom: 40px;
+        }
+
+        .flow-step {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 20px;
+            page-break-inside: avoid;
+        }
+
+        .flow-step::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: -15px;
+            width: 2px;
+            background-color: var(--border);
+        }
+
+        .flow-step:last-child::before {
+            display: none;
+        }
+
+        .step-number {
+            background-color: var(--primary);
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 700;
+            flex-shrink: 0;
+            z-index: 1;
+        }
+
+        .step-content {
+            flex-grow: 1;
+        }
+
+        .step-title {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+
+        .step-desc {
+            font-size: 13px;
+            color: #666;
+        }
+
+        .tech-note {
+            display: inline-block;
+            background: #f0f0f0;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 600;
+            color: #444;
+            margin-top: 5px;
+            text-transform: uppercase;
+        }
+
+        @media print {
+            body { background: none; }
+            .page { margin: 0; box-shadow: none; width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page">
+        <header>
+            <img src="public/vog_logo.png" alt="VOG Logo" class="logo-img">
+            <div class="document-type">OPERASYONEL İŞLEM AKIŞLARI</div>
+        </header>
+
+        <h1>VOG Enterprise - Sistem İşleyiş Metodolojisi</h1>
+        <p style="font-size: 14px;">Bu belge, sipariş alımından sevkiyata kadar olan tüm süreçlerin dijital akış diyagramını ve veri tetikleme noktalarını detaylandırır.</p>
+
+        <h2>1. B2B Sipariş ve Finansal Onay Akışı</h2>
+        <div class="flow-container">
+            <div class="flow-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <div class="step-title">Müşteri Sipariş Girişi</div>
+                    <div class="step-desc">Global bayiler B2B portalına girer, matris seçim (renk/beden) ile sipariş formunu oluşturur.</div>
+                    <div class="tech-note">Portalside / React</div>
+                </div>
+            </div>
+            <div class="flow-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <div class="step-title">Kredi / Risk Kontrolü</div>
+                    <div class="step-desc">Sistem müşterinin açık hesap limitini Logo ERP üzerinden kontrol eder. Limit uygunsa onay mekanizması başlar.</div>
+                    <div class="tech-note">Integration / Logo Objects</div>
+                </div>
+            </div>
+            <div class="flow-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <div class="step-title">Logo Kayıt ve Üretim Emri</div>
+                    <div class="step-desc">Onaylanan sipariş Logo'da "Satış Siparişi" olarak açılır ve OMS (Üretim Takip) tarafında otomatik "İş Emri" oluşturulur.</div>
+                    <div class="tech-note">Automation / Webhooks</div>
+                </div>
+            </div>
+        </div>
+
+        <h2>2. OMS Üretim Hattı ve Veri Yakalama</h2>
+        <div class="flow-container">
+            <div class="flow-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <div class="step-title">Operasyon Başlatma</div>
+                    <div class="step-desc">Kesim şefi, kendisine gelen iş emrini onaylayarak üretim sayacını başlatır.</div>
+                </div>
+            </div>
+            <div class="flow-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <div class="step-title">Bant Geçişleri ve Veri Girişi</div>
+                    <div class="step-desc">Dikim, Ütü, Kalite Kontrol gibi 10 ana duraktan geçen her ürün grubu barkod/RFID okutularak sisteme işlenir.</div>
+                    <div class="tech-note">Real-time Backend / Node.js</div>
+                </div>
+            </div>
+            <div class="flow-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <div class="step-title">Kalite Kontrol (QC) Onayı</div>
+                    <div class="step-desc">Ürünlerin teknik şartnameye uygunluğu dijital formlarla sisteme işlenir. Hatalı ürünler anında "Tamir" bandına yönlendirilir.</div>
+                </div>
+            </div>
+        </div>
+
+        <h2>3. Lojistik ve Akıllı Sevkiyat (RFID & Sorter)</h2>
+        <div class="flow-container">
+            <div class="flow-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <div class="step-title">Kolileme ve RFID Yazımı</div>
+                    <div class="step-desc">Bitmiş ürünler kolilere girerken koli üzerindeki RFID etiketi, sipariş içeriğiyle eşleştirilir.</div>
+                </div>
+            </div>
+            <div class="flow-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <div class="step-title">Anten Tüneli Geçişi</div>
+                    <div class="step-desc">Koliler bant üzerinde ilerlerken SICK RFID antenlerinden geçer. Tünel, koliyi açmadan içindeki 50 ürünü saniyeler içinde okur.</div>
+                    <div class="tech-note">Hardware / SICK RFID</div>
+                </div>
+            </div>
+            <div class="flow-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <div class="step-title">Sorter Ayrıştırma</div>
+                    <div class="step-desc">Eğer koli içeriği %100 doğruysa PLC sistemi koliyi uygun sevkiyat kapısına (Örn: Almanya Kapısı) yönlendirir. Hatada koli alarm vererek stop eder.</div>
+                    <div class="tech-note">PLC / Industrial IoT</div>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 30px; font-size: 13px; font-weight: 600; text-align: center; color: var(--accent);">
+            VOG Enterprise - Uçtan Uca Dijital Otonom Akış - 2026
+        </div>
+    </div>
+
+</body>
+</html>
